@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load i18n static %}
+
+{% block title %}{% trans "Our Manufacturing & Fermentation Process" %}{% endblock %}
+
+{% block content %}
+
+    <!-- ===== HERO HEADER ===== -->
+    <section class="bg-success text-white py-5 text-center position-relative">
+        <div class="container py-5">
+            <span class="text-warning fw-bold text-uppercase tracking-widest">{% trans "Moroccan Food Manufacturer" %}</span>
+            <h1 class="text-white fs-1 fw-bold mt-2">{% trans "Our Manufacturing & Fermentation Process" %}</h1>
+        </div>
+    </section>
+
+    <!-- ===== MANUFACTURING STEPS ===== -->
+    <section class="section-padding">
+        <div class="container">
+            <p class="fs-5 text-secondary text-center mx-auto mb-5" style="max-width: 800px;">
+                {% trans "Vinaigre du Maroc combines natural raw materials with advanced acetator equipment. Our biological fermentation turns pure wines, ciders, and natural alcohols into highly stable, premium-grade vinegars." %}
+            </p>
+
+            <div class="row g-4">
+                
+                <!-- Sourcing -->
+                <div class="col-md-4">
+                    <div class="choose-card">
+                        <div class="choose-icon-wrapper"><i class="bi bi-tree"></i></div>
+                        <h4 class="fw-bold mb-2">{% trans "1. Raw Sourcing" %}</h4>
+                        <p class="text-secondary small">{% trans "We source premium raw ciders, quality red and white grape wines, and pure agricultural alcohols from certified local suppliers." %}</p>
+                    </div>
+                </div>
+
+                <!-- Biological Fermentation -->
+                <div class="col-md-4">
+                    <div class="choose-card">
+                        <div class="choose-icon-wrapper"><i class="bi bi-droplet-half"></i></div>
+                        <h4 class="fw-bold mb-2">{% trans "2. Acetification" %}</h4>
+                        <p class="text-secondary small">{% trans "Heavy stainless steel acetators utilize aerobic biological fermentation. Acetic acid bacteria naturally convert alcohols into clean vinegars under precise temperature checks." %}</p>
+                    </div>
+                </div>
+
+                <!-- Filtration & Bottling -->
+                <div class="col-md-4">
+                    <div class="choose-card">
+                        <div class="choose-icon-wrapper"><i class="bi bi-box-seam"></i></div>
+                        <h4 class="fw-bold mb-2">{% trans "3. Automatic Packing" %}</h4>
+                        <p class="text-secondary small">{% trans "Outbound vinegars pass ultra-fine sterilizing filters and automatic filling lines. Bottles undergo online visual inspection and laser lot coding before palletization." %}</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

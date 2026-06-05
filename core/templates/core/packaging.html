@@ -1,0 +1,109 @@
+{% extends 'base.html' %}
+{% load i18n static %}
+
+{% block title %}{% trans "B2B Export Packaging Options" %}{% endblock %}
+
+{% block content %}
+
+    <!-- ===== HERO HEADER ===== -->
+    <section class="bg-success text-white py-5 text-center position-relative">
+        <div class="container py-5">
+            <span class="text-warning fw-bold text-uppercase tracking-widest">{% trans "Moroccan Food Manufacturer" %}</span>
+            <h1 class="text-white fs-1 fw-bold mt-2">{% trans "Flexible Packaging Configurations" %}</h1>
+        </div>
+    </section>
+
+    <!-- ===== INTRO ===== -->
+    <section class="section-padding py-5">
+        <div class="container text-center">
+            <p class="fs-5 text-secondary mx-auto" style="max-width: 800px;">
+                {% trans "We offer tailored B2B packaging setups. From elegant glass bottles for high-end retail supermarkets, lightweight PET containers for wholesale foodservice distributors, to heavy drums and IBC tanks for industrial food manufacturers." %}
+            </p>
+        </div>
+    </section>
+
+    <!-- ===== GRID ===== -->
+    <section class="section-padding bg-warm-light">
+        <div class="container">
+            <div class="row g-4">
+                
+                <!-- Retail Formats -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="pkg-card">
+                        <div class="pkg-icon"><i class="bi bi-box-seam text-success"></i></div>
+                        <h3 class="pkg-title">200ml - 300ml Glass</h3>
+                        <p class="pkg-desc mb-3">{% trans "Premium glass bottles optimized for high-end vinegars, colored specialties, and flavored dressing products." %}</p>
+                        <div class="border-top pt-3 text-start small text-secondary">
+                            <div><strong>{% trans "Carton Specs" %}:</strong> 12 {% trans "Bottles per Carton" %}</div>
+                            <div><strong>{% trans "Pallet Specs" %}:</strong> 120 {% trans "Cartons per Pallet" %}</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="pkg-card">
+                        <div class="pkg-icon"><i class="bi bi-box-seam text-success"></i></div>
+                        <h3 class="pkg-title">200ml PET</h3>
+                        <p class="pkg-desc mb-3">{% trans "Lightweight, break-resistant PET bottles ideal for high-volume retail supermarket chains." %}</p>
+                        <div class="border-top pt-3 text-start small text-secondary">
+                            <div><strong>{% trans "Carton Specs" %}:</strong> 24 {% trans "Bottles per Carton" %}</div>
+                            <div><strong>{% trans "Pallet Specs" %}:</strong> 96 {% trans "Cartons per Pallet" %}</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="pkg-card">
+                        <div class="pkg-icon"><i class="bi bi-box-seam text-success"></i></div>
+                        <h3 class="pkg-title">500ml Glass / PET</h3>
+                        <p class="pkg-desc mb-3">{% trans "Standard retail and household format. Available in elegant dark round bottles or clear glass." %}</p>
+                        <div class="border-top pt-3 text-start small text-secondary">
+                            <div><strong>{% trans "Carton Specs" %}:</strong> 12 {% trans "Bottles per Carton" %}</div>
+                            <div><strong>{% trans "Pallet Specs" %}:</strong> 84 {% trans "Cartons per Pallet" %}</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Foodservice/HoReCa Formats -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="pkg-card">
+                        <div class="pkg-icon"><i class="bi bi-box-fill text-success"></i></div>
+                        <h3 class="pkg-title">2L PET Jugs</h3>
+                        <p class="pkg-desc mb-3">{% trans "Convenient size for professional kitchens, bakeries, food service, and caterers." %}</p>
+                        <div class="border-top pt-3 text-start small text-secondary">
+                            <div><strong>{% trans "Carton Specs" %}:</strong> 6 {% trans "Jugs per Carton" %}</div>
+                            <div><strong>{% trans "Pallet Specs" %}:</strong> 60 {% trans "Cartons per Pallet" %}</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="pkg-card">
+                        <div class="pkg-icon"><i class="bi bi-box-fill text-success"></i></div>
+                        <h3 class="pkg-title">5L PET Jugs</h3>
+                        <p class="pkg-desc mb-3">{% trans "Large commercial jars with handle, catering to wholesale distributor shipments." %}</p>
+                        <div class="border-top pt-3 text-start small text-secondary">
+                            <div><strong>{% trans "Carton Specs" %}:</strong> 4 {% trans "Jugs per Carton" %}</div>
+                            <div><strong>{% trans "Pallet Specs" %}:</strong> 48 {% trans "Cartons per Pallet" %}</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Industrial Bulk Formats -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="pkg-card">
+                        <div class="pkg-icon"><i class="bi bi-database-fill text-success"></i></div>
+                        <h3 class="pkg-title">1000L IBC Tank</h3>
+                        <p class="pkg-desc mb-3">{% trans "Heavy intermediate bulk shipping containers. Pre-fitted on galvanized steel grids with discharge valves." %}</p>
+                        <div class="border-top pt-3 text-start small text-secondary">
+                            <div><strong>{% trans "Tank Specs" %}:</strong> 1000 Liters Capacity</div>
+                            <div><strong>{% trans "Pallet Specs" %}:</strong> 1 IBC Tank per Pallet Slot</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

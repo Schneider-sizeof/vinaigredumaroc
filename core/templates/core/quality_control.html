@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load i18n static %}
+
+{% block title %}{% trans "Quality Control & Food Safety Standards" %}{% endblock %}
+
+{% block content %}
+
+    <!-- ===== HERO HEADER ===== -->
+    <section class="bg-success text-white py-5 text-center position-relative">
+        <div class="container py-5">
+            <span class="text-warning fw-bold text-uppercase tracking-widest">{% trans "Moroccan Food Manufacturer" %}</span>
+            <h1 class="text-white fs-1 fw-bold mt-2">{% trans "Quality Control & Laboratory Standards" %}</h1>
+        </div>
+    </section>
+
+    <!-- ===== CONTENT ===== -->
+    <section class="section-padding py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="fs-2 fw-bold text-success mb-3">{% trans "Rigorous Laboratory Testing for Every Batch" %}</h2>
+                    <p class="text-secondary mb-4" style="text-align: justify;">
+                        {% trans "At Vinaigre du Maroc, we maintain active chemical and physical laboratories to monitor biological fermentation progress. Every production run undergoes detailed screening, ensuring precise acetic acidity calibration, clarity, color conformity, and micro-biological stability compliance." %}
+                    </p>
+                    <p class="text-secondary" style="text-align: justify;">
+                        {% trans "Our manufacturing facility operates in full accordance with HACCP directives and global food defense principles. Full batch-code records and technical datasheets are kept for absolute traceability of incoming raw ingredients and outbound maritime shipments." %}
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="glass-section p-5 shadow bg-light border border-1">
+                        <h4 class="text-success mb-4 fw-bold"><i class="bi bi-shield-check me-2"></i>{% trans "Key QC Operations" %}</h4>
+                        <div class="mb-3">
+                            <strong>1. {% trans "Acidity Testing" %}</strong>
+                            <p class="small text-secondary m-0">{% trans "Automated titration systems continuously test batch acidity to guarantee consistent percentages (e.g. 6% or 8%)." %}</p>
+                        </div>
+                        <div class="mb-3">
+                            <strong>2. {% trans "Microbiological Stability" %}</strong>
+                            <p class="small text-secondary m-0">{% trans "Pasteurization processes and strict sterilizing filters eliminate unwanted wild yeasts and bacterial elements." %}</p>
+                        </div>
+                        <div>
+                            <strong>3. {% trans "Traceability Tracking" %}</strong>
+                            <p class="small text-secondary m-0">{% trans "Detailed batch records track ingredients, fermentation history, and packaging components for comprehensive recall protection." %}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

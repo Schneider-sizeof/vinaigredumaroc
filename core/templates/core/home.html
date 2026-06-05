@@ -1,0 +1,776 @@
+{% extends 'base.html' %}
+{% load i18n static i18n_extras certification_tags %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% block title %}
+    {% if LANGUAGE_CODE == 'en' %}
+        Moroccan Vinegar & Condiments Manufacturer | BRC Certified Exporter | Vinaigre du Maroc
+    {% elif LANGUAGE_CODE == 'fr' %}
+        Fabricant de Vinaigre et Condiments Marocains | Exportateur Certifié BRC | Vinaigre du Maroc
+    {% elif LANGUAGE_CODE == 'ar' %}
+        مصنع خل ومنتجات غذائية مغربية | مصدّر معتمد BRC | خل المغرب
+    {% elif LANGUAGE_CODE == 'es' %}
+        Fabricante de Vinagre y Condimentos Marroquíes | Exportador Certificado BRC | Vinaigre du Maroc
+    {% elif LANGUAGE_CODE == 'it' %}
+        Produttore di Aceto e Condimenti Marocchini | Esportatore Certificato BRC | Vinaigre du Maroc
+    {% else %}
+        Moroccan Vinegar & Condiments Manufacturer | BRC Certified Exporter | Vinaigre du Maroc
+    {% endif %}
+{% endblock %}
+
+{% block meta_description %}
+    {% if LANGUAGE_CODE == 'en' %}
+        Vinaigre du Maroc manufactures and exports premium vinegars, sauces, and condiments from Fès, Morocco. BRC Grade A, IFS, Halal, Kosher, FDA certified. Custom packaging from 200ml to 1000L IBC. Request a B2B quote.
+    {% elif LANGUAGE_CODE == 'fr' %}
+        Vinaigre du Maroc fabrique et exporte des vinaigres, sauces et condiments de qualité depuis Fès, Maroc. Certifié BRC Grade A, IFS, Halal, Casher, FDA. Emballages de 200ml à 1000L IBC.
+    {% elif LANGUAGE_CODE == 'ar' %}
+        خل المغرب تصنّع وتصدّر الخل والصلصات والتوابل الفاخرة من فاس، المغرب. معتمد BRC الدرجة A، IFS، حلال، كوشر، FDA. تغليف مخصص من 200 مل إلى 1000 لتر.
+    {% elif LANGUAGE_CODE == 'es' %}
+        Vinaigre du Maroc fabrica y exporta vinagres, salsas y condimentos de calidad desde Fez, Marruecos. Certificado BRC Grado A, IFS, Halal, Kosher, FDA.
+    {% elif LANGUAGE_CODE == 'it' %}
+        Vinaigre du Maroc produce ed esporta aceti, salse e condimenti di qualità da Fez, Marocco. Certificato BRC Grado A, IFS, Halal, Kosher, FDA.
+    {% else %}
+        Vinaigre du Maroc manufactures and exports premium vinegars, sauces, and condiments from Fès, Morocco. BRC Grade A, IFS, Halal, Kosher, FDA certified.
+    {% endif %}
+{% endblock %}
+
+{% block extra_schema %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Vinaigre du Maroc — Premium Moroccan Vinegar & Condiments",
+  "description": "Leading Moroccan manufacturer of premium vinegars, sauces, and condiments for global B2B export.",
+  "url": "{{ SITE_URL }}{{ request.path }}",
+  "inLanguage": "{{ LANGUAGE_CODE }}",
+  "isPartOf": { "@type": "WebSite", "name": "Vinaigre du Maroc", "url": "{{ SITE_URL }}" }
+}
+</script>
+{% endblock %}
+
+{% block content %}
+<!-- ===== HERO SECTION (CapersMed-Inspired) ===== -->
+<section class="hero" style="background: linear-gradient(rgba(88,24,37,0.18), rgba(88,24,37,0.42)), url('{% static "images/hero_bg.jpg" %}') center 15%/cover no-repeat;">
+    <div class="hero-content" style="margin-top: 80px !important;">
+        <h1>
+            {% if LANGUAGE_CODE == 'en' %}
+                Premium Moroccan Vinegar &amp; Condiments
+                <br><span class="hero-subtitle" style="font-size: 0.4em; opacity: 0.9; font-weight: 500; display: block; margin-top: 0.8rem; letter-spacing: 1px;">Industrial Manufacturer &amp; Global Exporter</span>
+            {% elif LANGUAGE_CODE == 'fr' %}
+                Vinaigre &amp; Condiments Marocains d'Exception
+                <br><span class="hero-subtitle" style="font-size: 0.4em; opacity: 0.9; font-weight: 500; display: block; margin-top: 0.8rem; letter-spacing: 1px;">Fabricant Industriel &amp; Exportateur Mondial</span>
+            {% elif LANGUAGE_CODE == 'ar' %}
+                خل ومنتجات غذائية مغربية فاخرة
+                <br><span class="hero-subtitle" style="font-size: 0.4em; opacity: 0.9; font-weight: 500; display: block; margin-top: 0.8rem; letter-spacing: 1px;">مصنع صناعي ومصدّر عالمي</span>
+            {% elif LANGUAGE_CODE == 'es' %}
+                Vinagre y Condimentos Marroquíes Premium
+                <br><span class="hero-subtitle" style="font-size: 0.4em; opacity: 0.9; font-weight: 500; display: block; margin-top: 0.8rem; letter-spacing: 1px;">Fabricante Industrial y Exportador Global</span>
+            {% elif LANGUAGE_CODE == 'it' %}
+                Aceto e Condimenti Marocchini Premium
+                <br><span class="hero-subtitle" style="font-size: 0.4em; opacity: 0.9; font-weight: 500; display: block; margin-top: 0.8rem; letter-spacing: 1px;">Produttore Industriale ed Esportatore Globale</span>
+            {% else %}
+                Premium Moroccan Vinegar &amp; Condiments
+                <br><span class="hero-subtitle" style="font-size: 0.4em; opacity: 0.9; font-weight: 500; display: block; margin-top: 0.8rem; letter-spacing: 1px;">Industrial Manufacturer &amp; Global Exporter</span>
+            {% endif %}
+        </h1>
+        <p>
+            {% if LANGUAGE_CODE == 'en' %}
+                Vinaigre du Maroc is a leading Moroccan manufacturer and exporter of premium vinegars, sauces, and gourmet condiments. We supply importers, distributors, and food companies worldwide with certified, consistent, export-grade products.
+            {% elif LANGUAGE_CODE == 'fr' %}
+                Vinaigre du Maroc est un fabricant et exportateur marocain de vinaigres, sauces et condiments gastronomiques de qualité supérieure. Nous approvisionnons les importateurs et distributeurs du monde entier.
+            {% elif LANGUAGE_CODE == 'ar' %}
+                خل المغرب هي شركة مغربية رائدة في تصنيع وتصدير الخل والصلصات والتوابل الذواقة. نزود المستوردين والموزعين وشركات الأغذية حول العالم بمنتجات معتمدة عالية الجودة.
+            {% elif LANGUAGE_CODE == 'es' %}
+                Vinaigre du Maroc es un fabricante y exportador marroquí líder de vinagres, salsas y condimentos gourmet de primera calidad para distribuidores e importadores internacionales.
+            {% elif LANGUAGE_CODE == 'it' %}
+                Vinaigre du Maroc è un produttore ed esportatore marocchino leader di aceti, salse e condimenti gourmet di prima qualità per distributori e importatori internazionali.
+            {% else %}
+                Vinaigre du Maroc is a leading Moroccan manufacturer and exporter of premium vinegars, sauces, and gourmet condiments for international B2B distribution.
+            {% endif %}
+        </p>
+        <div class="hero-cta">
+            <a href="{% url 'contact' %}" class="btn-hero-primary">
+                {% trans "Request Quote" %}
+            </a>
+            <a href="{% url 'products' %}" class="btn-hero-secondary">
+                {% trans "View Products" %}
+            </a>
+        </div>
+    </div>
+    <a href="#about-section" class="scroll-indicator" aria-label="{% trans 'Scroll down' %}">
+        <div class="mouse">
+            <div class="wheel"></div>
+        </div>
+        <div class="scroll-arrow">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </a>
+</section>
+
+<!-- Homepage Premium Styles -->
+<style>
+    /* ── Hero Section ── */
+    .hero {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #fff;
+        position: relative;
+        overflow: hidden;
+    }
+    .hero-content {
+        max-width: 850px;
+        padding: 0 2rem;
+        position: relative;
+        z-index: 2;
+    }
+    .hero-content h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: clamp(2.5rem, 5.5vw, 4.5rem);
+        font-weight: 700;
+        line-height: 1.15;
+        color: #fff;
+        margin-bottom: 1.5rem;
+        text-shadow: 0 4px 15px rgba(0,0,0,0.5), 0 2px 4px rgba(0,0,0,0.4);
+    }
+    .hero-content p {
+        font-size: 1.15rem;
+        color: rgba(255,255,255,0.95);
+        max-width: 620px;
+        margin: 0 auto 2.5rem;
+        line-height: 1.7;
+        text-shadow: 0 2px 10px rgba(0,0,0,0.5), 0 1px 3px rgba(0,0,0,0.4);
+    }
+    .hero-cta {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .btn-hero-primary {
+        display: inline-block;
+        padding: 16px 38px;
+        background: var(--brand-gold, #b5944b);
+        color: #1B1B1B;
+        font-weight: 700;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        border-radius: 50px;
+        border: 2px solid var(--brand-gold, #b5944b);
+        transition: all 0.3s ease;
+        box-shadow: 0 8px 30px rgba(181,148,75,0.3);
+    }
+    .btn-hero-primary:hover {
+        background: #c5a86d;
+        border-color: #c5a86d;
+        transform: translateY(-2px);
+        box-shadow: 0 12px 35px rgba(181,148,75,0.4);
+        color: #1B1B1B;
+    }
+    .btn-hero-secondary {
+        display: inline-block;
+        padding: 16px 38px;
+        background: transparent;
+        color: #fff;
+        font-weight: 700;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        border-radius: 50px;
+        border: 2px solid rgba(255,255,255,0.5);
+        transition: all 0.3s ease;
+    }
+    .btn-hero-secondary:hover {
+        background: rgba(255,255,255,0.12);
+        border-color: #fff;
+        transform: translateY(-2px);
+        color: #fff;
+    }
+
+    /* ── Scroll Indicator (Mouse animation) ── */
+    .scroll-indicator {
+        position: absolute;
+        bottom: 2.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        z-index: 3;
+        text-decoration: none;
+    }
+    .mouse {
+        width: 26px;
+        height: 40px;
+        border: 2px solid rgba(255,255,255,0.5);
+        border-radius: 13px;
+        position: relative;
+    }
+    .wheel {
+        width: 4px;
+        height: 8px;
+        background: rgba(255,255,255,0.7);
+        border-radius: 2px;
+        position: absolute;
+        top: 6px;
+        left: 50%;
+        transform: translateX(-50%);
+        animation: wheelScroll 1.5s ease-in-out infinite;
+    }
+    @keyframes wheelScroll {
+        0% { opacity: 1; transform: translateX(-50%) translateY(0); }
+        100% { opacity: 0; transform: translateX(-50%) translateY(12px); }
+    }
+    .scroll-arrow span {
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-bottom: 2px solid rgba(255,255,255,0.4);
+        border-right: 2px solid rgba(255,255,255,0.4);
+        transform: rotate(45deg);
+        animation: scrollArrow 1.5s ease-in-out infinite;
+    }
+    .scroll-arrow span:nth-child(2) { animation-delay: 0.15s; }
+    .scroll-arrow span:nth-child(3) { animation-delay: 0.3s; }
+    @keyframes scrollArrow {
+        0% { opacity: 0; transform: rotate(45deg) translate(-5px,-5px); }
+        50% { opacity: 1; }
+        100% { opacity: 0; transform: rotate(45deg) translate(5px,5px); }
+    }
+
+    /* ── Premium Animations ── */
+    @keyframes floatGlow {
+        0%, 100% { transform: translateY(0px); filter: drop-shadow(0 8px 25px rgba(181,148,75,0.3)); }
+        50% { transform: translateY(-20px); filter: drop-shadow(0 25px 40px rgba(181,148,75,0.5)); }
+    }
+    @keyframes glowPulse {
+        0%, 100% { box-shadow: 0 0 20px rgba(181,148,75,0.15), 0 0 60px rgba(88,24,37,0.1); }
+        50% { box-shadow: 0 0 40px rgba(181,148,75,0.3), 0 0 80px rgba(88,24,37,0.2); }
+    }
+    @keyframes shimmer {
+        0% { background-position: -200% 0; }
+        100% { background-position: 200% 0; }
+    }
+
+    /* ── Fade-up Observer Animation ── */
+    .fade-up {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .fade-up.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    /* ── About Section ── */
+    .home-about {
+        background: linear-gradient(170deg, #fdfcf7 0%, #f7f4ef 40%, #faf9f5 100%);
+        position: relative;
+        overflow: hidden;
+    }
+    .home-about::before {
+        content: '';
+        position: absolute;
+        top: -60px; right: -60px;
+        width: 300px; height: 300px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(181,148,75,0.06) 0%, transparent 70%);
+        pointer-events: none;
+    }
+
+    .product-glow-wrap {
+        display: flex; align-items: center; justify-content: center;
+        min-height: 350px; position: relative;
+    }
+    .product-glow-wrap::before {
+        content: '';
+        position: absolute;
+        width: 70%; height: 70%;
+        border-radius: 50%;
+        background: radial-gradient(ellipse, rgba(181,148,75,0.08) 0%, rgba(88,24,37,0.05) 50%, transparent 70%);
+        animation: glowPulse 2s ease-in-out infinite;
+        z-index: 0;
+    }
+    .product-glow-wrap .glow-icon {
+        font-size: 8rem;
+        position: relative;
+        z-index: 1;
+        animation: floatGlow 2s ease-in-out infinite;
+        filter: drop-shadow(0 8px 25px rgba(181,148,75,0.3));
+    }
+
+    /* ── Section Divider ── */
+    .section-divider {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        padding: 0.5rem 0;
+    }
+    .section-divider span {
+        width: 60px; height: 1px;
+        background: linear-gradient(90deg, transparent, rgba(181,148,75,0.5), transparent);
+    }
+    .section-divider i {
+        color: var(--brand-gold, #b5944b); font-style: normal; font-size: 0.8rem;
+    }
+
+    /* ── Featured Products Section ── */
+    .home-featured {
+        background: linear-gradient(175deg, #faf9f5 0%, #f0ede4 50%, #e8e3d8 100%);
+        position: relative;
+        overflow: hidden;
+    }
+    .home-featured::before {
+        content: '';
+        position: absolute;
+        top: 0; left: 0; right: 0;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, rgba(181,148,75,0.4), transparent);
+    }
+
+    /* ── Why Choose Us Section ── */
+    .home-why {
+        background: linear-gradient(135deg, #581825 0%, #3d0f1a 50%, #2a0a12 100%);
+        position: relative;
+        overflow: hidden;
+    }
+    .home-why::before {
+        content: '';
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background-image:
+            radial-gradient(circle at 20% 30%, rgba(181,148,75,0.06) 0%, transparent 50%),
+            radial-gradient(circle at 80% 70%, rgba(181,148,75,0.04) 0%, transparent 50%);
+        pointer-events: none;
+    }
+    .home-why .section-title { color: #fff !important; }
+    .home-why .feature-box {
+        background: rgba(255,255,255,0.04);
+        border: 1px solid rgba(255,255,255,0.08);
+        border-radius: 16px;
+        padding: 2.5rem 1.5rem;
+        backdrop-filter: blur(8px);
+        transition: all 0.4s ease;
+    }
+    .home-why .feature-box:hover {
+        background: rgba(255,255,255,0.08);
+        border-color: rgba(181,148,75,0.3);
+        transform: translateY(-6px);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    }
+    .home-why .feature-box h3 { color: #fff; }
+    .home-why .feature-icon {
+        font-size: 2.8rem;
+        width: 72px; height: 72px;
+        display: flex; align-items: center; justify-content: center;
+        background: linear-gradient(135deg, rgba(181,148,75,0.15), rgba(181,148,75,0.05));
+        border-radius: 50%;
+        border: 1px solid rgba(181,148,75,0.2);
+        margin: 0 auto 1.5rem;
+    }
+
+    /* ── Certifications Section ── */
+    .home-certs {
+        background: linear-gradient(170deg, #faf9f5 0%, #f5f2ec 100%);
+        position: relative;
+    }
+    .home-certs::before {
+        content: '';
+        position: absolute;
+        top: 0; left: 0; right: 0;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, rgba(88,24,37,0.15), transparent);
+    }
+    .home-certs .cert-box {
+        background: #fff;
+        border: 1px solid #e8e3d8;
+        border-radius: 14px;
+        padding: 2rem 1.5rem;
+        transition: all 0.35s ease;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.03);
+        text-align: center;
+    }
+    .home-certs .cert-box:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 32px rgba(88,24,37,0.1);
+        border-color: rgba(181,148,75,0.3);
+    }
+
+    /* ── CTA Section ── */
+    .home-cta-section {
+        background: linear-gradient(135deg, #581825 0%, #3d0f1a 100%);
+        position: relative;
+        overflow: hidden;
+    }
+    .home-cta-section::before {
+        content: '';
+        position: absolute;
+        top: 0; left: 0; right: 0;
+        height: 3px;
+        background: linear-gradient(90deg, transparent, var(--brand-gold, #b5944b), transparent);
+    }
+    .home-cta-section::after {
+        content: '';
+        position: absolute;
+        top: -50%; right: -10%;
+        width: 500px; height: 500px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(181,148,75,0.05) 0%, transparent 60%);
+        pointer-events: none;
+    }
+
+    /* ── About Preview Cards ── */
+    .about-preview {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4rem;
+        align-items: center;
+        margin-bottom: 6rem;
+    }
+    .about-preview:last-child {
+        margin-bottom: 0;
+    }
+    .about-text {
+        flex: 1 1 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+    .about-text h2 {
+        font-family: 'Playfair Display', serif;
+        color: var(--brand-burgundy, #581825);
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+        text-align: left;
+        line-height: 1.3;
+    }
+    .about-text p {
+        margin-bottom: 1.5rem;
+        line-height: 1.7;
+        color: #555;
+    }
+
+    /* ── B2B Spec Cards ── */
+    .spec-card {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        background: #fff;
+        border: 1px solid #e0ede3;
+        border-radius: 14px;
+        padding: 2rem;
+        box-shadow: 0 4px 20px rgba(88,24,37,0.03);
+        transition: transform 0.3s ease;
+    }
+    .spec-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 32px rgba(88,24,37,0.08);
+        border-color: rgba(181,148,75,0.3);
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 768px) {
+        .about-preview {
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+        .hero-content h1 {
+            font-size: 2.2rem;
+        }
+        .about-text h2 {
+            font-size: 1.6rem;
+        }
+    }
+
+    html[dir="rtl"] .about-text {
+        align-items: flex-end;
+        text-align: right;
+    }
+    html[dir="rtl"] .about-text h2 {
+        text-align: right !important;
+    }
+
+    .b2b-specs-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+    }
+    @media (max-width: 991px) {
+        .b2b-specs-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    @media (max-width: 576px) {
+        .b2b-specs-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+
+<!-- ===== ABOUT / PRODUCT PREVIEWS ===== -->
+<section id="about-section" class="section-padding home-about">
+    <div class="container">
+
+        <!-- CARD 1: Premium Vinegars -->
+        <div class="about-preview fade-up">
+            <div class="product-glow-wrap" style="flex: 1 1 400px;">
+                <span class="glow-icon">🍾</span>
+            </div>
+            <div class="about-text">
+                <div class="section-divider" style="margin-left: 0; align-self: flex-start;"><span></span><i>◆</i><span></span></div>
+                <h2>{% trans "Premium Moroccan Vinegars — All Types, Year-Round Supply" %}</h2>
+                <p>{% trans "Vinaigre du Maroc produces high-grade white vinegar, red wine vinegar, white wine vinegar, apple cider vinegar, and flavored vinegars. All manufactured in our state-of-the-art Fès facility with precise acidity control and rigorous quality assurance." %}</p>
+                <div style="font-size: 0.9rem; font-weight: bold; color: var(--brand-gold); background: rgba(88,24,37,0.05); padding: 6px 14px; border-radius: 4px; margin-bottom: 1.5rem;">
+                    {% if LANGUAGE_CODE == 'fr' %}Vinaigre Blanc — 4% à 20% d'Acidité{% elif LANGUAGE_CODE == 'ar' %}خل أبيض — حموضة من 4% إلى 20%{% elif LANGUAGE_CODE == 'es' %}Vinagre Blanco — Acidez del 4% al 20%{% elif LANGUAGE_CODE == 'it' %}Aceto Bianco — Acidità dal 4% al 20%{% else %}White Vinegar — 4% to 20% Acidity{% endif %}
+                </div>
+                <a href="{% url 'products' %}?category=vinegars" class="btn-premium btn-premium-secondary" style="border-radius: 50px;">{% trans "View Vinegars" %}</a>
+            </div>
+        </div>
+
+        <!-- CARD 2: Sauces & Condiments -->
+        <div class="about-preview fade-up" style="flex-direction: row-reverse;">
+            <div class="about-text">
+                <div class="section-divider" style="margin-left: 0; align-self: flex-start;"><span></span><i>◆</i><span></span></div>
+                <h2>{% trans "Sauces & Gourmet Condiments — Private Label Ready" %}</h2>
+                <p>{% trans "Authentic Moroccan sauces and preserved gourmet specialties. Including premium Hot Sauce, Harissa, Lemon-infused Cornichons, and specialty condiments. Clean ingredients with export-grade formulations designed for international distribution." %}</p>
+                <div style="font-size: 0.9rem; font-weight: bold; color: var(--brand-gold); background: rgba(88,24,37,0.05); padding: 6px 14px; border-radius: 4px; margin-bottom: 1.5rem;">
+                    {% trans "Hot Sauce & Harissa — Private Label OEM" %}
+                </div>
+                <a href="{% url 'products' %}?category=sauces-condiments" class="btn-premium btn-premium-secondary" style="border-radius: 50px;">{% trans "View Condiments" %}</a>
+            </div>
+            <div class="product-glow-wrap" style="flex: 1 1 400px;">
+                <span class="glow-icon">🌶️</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ===== B2B SPECS SECTION ===== -->
+<section class="section-padding home-featured">
+    <div class="container">
+        <div style="text-align: center; margin-bottom: 4rem;" class="fade-up">
+            <span class="eyebrow">{% trans "Global Distribution" %}</span>
+            <h2 class="section-title" style="margin-bottom: 0;">{% trans "B2B Export Specifications" %}</h2>
+            <p style="color: #666; margin-top: 1.5rem; font-size: 1rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                {% trans "Vinaigre du Maroc is a direct-from-factory manufacturer. We support importers, distributors, and private label clients globally with standardized premium export formats." %}
+            </p>
+        </div>
+
+        <div class="b2b-specs-grid">
+            <!-- Card 1: Formats -->
+            <div class="spec-card fade-up">
+                <div style="margin-bottom: 1.5rem; font-size: 2.2rem; color: var(--brand-gold);">📏</div>
+                <h3 style="font-family: 'Playfair Display', serif; color: var(--brand-burgundy); font-size: 1.35rem; margin-bottom: 1rem;">{% trans "Product Range" %}</h3>
+                <ul style="list-style: none; padding: 0; color: #555; font-size: 0.92rem; line-height: 1.6;">
+                    <li>• {% if LANGUAGE_CODE == 'fr' %}Vinaigre Blanc (acidité 4%–20%){% elif LANGUAGE_CODE == 'ar' %}خل أبيض (حموضة 4%–20%){% elif LANGUAGE_CODE == 'es' %}Vinagre Blanco (acidez 4%–20%){% elif LANGUAGE_CODE == 'it' %}Aceto Bianco (acidità 4%–20%){% else %}White Vinegar (4%–20% acidity){% endif %}</li>
+                    <li>• {% trans "Red & White Wine Vinegar" %}</li>
+                    <li>• {% trans "Apple Cider Vinegar" %}</li>
+                    <li>• {% trans "Hot Sauce & Harissa" %}</li>
+                    <li>• {% trans "Specialty Condiments" %}</li>
+                </ul>
+            </div>
+
+            <!-- Card 2: Packaging -->
+            <div class="spec-card fade-up">
+                <div style="margin-bottom: 1.5rem; font-size: 2.2rem; color: var(--brand-gold);">📦</div>
+                <h3 style="font-family: 'Playfair Display', serif; color: var(--brand-burgundy); font-size: 1.35rem; margin-bottom: 1rem;">{% trans "Packaging & Formats" %}</h3>
+                <ul style="list-style: none; padding: 0; color: #555; font-size: 0.92rem; line-height: 1.6;">
+                    <li>• <strong>{% trans "Retail" %}:</strong> {% trans "200ml–500ml Glass & PET" %}</li>
+                    <li>• <strong>{% trans "HoReCa" %}:</strong> {% trans "2L–5L PET Bottles" %}</li>
+                    <li>• <strong>{% trans "Industrial" %}:</strong> {% trans "200L HDPE Drums" %}</li>
+                    <li>• <strong>{% trans "Bulk" %}:</strong> {% trans "1000L IBC Tanks" %}</li>
+                </ul>
+            </div>
+
+            <!-- Card 3: Logistics -->
+            <div class="spec-card fade-up">
+                <div style="margin-bottom: 1.5rem; font-size: 2.2rem; color: var(--brand-gold);">🚢</div>
+                <h3 style="font-family: 'Playfair Display', serif; color: var(--brand-burgundy); font-size: 1.35rem; margin-bottom: 1rem;">{% trans "Logistics & Supply" %}</h3>
+                <ul style="list-style: none; padding: 0; color: #555; font-size: 0.92rem; line-height: 1.6;">
+                    <li><strong>{% trans "Capacity" %}:</strong> {% trans "25M+ liters annual" %}</li>
+                    <li><strong>{% trans "Port" %}:</strong> {% trans "FOB Tangier Med / Casablanca" %}</li>
+                    <li><strong>{% trans "Transit" %}:</strong> {% trans "Europe 2–5 days" %}</li>
+                    <li><strong>{% trans "Supply" %}:</strong> {% trans "Year-round continuous production" %}</li>
+                </ul>
+            </div>
+
+            <!-- Card 4: Certifications -->
+            <div class="spec-card fade-up">
+                <div style="margin-bottom: 1.5rem; font-size: 2.2rem; color: var(--brand-gold);">📜</div>
+                <h3 style="font-family: 'Playfair Display', serif; color: var(--brand-burgundy); font-size: 1.35rem; margin-bottom: 1rem;">{% trans "Compliance & Trust" %}</h3>
+                <ul style="list-style: none; padding: 0; color: #555; font-size: 0.92rem; line-height: 1.6;">
+                    <li>• {% trans "BRC Global Standard Grade A" %}</li>
+                    <li>• {% trans "IFS Food certified" %}</li>
+                    <li>• {% trans "Halal & Kosher certified" %}</li>
+                    <li>• {% trans "FDA registered facility" %}</li>
+                </ul>
+                <div style="margin-top: 1.5rem; width: 100%;">
+                    <a href="{% url 'contact' %}" class="btn-premium btn-premium-accent" style="display: block; text-align: center; font-size: 0.85rem; padding: 10px 15px; border-radius: 50px;">{% trans "Request B2B Quote" %}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== WHY CHOOSE US ===== -->
+<section class="section-padding home-why">
+    <div class="container">
+        <h2 class="section-title fade-up">{% trans "Why Choose Us" %}</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+            <div class="feature-box fade-up" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+                <div class="feature-icon">🏆</div>
+                <h3>{% trans "Premium Quality" %}</h3>
+                <p style="color: rgba(255,255,255,0.6); font-size: 0.9rem;">{% trans "Strict quality controls with physicochemical lab analysis for every batch." %}</p>
+            </div>
+            <div class="feature-box fade-up" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+                <div class="feature-icon">🌍</div>
+                <h3>{% trans "Export Ready" %}</h3>
+                <p style="color: rgba(255,255,255,0.6); font-size: 0.9rem;">{% trans "45+ countries served with full documentation and customs compliance." %}</p>
+            </div>
+            <div class="feature-box fade-up" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+                <div class="feature-icon">🇲🇦</div>
+                <h3>{% trans "Moroccan Heritage" %}</h3>
+                <p style="color: rgba(255,255,255,0.6); font-size: 0.9rem;">{% trans "Deep roots in Fès with traditional fermentation expertise and modern technology." %}</p>
+            </div>
+            <div class="feature-box fade-up" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+                <div class="feature-icon">📦</div>
+                <h3>{% trans "Flexible Formats" %}</h3>
+                <p style="color: rgba(255,255,255,0.6); font-size: 0.9rem;">{% trans "From 200ml retail glass bottles to 1000L IBC industrial tanks." %}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== CERTIFICATIONS ===== -->
+<section class="section-padding home-certs">
+    <div class="container">
+        <h2 class="section-title fade-up" style="font-family: 'Playfair Display', serif; color: var(--brand-burgundy); text-align: center; margin-bottom: 3rem;">
+            {% trans "BRC Grade A, IFS, Halal, Kosher & FDA — Ready for Global Export" %}
+        </h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1.5rem; margin-bottom: 3rem;" class="fade-up">
+            <div class="cert-box">
+                <div class="cert-svg-wrap" style="width: 60px; height: 60px; margin: 0 auto 1rem; display: block;">
+                    {% render_certification_icon 'HALAL' %}
+                </div>
+                <h4 style="font-weight: 700; color: var(--brand-burgundy); margin: 0 0 0.3rem;">Halal</h4>
+                <span class="small text-muted">{% trans "100% Certified" %}</span>
+            </div>
+            <div class="cert-box">
+                <div class="cert-svg-wrap" style="width: 60px; height: 60px; margin: 0 auto 1rem; display: block;">
+                    {% render_certification_icon 'KOSHER' %}
+                </div>
+                <h4 style="font-weight: 700; color: var(--brand-burgundy); margin: 0 0 0.3rem;">Kosher</h4>
+                <span class="small text-muted">{% trans "Rabbinate Audit" %}</span>
+            </div>
+            <div class="cert-box">
+                <div class="cert-svg-wrap" style="width: 60px; height: 60px; margin: 0 auto 1rem; display: block;">
+                    {% render_certification_icon 'IFS' %}
+                </div>
+                <h4 style="font-weight: 700; color: var(--brand-burgundy); margin: 0 0 0.3rem;">IFS Food</h4>
+                <span class="small text-muted">{% trans "European Standard" %}</span>
+            </div>
+            <div class="cert-box">
+                <div class="cert-svg-wrap" style="width: 60px; height: 60px; margin: 0 auto 1rem; display: block;">
+                    {% render_certification_icon 'BRCGS' %}
+                </div>
+                <h4 style="font-weight: 700; color: var(--brand-burgundy); margin: 0 0 0.3rem;">BRC GS</h4>
+                <span class="small text-muted">{% trans "Grade A Standard" %}</span>
+            </div>
+            <div class="cert-box">
+                <div class="cert-svg-wrap" style="width: 60px; height: 60px; margin: 0 auto 1rem; display: block;">
+                    {% render_certification_icon 'FDA' %}
+                </div>
+                <h4 style="font-weight: 700; color: var(--brand-burgundy); margin: 0 0 0.3rem;">FDA</h4>
+                <span class="small text-muted">{% trans "US Registered" %}</span>
+            </div>
+        </div>
+
+        <!-- Certification quote -->
+        <div style="padding: 2.5rem; background: #fff; border: 1px solid #e8e3d8; border-radius: 12px; box-shadow: 0 4px 20px rgba(88,24,37,0.03); text-align: center;" class="fade-up">
+            <p style="font-size: 1.05rem; line-height: 1.8; color: #333; font-style: italic; max-width: 900px; margin: 0 auto;">
+                {% if LANGUAGE_CODE == 'fr' %}
+                    "Vinaigre du Maroc est certifié BRC Global Standard Grade A, enregistré auprès de la FDA, certifié IFS Food pour l'exportation vers l'Union Européenne et les États-Unis, et détient les certifications Halal et Casher. Tous les produits sont fabriqués selon les normes phytosanitaires de l'ONSSA (Maroc)."
+                {% elif LANGUAGE_CODE == 'ar' %}
+                    "خل المغرب حاصلة على شهادة BRC Global Standard Grade A، ومسجلة لدى إدارة الغذاء والدواء الأمريكية (FDA)، ومعتمدة من IFS Food للتصدير إلى الاتحاد الأوروبي والولايات المتحدة، وحاصلة على شهادتي حلال وكوشر. جميع المنتجات يتم إنتاجها وفقاً لمعايير الصحة النباتية لأونسا ONSSA (المغرب)."
+                {% elif LANGUAGE_CODE == 'es' %}
+                    "Vinaigre du Maroc está certificada bajo la norma BRC Global Standard Grade A, registrada ante la FDA, certificada en IFS Food para la exportación a la UE y EE.UU., y cuenta con las certificaciones Halal y Kosher."
+                {% elif LANGUAGE_CODE == 'it' %}
+                    "Vinaigre du Maroc è certificata BRC Global Standard Grade A, registrata presso la FDA, certificata IFS Food per l'esportazione verso l'UE e gli USA, e possiede le certificazioni Halal e Kosher."
+                {% else %}
+                    "Vinaigre du Maroc is certified BRC Global Standard Grade A, registered with the FDA, certified IFS Food for export to the European Union and the United States, and holds Halal and Kosher certification. All products are produced under ONSSA phytosanitary standards (Morocco)."
+                {% endif %}
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- ===== CONTACT CTA ===== -->
+<section class="section-padding text-center home-cta-section" style="color: #fff;">
+    <div class="container fade-up">
+        <span style="display:inline-block;font-size:0.72rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--brand-gold);margin-bottom:1.2rem;">{% trans "Wholesale & Export" %}</span>
+        <h2 style="color: #fff; margin-bottom: 1.5rem; font-size: 2.2rem; font-family: 'Playfair Display', serif;">
+            {% if LANGUAGE_CODE == 'en' %}Request a Wholesale Quote — FOB Tangier Med
+            {% elif LANGUAGE_CODE == 'fr' %}Demandez un Devis de Gros — FOB Tanger Med
+            {% elif LANGUAGE_CODE == 'ar' %}اطلب عرض سعر للجملة — فوب طنجة المتوسط
+            {% elif LANGUAGE_CODE == 'es' %}Solicite Presupuesto Mayorista — FOB Tánger Med
+            {% elif LANGUAGE_CODE == 'it' %}Richiedi un Preventivo All'Ingrosso — FOB Tangeri Med
+            {% else %}Request a Wholesale Quote — FOB Tangier Med
+            {% endif %}
+        </h2>
+        <p style="margin-bottom: 1.5rem; font-size: 1.15rem; color: rgba(255,255,255,0.85); max-width:560px; margin-left:auto; margin-right:auto;">
+            {% trans "Contact us for wholesale pricing, private label, or export inquiries." %}</p>
+        <p style="margin-bottom: 2rem; font-weight: 500; color: rgba(255,255,255,0.7); font-size:0.95rem;">📞 {{ site_settings.phone }} &nbsp; | &nbsp; 📍 {{ site_settings.address }}</p>
+        <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+            <a href="{% url 'contact' %}" class="btn-hero-primary">
+                ✉️ {% trans "Contact Us Now" %}
+            </a>
+            <a href="{% url 'products' %}" class="btn-hero-secondary" style="padding:16px 38px;">
+                {% trans "Explore Full Catalog" %} →
+            </a>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+// Fade-up intersection observer
+(function(){
+    var els = document.querySelectorAll('.fade-up');
+    if (!els.length) return;
+    var observer = new IntersectionObserver(function(entries){
+        entries.forEach(function(entry){
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {threshold: 0.15});
+    els.forEach(function(el){ observer.observe(el); });
+})();
+
+// Smooth scroll for scroll-indicator
+document.querySelectorAll('.scroll-indicator').forEach(function(a){
+    a.addEventListener('click', function(e){
+        e.preventDefault();
+        var target = document.querySelector(a.getAttribute('href'));
+        if (target) {
+            var y = target.getBoundingClientRect().top + window.pageYOffset - 80;
+            window.scrollTo({top: y, behavior: 'smooth'});
+        }
+    });
+});
+</script>
+{% endblock %}

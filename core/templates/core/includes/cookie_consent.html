@@ -1,0 +1,103 @@
+{% load i18n %}
+
+<!-- Cookie Consent Container -->
+<div class="cookie-consent-container">
+    
+    <!-- Floating Settings Button (shown after consent) -->
+    <div id="cc-floating-btn" class="cc-floating-btn" aria-label="{% trans 'Cookie Settings' %}" title="{% trans 'Cookie Settings' %}">
+        <svg viewBox="0 0 24 24">
+            <path d="M12,2C6.48,2,2,6.48,2,12s4.48,10,10,10c1.06,0,2.08-0.16,3.03-0.46c-0.21-0.65-0.34-1.34-0.34-2.04 c0-3.31,2.69-6,6-6c0.81,0,1.58,0.16,2.3,0.44C23.67,12.78,24,11.43,24,10C24,4.48,19.52,2,12,2z M10.5,16c-0.83,0-1.5-0.67-1.5-1.5 S9.67,13,10.5,13s1.5,0.67,1.5,1.5S11.33,16,10.5,16z M8,10.5C7.17,10.5,6.5,9.83,6.5,9S7.17,7.5,8,7.5S9.5,8.17,9.5,9 S8.83,10.5,8,10.5z M14.5,10c-0.83,0-1.5-0.67-1.5-1.5S13.67,7,14.5,7s1.5,0.67,1.5,1.5S15.33,10,14.5,10z"/>
+        </svg>
+    </div>
+
+    <!-- Main Banner -->
+    <div id="cc-banner" class="cc-banner" role="dialog" aria-live="polite" aria-label="{% trans 'Cookie Consent' %}">
+        <div class="cc-banner-content">
+            <h3>{% trans "We value your privacy" %}</h3>
+            <p>
+                {% trans "We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic. By clicking 'Accept All', you consent to our use of cookies." %}
+                <a href="{% url 'about' %}" target="_blank">{% trans "Read our Privacy Policy" %}</a>.
+            </p>
+        </div>
+        <div class="cc-banner-actions">
+            <button id="cc-btn-customize" class="cc-btn cc-btn-link">{% trans "Customize Preferences" %}</button>
+            <button id="cc-btn-reject-all" class="cc-btn cc-btn-secondary">{% trans "Reject Non-Essential" %}</button>
+            <button id="cc-btn-accept-all" class="cc-btn cc-btn-primary">{% trans "Accept All" %}</button>
+        </div>
+    </div>
+
+    <!-- Customize Modal Overlay -->
+    <div id="cc-modal-overlay" class="cc-modal-overlay" role="dialog" aria-modal="true" aria-labelledby="cc-modal-title">
+        <div class="cc-modal">
+            <div class="cc-modal-header">
+                <h2 id="cc-modal-title">{% trans "Cookie Preferences" %}</h2>
+                <button id="cc-modal-close" class="cc-modal-close" aria-label="{% trans 'Close' %}">&times;</button>
+            </div>
+            
+            <div class="cc-modal-body">
+                <p class="cc-intro">
+                    {% trans "When you visit any website, it may store or retrieve information on your browser, mostly in the form of cookies. This information might be about you, your preferences or your device and is mostly used to make the site work as you expect it to." %}
+                </p>
+
+                <!-- Necessary Cookies -->
+                <div class="cc-cookie-category">
+                    <div class="cc-category-header">
+                        <h3 class="cc-category-title">{% trans "Strictly Necessary Cookies" %}</h3>
+                        <span class="cc-always-active-label">{% trans "Always Active" %}</span>
+                    </div>
+                    <p class="cc-category-desc">
+                        {% trans "These cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in or filling in forms." %}
+                    </p>
+                </div>
+
+                <!-- Analytics Cookies -->
+                <div class="cc-cookie-category">
+                    <div class="cc-category-header">
+                        <h3 class="cc-category-title">{% trans "Analytics Cookies" %}</h3>
+                        <label class="cc-toggle">
+                            <input type="checkbox" id="cc-toggle-analytics">
+                            <span class="cc-slider"></span>
+                        </label>
+                    </div>
+                    <p class="cc-category-desc">
+                        {% trans "These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. They help us to know which pages are the most and least popular and see how visitors move around the site." %}
+                    </p>
+                </div>
+
+                <!-- Marketing Cookies -->
+                <div class="cc-cookie-category">
+                    <div class="cc-category-header">
+                        <h3 class="cc-category-title">{% trans "Marketing Cookies" %}</h3>
+                        <label class="cc-toggle">
+                            <input type="checkbox" id="cc-toggle-marketing">
+                            <span class="cc-slider"></span>
+                        </label>
+                    </div>
+                    <p class="cc-category-desc">
+                        {% trans "These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites." %}
+                    </p>
+                </div>
+
+                <!-- Preferences Cookies -->
+                <div class="cc-cookie-category">
+                    <div class="cc-category-header">
+                        <h3 class="cc-category-title">{% trans "Preferences Cookies" %}</h3>
+                        <label class="cc-toggle">
+                            <input type="checkbox" id="cc-toggle-preferences">
+                            <span class="cc-slider"></span>
+                        </label>
+                    </div>
+                    <p class="cc-category-desc">
+                        {% trans "These cookies enable the website to provide enhanced functionality and personalisation. They may be set by us or by third party providers whose services we have added to our pages." %}
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="cc-modal-footer">
+                <button id="cc-btn-save-preferences" class="cc-btn cc-btn-primary">{% trans "Save My Preferences" %}</button>
+            </div>
+        </div>
+    </div>
+
+</div>

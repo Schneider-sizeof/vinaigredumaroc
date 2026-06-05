@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+{% load i18n static %}
+
+{% block title %}{% trans "About Us" %}{% endblock %}
+
+{% block content %}
+
+    <!-- ===== HERO HEADER ===== -->
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <span class="hero-accent text-uppercase fw-bold" style="letter-spacing:3px;font-size:0.85rem;">{% trans "Moroccan Food Manufacturer" %}</span>
+            <div class="hero-divider"></div>
+            <h1>{% trans "Our Heritage & Export Capabilities" %}</h1>
+            <p>{% trans "Deeply rooted in the authentic agricultural rich soils of Fès, Morocco, Vinaigre du Maroc combines historical heritage and fermentation expertise with modern industrial technology." %}</p>
+        </div>
+    </section>
+
+    <!-- ===== NARRATIVE SECTION ===== -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <h2 class="fs-2 fw-bold text-success mb-3">{% trans "Crafting Vinegar in Fès Since 1998" %}</h2>
+                    <p class="text-secondary mb-4" style="text-align: justify;">
+                        {% trans "Vinaigre du Maroc was founded in Fès, Morocco, with a clear vision: to combine traditional biological fermentation heritage with state-of-the-art industrial technology. Over the decades, we have expanded our capacity to become the premier vinegar manufacturer in Morocco, supplying major international distributors, hotel chains, and retail supermarkets." %}
+                    </p>
+                    <p class="text-secondary" style="text-align: justify;">
+                        {% trans "Our proximity to the local agricultural fields of the Saïss plain provides us with natural, premium ingredients. We are dedicated to providing superior export-quality vinegars and condiments that meet global culinary and regulatory standards." %}
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="glass-section p-5 shadow bg-light border-1">
+                        <h4 class="text-success mb-4 fw-bold">{% trans "Our Export Commitment" %}</h4>
+                        <div class="d-flex align-items-start gap-3 mb-4">
+                            <span class="fs-3 text-success">🏆</span>
+                            <div>
+                                <h6 class="fw-bold m-0">{% trans "Uncompromised Quality" %}</h6>
+                                <p class="text-secondary small m-0">{% trans "Continuous physical-chemical monitoring ensures absolute chemical acidity and biological purity compliance." %}</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start gap-3 mb-4">
+                            <span class="fs-3 text-success">🌍</span>
+                            <div>
+                                <h6 class="fw-bold m-0">{% trans "Global Distribution Channels" %}</h6>
+                                <p class="text-secondary small m-0">{% trans "We ship mixed full container loads (FCL) from Tangier Med directly to major global gateways." %}</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start gap-3">
+                            <span class="fs-3 text-success">🤝</span>
+                            <div>
+                                <h6 class="fw-bold m-0">{% trans "OEM B2B Private Labels" %}</h6>
+                                <p class="text-secondary small m-0">{% trans "We help brand owners design customized formulas, retail bottles, boxes, and barcodes." %}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== KEY VALUES SECTION ===== -->
+    <section class="section-padding bg-warm-light">
+        <div class="container">
+            <span class="eyebrow">{% trans "CORE PRINCIPLES" %}</span>
+            <h2 class="section-title">{% trans "Corporate Values" %}</h2>
+            
+            <div class="row g-4 text-center">
+                <div class="col-md-4">
+                    <div class="choose-card">
+                        <div class="choose-icon-wrapper mx-auto"><i class="bi bi-patch-check"></i></div>
+                        <h4 class="fw-bold mb-2">{% trans "Quality Control" %}</h4>
+                        <p class="text-secondary small">{% trans "We maintain in-house microbiological and chemical testing labs. Our production batch runs undergo rigorous physical testing for acidity levels, density, and shelf longevity." %}</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="choose-card">
+                        <div class="choose-icon-wrapper mx-auto"><i class="bi bi-people"></i></div>
+                        <h4 class="fw-bold mb-2">{% trans "Global Partnerships" %}</h4>
+                        <p class="text-secondary small">{% trans "We cooperate with B2B food brokers, commercial importers, and logistics networks in Europe, the USA, and Asia, offering seamless customs clearances." %}</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="choose-card">
+                        <div class="choose-icon-wrapper mx-auto"><i class="bi bi-box-seam"></i></div>
+                        <h4 class="fw-bold mb-2">{% trans "Flexible Logistics" %}</h4>
+                        <p class="text-secondary small">{% trans "We support multiple packaging setups. From bulk tank trucks to intermediate 1000L IBCs, 200L drums, and consumer retail boxes, we accommodate flexible logistics." %}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

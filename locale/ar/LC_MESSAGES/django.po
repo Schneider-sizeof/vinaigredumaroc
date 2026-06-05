@@ -1,0 +1,1241 @@
+# Translation file for Vinaigre du Maroc - Arabic
+# Copyright (C) 2026 Vinaigre du Maroc
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: vinaigre-de-maroc 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-29 20:00+0000\n"
+"PO-Revision-Date: 2026-05-29 20:00+0000\n"
+"Last-Translator: Vinaigre du Maroc\n"
+"Language-Team: Arabic\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "1. Raw Sourcing"
+msgstr "1. توريد المواد الخام"
+
+msgid "100% Certified"
+msgstr "معتمد 100%"
+
+msgid "2. Acetification"
+msgstr "2. عملية الأستلة"
+
+msgid "3. Automatic Packing"
+msgstr "3. التعبئة الآلية"
+
+msgid "About Us"
+msgstr "من نحن"
+
+msgid "Acidity"
+msgstr "الحموضة"
+
+msgid "Acidity Level"
+msgstr "مستوى الحموضة"
+
+msgid "Acidity Testing"
+msgstr "اختبار الحموضة"
+
+msgid "All Catalog"
+msgstr "الكتالوج الكامل"
+
+msgid "All Products"
+msgstr "جميع المنتجات"
+
+msgid "All Rights Reserved."
+msgstr "جميع الحقوق محفوظة."
+
+msgid "Annual Liters"
+msgstr "لترات سنوياً"
+
+msgid "At Vinaigre du Maroc, we maintain active chemical and physical laboratories to monitor biological fermentation progress. Every production run undergoes detailed screening, ensuring precise acetic acidity calibration, clarity, color conformity, and micro-biological stability compliance."
+msgstr "في فيناغر دو ماروك، نحتفظ بمختبرات كيميائية وفيزيائية نشطة لمراقبة تقدم التخمير البيولوجي. يخضع كل دورة إنتاج لفحص مفصل، مما يضمن معايرة دقيقة للحموضة الخلية والوضوح والتوافق اللوني والامتثال للاستقرار الميكروبيولوجي."
+
+msgid "Audited standards BRC GS Grade A, IFS Food, Halal, Kosher, and FDA registry simplify import clearance."
+msgstr "المعايير المدققة BRC GS الدرجة A وIFS Food والحلال والكوشر وسجل FDA تبسط التخليص الجمركي للاستيراد."
+
+msgid "Authentic Moroccan sauces and pickled gourmet specialties. Including high-grade Hot Sauce, Lemon-infused Cornichons, Hot Pepper Paste, and Caper Paste. Clean ingredients and premium export formulations."
+msgstr "صلصات مغربية أصيلة وتخصصات مخللة فاخرة. بما في ذلك الصلصة الحارة والكورنيشون بالليمون ومعجون الفلفل الحار ومعجون الكبر. مكونات نظيفة وتركيبات تصدير فاخرة."
+
+msgid "Automated titration systems continuously test batch acidity to guarantee consistent percentages (e.g. 6% or 8%)."
+msgstr "أنظمة المعايرة الآلية تختبر باستمرار حموضة الدفعات لضمان نسب ثابتة (مثل 6% أو 8%)."
+
+msgid "Available Packaging Formats"
+msgstr "تنسيقات التعبئة المتاحة"
+
+msgid "Average transit times: Europe (2-5 days), USA East Coast (10-14 days), Middle East Gulf (12-18 days), West Africa (6-10 days)."
+msgstr "أوقات العبور المتوسطة: أوروبا (2-5 أيام)، الساحل الشرقي الأمريكي (10-14 يوماً)، الخليج العربي (12-18 يوماً)، غرب أفريقيا (6-10 أيام)."
+
+msgid "B2B Export & OEM Private Labeling"
+msgstr "تصدير B2B والعلامة الخاصة OEM"
+
+msgid "B2B Export FAQ"
+msgstr "الأسئلة الشائعة حول التصدير"
+
+msgid "B2B Export Packaging Options"
+msgstr "خيارات تعبئة التصدير B2B"
+
+msgid "B2B Inquiries"
+msgstr "استفسارات B2B"
+
+msgid "B2B Inquiry"
+msgstr "استفسار B2B"
+
+msgid "Back to home"
+msgstr "العودة للرئيسية"
+
+msgid "Blog"
+msgstr "المدونة"
+
+msgid "Blog Post"
+msgstr "مقال"
+
+msgid "Blog Posts"
+msgstr "مقالات"
+
+msgid "Bottles per Carton"
+msgstr "زجاجات لكل كرتون"
+
+msgid "Bulk Vinegar Supply"
+msgstr "توريد الخل بالجملة"
+
+msgid "Bulk bottles designed for HoReCa distribution, catering services, and large foodservice providers."
+msgstr "زجاجات بالجملة مصممة لتوزيع HoReCa وخدمات التموين ومقدمي الخدمات الغذائية."
+
+msgid "CORE PRINCIPLES"
+msgstr "المبادئ الأساسية"
+
+msgid "Can you formulate customized acidity levels or custom vinegar flavors?"
+msgstr "هل يمكنكم صياغة مستويات حموضة مخصصة أو نكهات خل حسب الطلب؟"
+
+msgid "Carton Specs"
+msgstr "مواصفات الكرتون"
+
+msgid "Cartons per Pallet"
+msgstr "كراتين لكل منصة"
+
+msgid "Categories"
+msgstr "الفئات"
+
+msgid "Category"
+msgstr "الفئة"
+
+msgid "Certification"
+msgstr "الشهادة"
+
+msgid "Certifications"
+msgstr "الشهادات"
+
+msgid "Chat with our Export Team on WhatsApp"
+msgstr "تواصل مع فريق التصدير عبر واتساب"
+
+msgid "Choose glass bottles, PET jugs, or bulk containers with tailored boxes."
+msgstr "اختر زجاجات أو أباريق PET أو حاويات بالجملة مع صناديق مخصصة."
+
+msgid "Commercial Email Address"
+msgstr "البريد الإلكتروني التجاري"
+
+msgid "Company Name"
+msgstr "اسم الشركة"
+
+msgid "Condiments & Sauces"
+msgstr "التوابل والصلصات"
+
+msgid "Contact"
+msgstr "اتصل بنا"
+
+msgid "Contact & Exports"
+msgstr "الاتصال والتصدير"
+
+msgid "Contact Export Team"
+msgstr "الاتصال بفريق التصدير"
+
+msgid "Contact Our Export Team"
+msgstr "تواصل مع فريق التصدير"
+
+msgid "Contact Our Export Team Today"
+msgstr "تواصل مع فريق التصدير اليوم"
+
+msgid "Continuous physical-chemical monitoring ensures absolute chemical acidity and biological purity compliance."
+msgstr "المراقبة الفيزيائية-الكيميائية المستمرة تضمن الامتثال المطلق للحموضة الكيميائية والنقاء البيولوجي."
+
+msgid "Convenient size for professional kitchens, bakeries, food service, and caterers."
+msgstr "حجم مناسب للمطابخ المهنية والمخابز وخدمات الطعام."
+
+msgid "Corporate Values"
+msgstr "قيم الشركة"
+
+msgid "Country of Origin"
+msgstr "بلد المنشأ"
+
+msgid "Crafting Vinegar in Fès Since 1998"
+msgstr "صناعة الخل في فاس منذ 1998"
+
+msgid "Custom glass bottling, PET containers, industrial 200L drums, and 1000L IBC pallet tankers."
+msgstr "تعبئة زجاجية مخصصة وحاويات PET وبراميل صناعية 200 لتر وصهاريج IBC 1000 لتر."
+
+msgid "Deeply rooted in the authentic agricultural rich soils of Fès, Morocco, Vinaigre du Maroc combines historical heritage and fermentation expertise with modern industrial technology. We export premium food products compliant with BRC Global Standard (Grade A), IFS Food, Kosher, and Halal specifications."
+msgstr "متجذرة في التربة الزراعية الغنية بفاس المغربية، تجمع فيناغر دو ماروك بين التراث التاريخي وخبرة التخمير مع التكنولوجيا الصناعية الحديثة. نصدر منتجات غذائية فاخرة متوافقة مع معايير BRC (الدرجة A) وIFS Food والحلال والكوشر."
+
+msgid "Detailed batch records track ingredients, fermentation history, and packaging components for comprehensive recall protection."
+msgstr "سجلات الدفعات المفصلة تتتبع المكونات وتاريخ التخمير ومكونات التعبئة لحماية شاملة من الاستدعاء."
+
+msgid "Direct B2B Export Inquiry"
+msgstr "استفسار تصدير B2B مباشر"
+
+msgid "Direct Telephone"
+msgstr "الهاتف المباشر"
+
+msgid "Direct highway transport from our factory in Fès to Tangier Med takes under 4 hours. Typical ocean freight transit timelines: Western Europe (Rotterdam, Hamburg, Le Havre): 3-6 days; USA East Coast: 10-14 days; Middle East: 12-18 days."
+msgstr "النقل البري المباشر من مصنعنا في فاس إلى طنجة المتوسط يستغرق أقل من 4 ساعات. أوقات الشحن البحري النموذجية: أوروبا الغربية: 3-6 أيام؛ الساحل الشرقي الأمريكي: 10-14 يوم؛ الشرق الأوسط: 12-18 يوم."
+
+msgid "Do you offer shipping samples for quality evaluations?"
+msgstr "هل تقدمون عينات شحن لتقييم الجودة؟"
+
+msgid "Download Catalog"
+msgstr "تحميل الكتالوج"
+
+msgid "Download Technical Datasheet"
+msgstr "تحميل ورقة البيانات الفنية"
+
+msgid "EXPORT CAPACITY"
+msgstr "طاقة التصدير"
+
+msgid "Email Address"
+msgstr "البريد الإلكتروني"
+
+msgid "Email Export Department"
+msgstr "مراسلة قسم التصدير"
+
+msgid "Enables straightforward customs clearance at US ports of entry for large wholesale container shipments."
+msgstr "يتيح تخليصاً جمركياً مباشراً في موانئ الدخول الأمريكية لشحنات الحاويات بالجملة."
+
+msgid "European Standard"
+msgstr "المعيار الأوروبي"
+
+msgid "Explore Technical Logistics Specs"
+msgstr "استكشاف المواصفات اللوجستية"
+
+msgid "Export"
+msgstr "التصدير"
+
+msgid "Export Capabilities"
+msgstr "قدرات التصدير"
+
+msgid "Export Capabilities & OEM Private Labeling"
+msgstr "قدرات التصدير والعلامة الخاصة OEM"
+
+msgid "Export Countries"
+msgstr "دول التصدير"
+
+msgid "Export Inquiries Email"
+msgstr "بريد استفسارات التصدير"
+
+msgid "Export Insights"
+msgstr "رؤى التصدير"
+
+msgid "Export News & Industry Insights"
+msgstr "أخبار التصدير ورؤى الصناعة"
+
+msgid "Export Quality"
+msgstr "جودة التصدير"
+
+msgid "Export Trade"
+msgstr "التجارة التصديرية"
+
+msgid "Export Value"
+msgstr "قيمة التصدير"
+
+msgid "Export quality is our absolute priority. Our manufacturing facility maintains active registrations and audits with major international compliance boards."
+msgstr "جودة التصدير هي أولويتنا المطلقة. يحتفظ مصنعنا بتسجيلات وعمليات تدقيق نشطة مع هيئات الامتثال الدولية الرئيسية."
+
+msgid "Exporting Worldwide"
+msgstr "التصدير عالمياً"
+
+msgid "FCL Logistics Shipping"
+msgstr "شحن حاويات كاملة FCL"
+
+msgid "FLEXIBLE B2B PACKAGING"
+msgstr "تعبئة B2B مرنة"
+
+msgid "FOB Shipping Port"
+msgstr "ميناء الشحن FOB"
+
+msgid "Facility certified: BRC Global Standard (Grade A) | IFS Food | Halal | Kosher | FDA Registered"
+msgstr "المصنع معتمد: BRC (الدرجة A) | IFS Food | حلال | كوشر | FDA مسجل"
+
+msgid "Factory Address"
+msgstr "عنوان المصنع"
+
+msgid "Fast Logistics"
+msgstr "لوجستيات سريعة"
+
+msgid "Fermentation"
+msgstr "التخمير"
+
+msgid "Flexible Formats"
+msgstr "تنسيقات مرنة"
+
+msgid "Flexible Logistics"
+msgstr "لوجستيات مرنة"
+
+msgid "Flexible Packaging Configurations"
+msgstr "تكوينات تعبئة مرنة"
+
+msgid "Flexible Packaging Formats"
+msgstr "تنسيقات تعبئة مرنة"
+
+msgid "For Global B2B Export"
+msgstr "للتصدير العالمي B2B"
+
+msgid "For industrial manufacturers who pack or blend in their local facilities, we export bulk vinegar in 1000L IBC tanks, 200L drums, or direct food-grade flexitanks."
+msgstr "للمصنعين الصناعيين الذين يعبئون أو يمزجون في منشآتهم المحلية، نصدر الخل بالجملة في صهاريج IBC 1000 لتر أو براميل 200 لتر."
+
+msgid "Frequently Asked B2B Questions"
+msgstr "أسئلة B2B الشائعة"
+
+msgid "Fulfill all fields below to request specific commercial terms, shipping quotes, or sample requests."
+msgstr "املأ جميع الحقول أدناه لطلب شروط تجارية محددة أو عروض أسعار شحن أو طلبات عينات."
+
+msgid "Fès Industrial Facility"
+msgstr "المنشأة الصناعية بفاس"
+
+msgid "GLOBAL LOGISTICS NETWORK"
+msgstr "شبكة لوجستية عالمية"
+
+msgid "Glass and PET retail packaging. Perfect for supermarket distribution and branded OEM contracts."
+msgstr "تعبئة زجاجية وPET للبيع بالتجزئة. مثالية لتوزيع السوبرماركت وعقود OEM."
+
+msgid "Global Certificates"
+msgstr "شهادات عالمية"
+
+msgid "Global Compliance & Certifications"
+msgstr "الامتثال والشهادات العالمية"
+
+msgid "Global Distribution Channels"
+msgstr "قنوات التوزيع العالمية"
+
+msgid "Global Partnerships"
+msgstr "شراكات عالمية"
+
+msgid "Global Standards"
+msgstr "معايير عالمية"
+
+msgid "Gourmet Condiments"
+msgstr "توابل ذواقة"
+
+msgid "Grade A Standard"
+msgstr "معيار الدرجة A"
+
+msgid "Heavy HDPE drums with airtight seals for industrial manufacturers and food compounders."
+msgstr "براميل HDPE ثقيلة مع أختام محكمة للمصنعين الصناعيين ومصنعي الأغذية."
+
+msgid "Heavy intermediate bulk shipping containers. Pre-fitted on galvanized steel grids with discharge valves."
+msgstr "حاويات شحن وسيطة ثقيلة. مثبتة مسبقاً على شبكات فولاذية مجلفنة مع صمامات تفريغ."
+
+msgid "Heavy stainless steel acetators utilize aerobic biological fermentation. Acetic acid bacteria naturally convert alcohols into clean vinegars under precise temperature checks."
+msgstr "أجهزة الأستلة من الفولاذ المقاوم للصدأ تستخدم التخمير البيولوجي الهوائي. بكتيريا حمض الخليك تحول الكحول طبيعياً إلى خل نقي تحت فحوصات حرارية دقيقة."
+
+msgid "Heavy stainless steel acetification acetators guarantee high output and year-round continuous supply."
+msgstr "أجهزة الأستلة من الفولاذ المقاوم للصدأ تضمن إنتاجاً عالياً وإمداداً مستمراً طوال العام."
+
+msgid "Highly valued by European B2B wholesalers, discount retail networks, and commercial brokers."
+msgstr "ذو قيمة عالية لدى تجار الجملة B2B الأوروبيين وشبكات التجزئة المخفضة والوسطاء التجاريين."
+
+msgid "Home"
+msgstr "الرئيسية"
+
+msgid "Incorporate regional languages, import barcodes, and health warnings on labeling."
+msgstr "دمج اللغات الإقليمية وأكواد الاستيراد والتحذيرات الصحية على التوسيم."
+
+msgid "Industrial Packaging Formats"
+msgstr "تنسيقات التعبئة الصناعية"
+
+msgid "Ingredients"
+msgstr "المكونات"
+
+msgid "Inquiry Messages"
+msgstr "رسائل الاستفسار"
+
+msgid "Interested in exporting this product? Fill out your packaging needs and requested quantity, and our international sales team will provide a customized container quote."
+msgstr "مهتم بتصدير هذا المنتج؟ حدد احتياجات التعبئة والكمية المطلوبة، وسيقدم فريق المبيعات الدولي عرض أسعار مخصص."
+
+msgid "Intermediate Bulk Containers on steel pallets, optimized for industrial vinegar buyers."
+msgstr "حاويات وسيطة على منصات فولاذية، محسنة لمشتري الخل الصناعي."
+
+msgid "International Certifications"
+msgstr "الشهادات الدولية"
+
+msgid "International Export Lead Sheet"
+msgstr "ورقة عملاء التصدير الدولي"
+
+msgid "International Food Safety Certifications"
+msgstr "شهادات سلامة الغذاء الدولية"
+
+msgid "International Sales Department"
+msgstr "قسم المبيعات الدولية"
+
+msgid "Jugs per Carton"
+msgstr "أباريق لكل كرتون"
+
+msgid "Key QC Operations"
+msgstr "عمليات مراقبة الجودة الرئيسية"
+
+msgid "Large Capacity"
+msgstr "طاقة إنتاجية كبيرة"
+
+msgid "Large commercial jars with handle, catering to wholesale distributor shipments."
+msgstr "أباريق تجارية كبيرة مع مقبض لشحنات موزعي الجملة."
+
+msgid "Lightweight, break-resistant PET bottles ideal for high-volume retail supermarket chains."
+msgstr "زجاجات PET خفيفة ومقاومة للكسر مثالية لسلاسل السوبرماركت ذات الحجم الكبير."
+
+msgid "Logistics & Container Loading"
+msgstr "اللوجستيات وتحميل الحاويات"
+
+msgid "MANUFACTURER ADVANTAGE"
+msgstr "ميزة المُصنّع"
+
+msgid "Main navigation"
+msgstr "التنقل الرئيسي"
+
+msgid "Manufacturing Process"
+msgstr "عملية التصنيع"
+
+msgid "Maximize shipping efficiency by importing mixed containers. Combine premium vinegars, hot sauces, and caper pastes in a single full container load (FCL) shipment."
+msgstr "حقق أقصى كفاءة في الشحن باستيراد حاويات مختلطة. ادمج الخل الفاخر والصلصات الحارة ومعجون الكبر في شحنة حاوية كاملة واحدة (FCL)."
+
+msgid "Message & Technical Specifications"
+msgstr "الرسالة والمواصفات الفنية"
+
+msgid "Microbiological Stability"
+msgstr "الاستقرار الميكروبيولوجي"
+
+msgid "Mixed Container Loads"
+msgstr "حمولات حاويات مختلطة"
+
+msgid "Mon - Fri: 8:00 AM - 6:00 PM"
+msgstr "الاثنين - الجمعة: 8:00 ص - 6:00 م"
+
+msgid "Moroccan Export Excellence"
+msgstr "التميز المغربي في التصدير"
+
+msgid "Moroccan Food Manufacturer"
+msgstr "مصنع غذائي مغربي"
+
+msgid "Moroccan Heritage, Global Standards"
+msgstr "تراث مغربي، معايير عالمية"
+
+msgid "Moroccan Premium Vinegar & Condiments Manufacturer"
+msgstr "مصنع خل وتوابل مغربي فاخر"
+
+msgid "Moroccan Vinegar & Condiments Exporter"
+msgstr "مصدر خل وتوابل مغربي"
+
+msgid "News"
+msgstr "الأخبار"
+
+msgid "News & Insights"
+msgstr "الأخبار والرؤى"
+
+msgid "No Articles Published"
+msgstr "لا توجد مقالات"
+
+msgid "No Products Found"
+msgstr "لا توجد منتجات"
+
+msgid "No related articles found."
+msgstr "لم يتم العثور على مقالات ذات صلة."
+
+msgid "OEM & Private Label"
+msgstr "OEM والعلامة الخاصة"
+
+msgid "OEM / Private Label"
+msgstr "OEM / العلامة الخاصة"
+
+msgid "OEM / Private Label Solutions"
+msgstr "حلول OEM / العلامة الخاصة"
+
+msgid "OEM / Private Labeling"
+msgstr "OEM / العلامة الخاصة"
+
+msgid "OEM B2B Private Labels"
+msgstr "علامات B2B الخاصة OEM"
+
+msgid "OUR PORTFOLIO"
+msgstr "منتجاتنا"
+
+msgid "Open Inquiry Form"
+msgstr "نموذج الاستفسار"
+
+msgid "Open menu"
+msgstr "فتح القائمة"
+
+msgid "Origin"
+msgstr "المنشأ"
+
+msgid "Other Trade Insights"
+msgstr "رؤى تجارية أخرى"
+
+msgid "Our Export Commitment"
+msgstr "التزامنا بالتصدير"
+
+msgid "Our Heritage & Export Capabilities"
+msgstr "تراثنا وقدرات التصدير"
+
+msgid "Our Manufacturing & Fermentation Process"
+msgstr "عملية التصنيع والتخمير"
+
+msgid "Our Premium Products"
+msgstr "منتجاتنا الفاخرة"
+
+msgid "Our Private Label Steps"
+msgstr "خطوات العلامة الخاصة"
+
+msgid "Our design and regulatory teams assist in label layouts, ensuring that nutritional tables, barcode registrations, and multilingual ingredient listings comply with target country food import rules."
+msgstr "تساعد فرق التصميم والتنظيم لدينا في تصميم الملصقات، مما يضمن امتثال الجداول الغذائية وتسجيلات الباركود وقوائم المكونات متعددة اللغات لقواعد استيراد الأغذية."
+
+msgid "Our export headquarters manages commercial agreements, shipping schedules, and private label OEM setups. Fulfill container orders directly from our Fès factory, fully compliant with your country import specifications."
+msgstr "يدير مقر التصدير لدينا الاتفاقيات التجارية وجداول الشحن وإعدادات العلامة الخاصة OEM. نفذ طلبات الحاويات مباشرة من مصنعنا في فاس."
+
+msgid "Our manufacturing facility operates in full accordance with HACCP directives and global food defense principles. Full batch-code records and technical datasheets are kept for absolute traceability of incoming raw ingredients and outbound maritime shipments."
+msgstr "يعمل مصنعنا بالامتثال الكامل لتوجيهات HACCP ومبادئ الدفاع الغذائي العالمية. يتم الاحتفاظ بسجلات كاملة لرموز الدفعات للتتبع المطلق."
+
+msgid "Our manufacturing facility operates multiple high-speed production and automatic filling lines. From 200ml glass/PET bottles for retail retail supermarket chains, up to 1000L IBC tanks for bulk food manufacturers, we fulfill complex mixed-container shipping schedules with guaranteed consistency."
+msgstr "يشغل مصنعنا خطوط إنتاج عالية السرعة وخطوط تعبئة آلية متعددة. من زجاجات 200 مل للسوبرماركت إلى خزانات IBC سعة 1000 لتر للمصنعين، ننفذ جداول شحن معقدة بجودة مضمونة."
+
+msgid "Our proximity to the local agricultural fields of the Saïss plain provides us with natural, premium ingredients. We are dedicated to providing superior export-quality vinegars and condiments that meet global culinary and regulatory standards."
+msgstr "قربنا من الحقول الزراعية المحلية في سهل السايس يوفر لنا مكونات طبيعية وفاخرة. نحن ملتزمون بتقديم خل وتوابل بجودة تصدير عالية."
+
+msgid "Our standard MOQ is 1 Full Container Load (FCL), which can consist of mixed product pallets (different vinegars and condiments). For bulk industrial shipments in 1000L IBCs or drums, alternative shipping quantities can be organized. Please contact our export managers."
+msgstr "الحد الأدنى لكمية الطلب لدينا هو حاوية كاملة واحدة (FCL) يمكن أن تتكون من منصات منتجات مختلطة. للشحنات الصناعية بالجملة يمكن تنظيم كميات بديلة."
+
+msgid "Our vinegar lines and condiment fermentation processes are audited and certified Kosher. We cooperate with leading certification rabbinates to ensure complete traceability of raw biological sources and processing equipment."
+msgstr "خطوط الخل وعمليات تخمير التوابل لدينا مدققة ومعتمدة كوشر. نتعاون مع الحاخاميات الرائدة لضمان التتبع الكامل."
+
+msgid "Outbound vinegars pass ultra-fine sterilizing filters and automatic filling lines. Bottles undergo online visual inspection and laser lot coding before palletization."
+msgstr "يمر الخل الصادر عبر مرشحات تعقيم فائقة الدقة وخطوط تعبئة آلية. تخضع الزجاجات لفحص بصري وترميز ليزري قبل التحميل على المنصات."
+
+msgid "Packaging"
+msgstr "التعبئة والتغليف"
+
+msgid "Packaging Configuration"
+msgstr "تكوين التعبئة"
+
+msgid "Packaging Format"
+msgstr "تنسيق التعبئة"
+
+msgid "Packaging Formats"
+msgstr "تنسيقات التعبئة"
+
+msgid "Packaging Options"
+msgstr "خيارات التعبئة"
+
+msgid "Pallet Specs"
+msgstr "مواصفات المنصة"
+
+msgid "Pasteurization processes and strict sterilizing filters eliminate unwanted wild yeasts and bacterial elements."
+msgstr "عمليات البسترة والمرشحات المعقمة الصارمة تقضي على الخمائر البرية والعناصر البكتيرية غير المرغوب فيها."
+
+msgid "Phone Number"
+msgstr "رقم الهاتف"
+
+msgid "Please check back later for news and export trade updates."
+msgstr "يرجى العودة لاحقاً للاطلاع على الأخبار والتحديثات التجارية."
+
+msgid "Please check back later or contact our sales team."
+msgstr "يرجى المحاولة لاحقاً أو الاتصال بفريق المبيعات."
+
+msgid "Premium"
+msgstr "فاخر"
+
+msgid "Premium Moroccan Vinegar & Condiments"
+msgstr "خل وتوابل مغربية فاخرة"
+
+msgid "Premium Moroccan Vinegar & Condiments Exporter"
+msgstr "مصدر خل وتوابل مغربية فاخرة"
+
+msgid "Premium Moroccan vinegar & condiments exporter."
+msgstr "مصدر خل وتوابل مغربية فاخرة."
+
+msgid "Premium Moroccan vinegar and condiments B2B exporter. High production capacity, international BRC/IFS/Halal certifications."
+msgstr "مصدر B2B للخل والتوابل المغربية الفاخرة. طاقة إنتاجية عالية وشهادات دولية BRC/IFS/حلال."
+
+msgid "Premium Product Catalog"
+msgstr "كتالوج المنتجات الفاخرة"
+
+msgid "Premium Vinegars"
+msgstr "الخل الفاخر"
+
+msgid "Premium glass bottles optimized for high-end vinegars, colored specialties, and flavored dressing products."
+msgstr "زجاجات فاخرة محسنة للخل الراقي والمنتجات الملونة والمنكهة."
+
+msgid "Prerequisite compliance for exporting food products to the Middle East (GCC), North Africa, and global Muslim consumers."
+msgstr "امتثال مسبق لتصدير المنتجات الغذائية إلى الشرق الأوسط (مجلس التعاون الخليجي) وشمال إفريقيا والمستهلكين المسلمين حول العالم."
+
+msgid "Private label contracts require a committed annual purchase volume. We supply turnkey OEM solutions: bottling configurations, customized boxes, labeling alignment compliant with local regulations, and export customs preparations."
+msgstr "عقود العلامة الخاصة تتطلب حجم شراء سنوي ملتزم. نقدم حلول OEM جاهزة: تكوينات التعبئة والكراتين المخصصة والتوسيم المتوافق."
+
+msgid "Process"
+msgstr "العمليات"
+
+msgid "Product"
+msgstr "منتج"
+
+msgid "Product Categories"
+msgstr "فئات المنتجات"
+
+msgid "Product Certifications"
+msgstr "شهادات المنتج"
+
+msgid "Products"
+msgstr "المنتجات"
+
+msgid "Provides verified product safety and quality assurance for US retail stores, Kosher food chains, and industrial buyers."
+msgstr "يوفر ضمان سلامة وجودة المنتج المتحقق منه للمتاجر الأمريكية وسلاسل الأغذية الكوشر والمشترين الصناعيين."
+
+msgid "Quality Control"
+msgstr "مراقبة الجودة"
+
+msgid "Quality Control & Food Safety Standards"
+msgstr "مراقبة الجودة ومعايير سلامة الغذاء"
+
+msgid "Quality Control & Laboratory Standards"
+msgstr "مراقبة الجودة ومعايير المختبر"
+
+msgid "Quality Controls"
+msgstr "ضوابط الجودة"
+
+msgid "RECOMMENDED ITEMS"
+msgstr "منتجات موصى بها"
+
+msgid "Rabbinate Audit"
+msgstr "تدقيق حاخامي"
+
+msgid "Read Article"
+msgstr "قراءة المقال"
+
+msgid "Ready for Large Bulk & Container Logistics"
+msgstr "جاهزون للشحن بالجملة والحاويات"
+
+msgid "Ready to discuss bulk imports, mixed container logistics, or custom OEM private labeling agreements? Send us your specifications."
+msgstr "مستعد لمناقشة الاستيراد بالجملة أو لوجستيات الحاويات المختلطة أو اتفاقيات العلامة الخاصة؟ أرسل لنا مواصفاتك."
+
+msgid "Recipe Adjustment"
+msgstr "تعديل الوصفة"
+
+msgid "Regulatory Alignment"
+msgstr "المواءمة التنظيمية"
+
+msgid "Related Condiments"
+msgstr "توابل ذات صلة"
+
+msgid "Request B2B Quote"
+msgstr "طلب عرض أسعار B2B"
+
+msgid "Request Quote"
+msgstr "طلب عرض سعر"
+
+msgid "Requested Products"
+msgstr "المنتجات المطلوبة"
+
+msgid "Requested Quantity (e.g. 1 FCL, 10 Pallets)"
+msgstr "الكمية المطلوبة (مثال: 1 حاوية، 10 منصات)"
+
+msgid "Requested Quantity (e.g. 1 FCL, 5 Pallets)"
+msgstr "الكمية المطلوبة (مثال: 1 حاوية، 5 منصات)"
+
+msgid "Review frequently asked questions regarding container orders, private labeling, standard production capabilities, and logistics protocols."
+msgstr "راجع الأسئلة الشائعة حول طلبات الحاويات والعلامة الخاصة وقدرات الإنتاج وبروتوكولات اللوجستيات."
+
+msgid "Rigorous Laboratory Testing for Every Batch"
+msgstr "اختبارات مختبرية صارمة لكل دفعة"
+
+msgid "SHIPPING DETAILS"
+msgstr "تفاصيل الشحن"
+
+msgid "Sauces & Condiments"
+msgstr "الصلصات والتوابل"
+
+msgid "Select Language"
+msgstr "اختر اللغة"
+
+msgid "Select specific biological vinegar types, acidity percentages (e.g. 6% or 8%), or custom colors."
+msgstr "حدد أنواع خل بيولوجية محددة أو نسب حموضة (مثل 6% أو 8%) أو ألوان مخصصة."
+
+msgid "Shelf Life"
+msgstr "مدة الصلاحية"
+
+msgid "Simplifies import clearance into the UK, European Union, and major North American retail supermarkets."
+msgstr "يبسط تخليص الاستيراد في المملكة المتحدة والاتحاد الأوروبي وسلاسل السوبرماركت الرئيسية في أمريكا الشمالية."
+
+msgid "Site Setting"
+msgstr "إعداد الموقع"
+
+msgid "Site Settings"
+msgstr "إعدادات الموقع"
+
+msgid "Standard retail and household format. Available in elegant dark round bottles or clear glass."
+msgstr "تنسيق قياسي للبيع بالتجزئة والمنزل. متوفر في زجاجات دائرية داكنة أنيقة أو زجاج شفاف."
+
+msgid "State-of-the-art automatic bottling lines, heavy-capacity stainless fermentation tanks, and rigid B2B logistics controls."
+msgstr "خطوط تعبئة آلية متطورة، خزانات تخمير من الفولاذ المقاوم للصدأ، وضوابط لوجستية صارمة."
+
+msgid "Storage Conditions"
+msgstr "ظروف التخزين"
+
+msgid "Strategic Fès location with rapid highway customs transport directly to Tangier Med cargo hub."
+msgstr "موقع استراتيجي في فاس مع نقل جمركي سريع بالطريق السريع مباشرة إلى مركز شحن طنجة المتوسط."
+
+msgid "Strategic highway connection from our Fès factory directly to Tangier Med. Favorable ocean freight transits to Hamburg, Rotterdam, New York, and Gulf ports."
+msgstr "اتصال طريق سريع استراتيجي من مصنعنا في فاس إلى طنجة المتوسط مباشرة. عبور بحري ملائم إلى هامبورغ وروتردام ونيويورك وموانئ الخليج."
+
+msgid "Strict physical-chemical laboratories analyze acidity, consistency, shelf-stability, and microbiological compliance."
+msgstr "مختبرات فيزيائية-كيميائية صارمة تحلل الحموضة والاتساق والاستقرار والامتثال الميكروبيولوجي."
+
+msgid "Submit Export Inquiry"
+msgstr "إرسال استفسار التصدير"
+
+msgid "Tangier Med Maritime Gateway"
+msgstr "بوابة طنجة المتوسط البحرية"
+
+msgid "Tangier Med Maritime Logistics"
+msgstr "لوجستيات ميناء طنجة المتوسط"
+
+msgid "Tangier Med Port, Morocco"
+msgstr "ميناء طنجة المتوسط، المغرب"
+
+msgid "Tank Specs"
+msgstr "مواصفات الخزان"
+
+msgid "Target Country"
+msgstr "البلد المستهدف"
+
+msgid "Target Destination Country"
+msgstr "بلد الوجهة المستهدف"
+
+msgid "Target Packaging"
+msgstr "التعبئة المستهدفة"
+
+msgid "Technical Details"
+msgstr "تفاصيل فنية"
+
+msgid "Technical Specifications Table"
+msgstr "جدول المواصفات الفنية"
+
+msgid "The BRCGS Food Safety certification is a leading global safety standard recognized by the GFSI (Global Food Safety Initiative). Maintaining a Grade A status proves our strict compliance with hygienic production processes, hazard analysis controls, and plant sanitation."
+msgstr "شهادة BRCGS للسلامة الغذائية هي معيار عالمي رائد معترف به من GFSI. الحفاظ على حالة الدرجة A يثبت امتثالنا الصارم لعمليات الإنتاج الصحية."
+
+msgid "The International Featured Standard (IFS) audits food safety and manufacturing quality. Fulfilling IFS standards demonstrates that Vinaigre du Maroc maintains highly controlled raw ingredient sourcing, biological processing, and packing consistency."
+msgstr "معيار IFS الدولي يدقق سلامة الأغذية وجودة التصنيع. يثبت الامتثال لمعايير IFS أن فيناغر دو ماروك تحافظ على مصادر مواد خام مضبوطة بشكل كبير."
+
+msgid "There was an error in your submission. Please check the fields below."
+msgstr "حدث خطأ في الإرسال. يرجى التحقق من الحقول أدناه."
+
+msgid "Traceability Tracking"
+msgstr "تتبع المنشأ"
+
+msgid "Turnkey solutions from recipe customization to label alignment, regulatory support, and export packaging."
+msgstr "حلول متكاملة من تخصيص الوصفات إلى توافق التوسيم والدعم التنظيمي وتعبئة التصدير."
+
+msgid "US Registered"
+msgstr "مسجل في أمريكا"
+
+msgid "Uncompromised Quality"
+msgstr "جودة بلا تنازل"
+
+msgid "Usage Ideas"
+msgstr "أفكار الاستخدام"
+
+msgid "View Certification Details"
+msgstr "عرض تفاصيل الشهادات"
+
+msgid "View Condiment Catalog"
+msgstr "عرض كتالوج التوابل"
+
+msgid "View Details"
+msgstr "عرض التفاصيل"
+
+msgid "View Vinegar Catalog"
+msgstr "عرض كتالوج الخل"
+
+msgid "Vinaigre du Maroc combines natural raw materials with advanced acetator equipment. Our biological fermentation turns pure wines, ciders, and natural alcohols into highly stable, premium-grade vinegars."
+msgstr "فيناغر دو ماروك يجمع بين المواد الخام الطبيعية وأجهزة الأستلة المتقدمة. يحول تخميرنا البيولوجي النبيذ والعصائر والكحولات الطبيعية إلى خل فاخر."
+
+msgid "Vinaigre du Maroc holds official Halal certificates. All ingredients, fermentation pipelines, and bottling storage facilities undergo strict religious and technological audits to guarantee zero cross-contamination and pure, lawful products."
+msgstr "فيناغر دو ماروك يحمل شهادات حلال رسمية. جميع المكونات وخطوط التخمير ومرافق التعبئة تخضع لعمليات تدقيق دينية وتكنولوجية صارمة."
+
+msgid "Vinaigre du Maroc implements rigid food safety systems. Our manufacturing plant, chemical fermentation processes, and automated bottling lines maintain continuous certifications to guarantee seamless customs clearance."
+msgstr "فيناغر دو ماروك ينفذ أنظمة صارمة لسلامة الغذاء. يحافظ مصنعنا على شهادات مستمرة لضمان تخليص جمركي سلس."
+
+msgid "Vinaigre du Maroc is a leading Moroccan manufacturer of premium vinegars, sauces, and B2B export condiments. Custom packaging from 200ml to 1000L IBC. Halal, Kosher, IFS, BRC, FDA certified."
+msgstr "فيناغر دو ماروك مصنع مغربي رائد للخل الفاخر والصلصات وتوابل التصدير B2B. تعبئة مخصصة من 200 مل إلى 1000 لتر IBC. معتمد حلال وكوشر وIFS وBRC وFDA."
+
+msgid "Vinaigre du Maroc is an international export-focused manufacturer of premium vinegars and table condiments. Empowering international B2B private label OEM agreements and bulk distribution shipping."
+msgstr "فيناغر دو ماروك مصنع دولي متخصص في تصدير الخل الفاخر وتوابل المائدة. نمكّن اتفاقيات العلامة الخاصة B2B والتوزيع بالجملة."
+
+msgid "Vinaigre du Maroc is officially registered with the United States Food and Drug Administration (FDA). Our manufacturing facility complies with FDA Good Manufacturing Practices (GMP) and FSMA rules, ensuring that all food shipments meet US customs specifications."
+msgstr "فيناغر دو ماروك مسجل رسمياً لدى FDA. يمتثل مصنعنا لممارسات التصنيع الجيدة (GMP) وقواعد FSMA لضمان توافق جميع شحنات الأغذية مع المواصفات الجمركية الأمريكية."
+
+msgid "Vinaigre du Maroc is the leading industrial vinegar and condiments manufacturer in Morocco. We supply state-of-the-art vinegars, sauces, and preserved table condiments to Europe, the USA, the Middle East, and Africa."
+msgstr "فيناغر دو ماروك هي الشركة الرائدة في تصنيع الخل والتوابل في المغرب. نورد الخل والصلصات والتوابل الفاخرة إلى أوروبا والولايات المتحدة والشرق الأوسط وأفريقيا."
+
+msgid "Vinaigre du Maroc is the trusted OEM manufacturing partner for supermarket chains, gourmet vinegar brands, and catering distributors worldwide. We offer complete B2B private label solutions, managing everything from recipe optimization (custom acidity, color, flavors) to container bottling, package boxes, and customs compliance support."
+msgstr "فيناغر دو ماروك الشريك OEM الموثوق لسلاسل السوبرماركت وعلامات الخل الفاخرة وموزعي التموين. نقدم حلول العلامة الخاصة B2B الكاملة."
+
+msgid "Vinaigre du Maroc was founded in Fès, Morocco, with a clear vision: to combine traditional biological fermentation heritage with state-of-the-art industrial technology. Over the decades, we have expanded our capacity to become the premier vinegar manufacturer in Morocco, supplying major international distributors, hotel chains, and retail supermarkets."
+msgstr "تأسست فيناغر دو ماروك في فاس، المغرب، برؤية واضحة: الجمع بين تراث التخمير البيولوجي التقليدي والتكنولوجيا الصناعية الحديثة. على مدى العقود أصبحنا المصنع الأول للخل في المغرب."
+
+msgid "WORLD-CLASS COMPLIANCE"
+msgstr "امتثال عالمي المستوى"
+
+msgid "We cooperate with B2B food brokers, commercial importers, and logistics networks in Europe, the USA, and Asia, offering seamless customs clearances."
+msgstr "نتعاون مع وسطاء الأغذية B2B والمستوردين التجاريين وشبكات اللوجستيات في أوروبا وأمريكا وآسيا."
+
+msgid "We help brand owners design customized formulas, retail bottles, boxes, and barcodes."
+msgstr "نساعد أصحاب العلامات التجارية في تصميم تركيبات مخصصة وزجاجات وكراتين وأكواد بار."
+
+msgid "We maintain in-house microbiological and chemical testing labs. Our production batch runs undergo rigorous physical testing for acidity levels, density, and shelf longevity."
+msgstr "نحتفظ بمختبرات داخلية للاختبارات الميكروبيولوجية والكيميائية. تخضع دفعات الإنتاج لاختبارات فيزيائية صارمة."
+
+msgid "We manufacture high-grade white vinegar, red wine vinegar, white wine vinegar, apple cider vinegar, and flavored lemon/apple vinegars. Designed for distribution, retailers, or bulk food applications."
+msgstr "نصنع خل أبيض عالي الجودة، خل النبيذ الأحمر، خل النبيذ الأبيض، خل التفاح، والخل المنكه بالليمون/التفاح. مصمم للتوزيع والتجزئة والتطبيقات الغذائية بالجملة."
+
+msgid "We offer tailored B2B packaging setups. From elegant glass bottles for high-end retail supermarkets, lightweight PET containers for wholesale foodservice distributors, to heavy drums and IBC tanks for industrial food manufacturers."
+msgstr "نقدم تكوينات تعبئة B2B مخصصة. من الزجاجات الأنيقة للسوبرماركت الراقية، وحاويات PET الخفيفة لموزعي خدمات الطعام بالجملة، إلى البراميل الثقيلة وصهاريج IBC للمصنعين الصناعيين."
+
+msgid "We ship mixed full container loads (FCL) from Tangier Med directly to major global gateways."
+msgstr "نشحن حاويات كاملة مختلطة (FCL) من طنجة المتوسط مباشرة إلى البوابات العالمية الرئيسية."
+
+msgid "We source premium raw ciders, quality red and white grape wines, and pure agricultural alcohols from certified local suppliers."
+msgstr "نحصل على عصائر التفاح الخام الممتازة، ونبيذ العنب الأحمر والأبيض عالي الجودة، والكحولات الزراعية النقية من الموردين المحليين المعتمدين."
+
+msgid "We support multiple packaging setups. From bulk tank trucks to intermediate 1000L IBCs, 200L drums, and consumer retail boxes, we accommodate flexible logistics."
+msgstr "ندعم تكوينات تعبئة متعددة. من شاحنات الصهاريج إلى IBC 1000 لتر وبراميل 200 لتر وكراتين التجزئة."
+
+msgid "What are the requirements for B2B Private Labeling / OEM contracts?"
+msgstr "ما هي متطلبات عقود العلامة الخاصة / OEM B2B؟"
+
+msgid "What is the standard logistics timeline from your Fès plant to Western Europe or USA?"
+msgstr "ما هو الجدول الزمني اللوجستي القياسي من مصنعكم في فاس إلى أوروبا الغربية أو الولايات المتحدة؟"
+
+msgid "What is your Minimum Order Quantity (MOQ) for international B2B shipments?"
+msgstr "ما هي الحد الأدنى لكمية الطلب (MOQ) للشحنات الدولية B2B؟"
+
+msgid "Why Choose Vinaigre du Maroc?"
+msgstr "لماذا تختار فيناغر دو ماروك؟"
+
+msgid "With direct highway connections from Fès to the Mediterranean Gateways of Tangier Med, we deliver seamless freight logistics to ports across Europe, the USA, the Middle East, and Africa."
+msgstr "مع اتصالات طرق سريعة مباشرة من فاس إلى بوابات طنجة المتوسط، نوفر لوجستيات شحن سلسة إلى موانئ أوروبا وأمريكا والشرق الأوسط وأفريقيا."
+
+msgid "Yes. Our food technologists and physical-chemical laboratories can calibrate specific biological acidity levels (e.g. 5%, 6%, 8% or higher) and develop customized colored/flavored profiles to match your regional consumer market profile."
+msgstr "نعم. يمكن لتقنيي الأغذية ومختبراتنا معايرة مستويات حموضة بيولوجية محددة وتطوير ملفات ألوان/نكهات مخصصة لتناسب سوقك الإقليمي."
+
+msgid "Yes. We ship product samples (in 250ml or 500ml formats) to registered commercial importers and food brokers worldwide. Let us know your company profile, destination country, and DHL/FedEx shipping account numbers."
+msgstr "نعم. نشحن عينات المنتجات إلى المستوردين التجاريين المسجلين في جميع أنحاء العالم. أخبرنا بملف شركتك وبلد الوجهة وأرقام حسابات الشحن."
+
+msgid "Your B2B inquiry has been sent successfully! Our export team will contact you shortly."
+msgstr "تم إرسال استفسارك B2B بنجاح! سيتصل بك فريق التصدير قريباً."
+
+msgid "Your B2B inquiry has been sent successfully. Our export team will contact you shortly."
+msgstr "تم إرسال استفسارك B2B بنجاح. سيتصل بك فريق التصدير قريباً."
+
+msgid "Your inquiry has been sent successfully!"
+msgstr "تم إرسال استفسارك بنجاح!"
+
+msgid "Your message has been sent successfully!"
+msgstr "تم إرسال رسالتك بنجاح!"
+
+msgid "about/"
+msgstr "من-نحن/"
+
+msgid "blog/"
+msgstr "المدونة/"
+
+msgid "blog/<str:slug>/"
+msgstr "المدونة/<str:slug>/"
+
+msgid "certifications/"
+msgstr "الشهادات/"
+
+msgid "contact/"
+msgstr "اتصل-بنا/"
+
+msgid "export/"
+msgstr "التصدير/"
+
+msgid "faq/"
+msgstr "الأسئلة-الشائعة/"
+
+msgid "manufacturing-process/"
+msgstr "عملية-التصنيع/"
+
+msgid "packaging/"
+msgstr "التعبئة/"
+
+msgid "products/"
+msgstr "المنتجات/"
+
+msgid "products/<str:slug>/"
+msgstr "المنتجات/<str:slug>/"
+
+msgid "quality-control/"
+msgstr "مراقبة-الجودة/"
+
+msgid "vinegar manufacturer Morocco, vinegar supplier Morocco, Moroccan vinegar exporter, halal vinegar supplier, private label vinegar, condiment manufacturer Morocco, hot sauce supplier Morocco, export food supplier Morocco"
+msgstr "مصنع خل المغرب، مورد خل المغرب، مصدر خل مغربي، مورد خل حلال، خل علامة خاصة"
+
+msgid "branding/"
+msgstr "العلامة-الخاصة/"
+
+msgid "Branding"
+msgstr "العلامة الخاصة"
+
+msgid "Private Label & Branding"
+msgstr "العلامة الخاصة والعلامات التجارية"
+
+msgid "Private Label & OEM Branding"
+msgstr "العلامة الخاصة وOEM"
+
+msgid "Your Brand, Our Expertise"
+msgstr "علامتك التجارية، خبرتنا"
+
+msgid "How Private Label Works"
+msgstr "كيف تعمل العلامة الخاصة"
+
+msgid "1. Consultation"
+msgstr "1. استشارة"
+
+msgid "2. Design & Sampling"
+msgstr "2. التصميم والعينات"
+
+msgid "3. Production"
+msgstr "3. الإنتاج"
+
+msgid "4. Export & Delivery"
+msgstr "4. التصدير والتسليم"
+
+msgid "Ready to Launch Your Brand?"
+msgstr "مستعد لإطلاق علامتك التجارية؟"
+
+msgid "Need help? Chat with us!"
+msgstr "تحتاج مساعدة؟ تحدث معنا!"
+
+msgid "Cookie Settings"
+msgstr "إعدادات ملفات تعريف الارتباط"
+
+msgid "Cookie Consent"
+msgstr "موافقة ملفات تعريف الارتباط"
+
+msgid "We value your privacy"
+msgstr "نحن نقدر خصوصيتك"
+
+msgid "Read our Privacy Policy"
+msgstr "اقرأ سياسة الخصوصية"
+
+msgid "Customize Preferences"
+msgstr "تخصيص التفضيلات"
+
+msgid "Reject Non-Essential"
+msgstr "رفض غير الضرورية"
+
+msgid "Accept All"
+msgstr "قبول الكل"
+
+msgid "Cookie Preferences"
+msgstr "تفضيلات ملفات تعريف الارتباط"
+
+msgid "Close"
+msgstr "إغلاق"
+
+msgid "Strictly Necessary Cookies"
+msgstr "ملفات تعريف الارتباط الضرورية"
+
+msgid "Always Active"
+msgstr "نشطة دائماً"
+
+msgid "Analytics Cookies"
+msgstr "ملفات تعريف الارتباط التحليلية"
+
+msgid "Marketing Cookies"
+msgstr "ملفات تعريف الارتباط التسويقية"
+
+msgid "Preferences Cookies"
+msgstr "ملفات تعريف الارتباط للتفضيلات"
+
+msgid "Save My Preferences"
+msgstr "حفظ تفضيلاتي"
+
+msgid "Language selector"
+msgstr "اختيار اللغة"
+
+msgid "View Products"
+msgstr "عرض المنتجات"
+
+msgid "Scroll down"
+msgstr "انتقل للأسفل"
+
+msgid "Premium Moroccan Vinegars — All Types, Year-Round Supply"
+msgstr "خل مغربي فاخر — جميع الأنواع، إمداد على مدار العام"
+
+msgid "Vinaigre du Maroc produces high-grade white vinegar, red wine vinegar, white wine vinegar, apple cider vinegar, and flavored vinegars. All manufactured in our state-of-the-art Fès facility with precise acidity control and rigorous quality assurance."
+msgstr "تنتج خل المغرب خل أبيض عالي الجودة وخل النبيذ الأحمر والأبيض وخل التفاح والخل المنكه. جميعها تُصنع في منشأتنا الحديثة في فاس مع تحكم دقيق في الحموضة وضمان جودة صارم."
+
+msgid "White Vinegar — 4% to 20% Acidity"
+msgstr "خل أبيض — حموضة من 4% إلى 20%"
+
+msgid "View Vinegars"
+msgstr "عرض الخل"
+
+msgid "Sauces & Gourmet Condiments — Private Label Ready"
+msgstr "صلصات وتوابل ذواقة — جاهزة للعلامة الخاصة"
+
+msgid "Authentic Moroccan sauces and preserved gourmet specialties. Including premium Hot Sauce, Harissa, Lemon-infused Cornichons, and specialty condiments. Clean ingredients with export-grade formulations designed for international distribution."
+msgstr "صلصات مغربية أصيلة وتخصصات ذواقة محفوظة. تشمل الصلصة الحارة الممتازة والهريسة والمخللات بالليمون والتوابل المتخصصة. مكونات نظيفة بتركيبات تصديرية مصممة للتوزيع الدولي."
+
+msgid "Hot Sauce & Harissa — Private Label OEM"
+msgstr "صلصة حارة وهريسة — OEM علامة خاصة"
+
+msgid "View Condiments"
+msgstr "عرض التوابل"
+
+msgid "Global Distribution"
+msgstr "التوزيع العالمي"
+
+msgid "B2B Export Specifications"
+msgstr "مواصفات التصدير B2B"
+
+msgid "Vinaigre du Maroc is a direct-from-factory manufacturer. We support importers, distributors, and private label clients globally with standardized premium export formats."
+msgstr "خل المغرب مصنع مباشر. ندعم المستوردين والموزعين وعملاء العلامة الخاصة عالمياً بتنسيقات تصدير موحدة."
+
+msgid "Product Range"
+msgstr "مجموعة المنتجات"
+
+msgid "White Vinegar (4%–20% acidity)"
+msgstr "خل أبيض (حموضة 4%–20%)"
+
+msgid "Red & White Wine Vinegar"
+msgstr "خل النبيذ الأحمر والأبيض"
+
+msgid "Apple Cider Vinegar"
+msgstr "خل التفاح"
+
+msgid "Hot Sauce & Harissa"
+msgstr "صلصة حارة وهريسة"
+
+msgid "Specialty Condiments"
+msgstr "توابل متخصصة"
+
+msgid "Packaging & Formats"
+msgstr "التعبئة والتنسيقات"
+
+msgid "Retail"
+msgstr "التجزئة"
+
+msgid "200ml–500ml Glass & PET"
+msgstr "200 مل–500 مل زجاج و PET"
+
+msgid "HoReCa"
+msgstr "HoReCa"
+
+msgid "2L–5L PET Bottles"
+msgstr "زجاجات PET 2 لتر–5 لتر"
+
+msgid "Industrial"
+msgstr "صناعي"
+
+msgid "200L HDPE Drums"
+msgstr "براميل HDPE 200 لتر"
+
+msgid "Bulk"
+msgstr "بالجملة"
+
+msgid "1000L IBC Tanks"
+msgstr "خزانات IBC 1000 لتر"
+
+msgid "Logistics & Supply"
+msgstr "اللوجستيات والإمداد"
+
+msgid "Capacity"
+msgstr "الطاقة الإنتاجية"
+
+msgid "25M+ liters annual"
+msgstr "أكثر من 25 مليون لتر سنوياً"
+
+msgid "Port"
+msgstr "الميناء"
+
+msgid "FOB Tangier Med / Casablanca"
+msgstr "فوب طنجة المتوسط / الدار البيضاء"
+
+msgid "Transit"
+msgstr "العبور"
+
+msgid "Europe 2–5 days"
+msgstr "أوروبا 2–5 أيام"
+
+msgid "Supply"
+msgstr "الإمداد"
+
+msgid "Year-round continuous production"
+msgstr "إنتاج مستمر على مدار العام"
+
+msgid "Compliance & Trust"
+msgstr "الامتثال والثقة"
+
+msgid "BRC Global Standard Grade A"
+msgstr "BRC Global Standard الدرجة A"
+
+msgid "IFS Food certified"
+msgstr "معتمد IFS Food"
+
+msgid "Halal & Kosher certified"
+msgstr "معتمد حلال وكوشر"
+
+msgid "FDA registered facility"
+msgstr "منشأة مسجلة لدى FDA"
+
+msgid "Why Choose Us"
+msgstr "لماذا تختارنا"
+
+msgid "Premium Quality"
+msgstr "جودة فاخرة"
+
+msgid "Strict quality controls with physicochemical lab analysis for every batch."
+msgstr "ضوابط جودة صارمة مع تحليل مختبري فيزيائي-كيميائي لكل دفعة."
+
+msgid "Export Ready"
+msgstr "جاهز للتصدير"
+
+msgid "45+ countries served with full documentation and customs compliance."
+msgstr "أكثر من 45 دولة مخدومة مع وثائق كاملة وامتثال جمركي."
+
+msgid "Moroccan Heritage"
+msgstr "تراث مغربي"
+
+msgid "Deep roots in Fès with traditional fermentation expertise and modern technology."
+msgstr "جذور عميقة في فاس مع خبرة تخمير تقليدية وتكنولوجيا حديثة."
+
+msgid "From 200ml retail glass bottles to 1000L IBC industrial tanks."
+msgstr "من زجاجات التجزئة 200 مل إلى خزانات IBC الصناعية 1000 لتر."
+
+msgid "BRC Grade A, IFS, Halal, Kosher & FDA — Ready for Global Export"
+msgstr "BRC الدرجة A، IFS، حلال، كوشر و FDA — جاهز للتصدير العالمي"
+
+msgid "Wholesale & Export"
+msgstr "البيع بالجملة والتصدير"
+
+msgid "Contact us for wholesale pricing, private label, or export inquiries."
+msgstr "تواصل معنا لأسعار الجملة أو العلامة الخاصة أو استفسارات التصدير."
+
+msgid "Contact Us Now"
+msgstr "تواصل معنا الآن"
+
+msgid "Explore Full Catalog"
+msgstr "استكشف الكتالوج الكامل"
+
+msgid "Deeply rooted in the authentic agricultural rich soils of Fès, Morocco, Vinaigre du Maroc combines historical heritage and fermentation expertise with modern industrial technology."
+msgstr "متجذرة في التربة الزراعية الغنية بفاس المغربية، تجمع فيناغر دو ماروك بين التراث التاريخي وخبرة التخمير مع التكنولوجيا الصناعية الحديثة."
+
+msgid "Launch your own vinegar and condiment brand with Vinaigre du Maroc. We handle formulation, production, packaging, labeling, and export logistics — you focus on your market."
+msgstr "أطلق علامتك التجارية الخاصة للخل والتوابل مع فيناغر دو ماروك. نتولى التركيب والإنتاج والتعبئة والتوسيم ولوجستيات التصدير — أنت ركز على سوقك."
+
+msgid "Share your product vision, target market, and volume requirements. Our export team will guide you through formulation options."
+msgstr "شارك رؤيتك للمنتج والسوق المستهدف ومتطلبات الحجم. سيرشدك فريق التصدير."
+
+msgid "We create product samples with your custom formulation, labels, and packaging design. Approve before production begins."
+msgstr "ننشئ عينات بتركيبتك المخصصة والملصقات وتصميم التغليف. وافق قبل بدء الإنتاج."
+
+msgid "Full-scale production in our BRC Grade A certified facility with strict quality controls and batch traceability."
+msgstr "إنتاج كامل في منشأتنا المعتمدة BRC الدرجة A مع ضوابط جودة صارمة وتتبع الدفعات."
+
+msgid "FOB Tangier Med or Casablanca. Full export documentation, phytosanitary certificates, and customs-ready shipments."
+msgstr "فوب طنجة المتوسط أو الدار البيضاء. وثائق تصدير كاملة وشهادات صحية نباتية."
+
+msgid "Contact our export team to discuss your private label project. Minimum order quantities start from 1 pallet."
+msgstr "تواصل مع فريق التصدير لمناقشة مشروع علامتك الخاصة. الحد الأدنى للطلب يبدأ من منصة واحدة."
+
+msgid "Private label and OEM branding solutions for vinegar and condiments. Custom packaging, formulation, and labeling services from Morocco's leading vinegar manufacturer."
+msgstr "حلول العلامة الخاصة وOEM للخل والتوابل. خدمات التغليف والتركيب والتوسيم المخصصة من أكبر مصنع خل في المغرب."
+
+
+msgid "All"
+msgstr "الكل"
+
+msgid "Browse our complete catalog of premium Moroccan vinegars, sauces, and condiments. Available in multiple packaging formats from 200ml glass bottles to 1000L IBC tanks for global export."
+msgstr "تصفح كتالوجنا الكامل من الخل والصلصات والتوابل المغربية الممتازة. متوفرة في عبوات متعددة من زجاجات 200 مل إلى خزانات IBC سعة 1000 لتر للتصدير العالمي."
+
+msgid "Browse premium Moroccan vinegars and condiments for export."
+msgstr "تصفح الخل والتوابل المغربية الممتازة المخصصة للتصدير."
+
+msgid "Details"
+msgstr "التفاصيل"
+
+msgid "Export Grade Quality"
+msgstr "جودة تصديرية ممتازة"
+
+msgid "Hero Background"
+msgstr "خلفية البطل"
+
+msgid "Hero Backgrounds"
+msgstr "خلفيات البطل"
+
+msgid "Mobile navigation"
+msgstr "قائمة الهاتف المحمول"
+
+msgid "Need Custom Packaging or a Bulk Quote?"
+msgstr "هل تحتاج إلى تعبئة مخصصة أو عرض سعر للجملة؟"
+
+msgid "Our Product Catalog"
+msgstr "كتالوج منتجاتنا"
+
+msgid "Packaging Available"
+msgstr "التعبئة المتوفرة"
+
+msgid "Photo"
+msgstr "الصورة"
+
+msgid "Premium Moroccan fermented vinegars and gourmet condiments. Each item is available in multiple packaging formats with full certification documentation for global export."
+msgstr "خل مخمر وتوابل مغربية فاخرة. كل منتج متوفر بصيغ تعبئة متعددة مع وثائق شهادات كاملة للتصدير العالمي."
+
+msgid "Premium Moroccan gourmet products available in multiple packaging formats with full certification for global export."
+msgstr "منتجات مغربية فاخرة متوفرة في صيغ تعبئة متعددة مع شهادات كاملة للتصدير العالمي."
+
+msgid "Product Catalog"
+msgstr "كتالوج المنتجات"
+
+msgid "Product Image"
+msgstr "صورة المنتج"
+
+msgid "Request a B2B Quote"
+msgstr "طلب عرض سعر B2B"
+
+msgid "These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. They help us to know which pages are the most and least popular and see how visitors move around the site."
+msgstr "تتيح لنا ملفات تعريف الارتباط هذه عد الزيارات ومصادر حركة المرور حتى نتمكن من قياس وتحسين أداء موقعنا. وهي تساعدنا في معرفة الصفحات الأكثر والأقل شعبية ورؤية كيفية تنقل الزوار حول الموقع."
+
+msgid "These cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in or filling in forms."
+msgstr "ملفات تعريف الارتباط هذه ضرورية لكي يعمل الموقع الإلكتروني ولا يمكن إيقاف تشغيلها في أنظمتنا. وعادةً ما يتم تعيينها فقط استجابةً للإجراءات التي تتخذها والتي تعادل طلباً للخدمات، مثل تعيين تفضيلات الخصوصية الخاصة بك أو تسجيل الدخول أو ملء النماذج."
+
+msgid "These cookies enable the website to provide enhanced functionality and personalisation. They may be set by us or by third party providers whose services we have added to our pages."
+msgstr "تتيح ملفات تعريف الارتباط هذه للموقع تقديم وظائف وميزات مخصصة ومحسنة. قد يتم تعيينها من قبلنا أو من قبل مزودي الخدمة من طرف ثالث الذين أضفنا خدماتهم إلى صفحاتنا."
+
+msgid "These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites."
+msgstr "قد يتم تعيين ملفات تعريف الارتباط هذه من خلال موقعنا بواسطة شركائنا في الإعلان. قد تستخدمها تلك الشركات لبناء ملف تعريف لاهتماماتك وعرض إعلانات ذات صلة بك على مواقع أخرى."
+
+msgid "Upload a product image (JPEG, PNG, WebP)."
+msgstr "تحميل صورة المنتج (JPEG، PNG، WebP)."
+
+msgid "View"
+msgstr "عرض"
+
+msgid "We offer private label manufacturing, customized acidity levels, and flexible packaging sizes ranging from retail glass to industrial bulk IBC containers for food companies."
+msgstr "نحن نقدم تصنيع العلامات التجارية الخاصة، ومستويات حموضة مخصصة، وأحجام تعبئة مرنة تتراوح من الزجاج المخصص للتجزئة إلى حاويات IBC الصناعية الكبيرة لشركات الأغذية."
+
+msgid "We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic. By clicking 'Accept All', you consent to our use of cookies."
+msgstr "نحن نستخدم ملفات تعريف الارتباط لتحسين تجربة التصفح الخاصة بك، وتقديم إعلانات أو محتوى مخصص، وتحليل حركة المرور لدينا. بالنقر فوق \"قبول الكل\"، فإنك توافق على استخدامنا لملفات تعريف الارتباط."
+
+msgid "When you visit any website, it may store or retrieve information on your browser, mostly in the form of cookies. This information might be about you, your preferences or your device and is mostly used to make the site work as you expect it to."
+msgstr "عند زيارتك لأي موقع إلكتروني، قد يخزن معلومات على متصفحك أو يسترجعها، غالباً على شكل ملفات تعريف ارتباط. قد تكون هذه المعلومات عنك أو عن تفضيلاتك أو جهازك وتُستخدم غالباً لجعل الموقع يعمل كما تتوقع."

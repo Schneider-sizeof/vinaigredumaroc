@@ -1,0 +1,1241 @@
+# Translation file for Vinaigre du Maroc - Spanish
+# Copyright (C) 2026 Vinaigre du Maroc
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: vinaigre-de-maroc 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-29 20:00+0000\n"
+"PO-Revision-Date: 2026-05-29 20:00+0000\n"
+"Last-Translator: Vinaigre du Maroc\n"
+"Language-Team: Spanish\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "1. Raw Sourcing"
+msgstr "1. Abastecimiento de materias primas"
+
+msgid "100% Certified"
+msgstr "100% Certificado"
+
+msgid "2. Acetification"
+msgstr "2. Acetificación"
+
+msgid "3. Automatic Packing"
+msgstr "3. Envasado automático"
+
+msgid "About Us"
+msgstr "Quiénes somos"
+
+msgid "Acidity"
+msgstr "Acidez"
+
+msgid "Acidity Level"
+msgstr "Nivel de acidez"
+
+msgid "Acidity Testing"
+msgstr "Pruebas de acidez"
+
+msgid "All Catalog"
+msgstr "Todo el catálogo"
+
+msgid "All Products"
+msgstr "Todos los productos"
+
+msgid "All Rights Reserved."
+msgstr "Todos los derechos reservados."
+
+msgid "Annual Liters"
+msgstr "Litros anuales"
+
+msgid "At Vinaigre du Maroc, we maintain active chemical and physical laboratories to monitor biological fermentation progress. Every production run undergoes detailed screening, ensuring precise acetic acidity calibration, clarity, color conformity, and micro-biological stability compliance."
+msgstr "En Vinaigre du Maroc, mantenemos laboratorios químicos y físicos activos para monitorear el proceso de fermentación biológica. Cada ciclo de producción se somete a un examen detallado."
+
+msgid "Audited standards BRC GS Grade A, IFS Food, Halal, Kosher, and FDA registry simplify import clearance."
+msgstr "Los estándares auditados BRC GS Grado A, IFS Food, Halal, Kosher y registro FDA simplifican el despacho de importación."
+
+msgid "Authentic Moroccan sauces and pickled gourmet specialties. Including high-grade Hot Sauce, Lemon-infused Cornichons, Hot Pepper Paste, and Caper Paste. Clean ingredients and premium export formulations."
+msgstr "Salsas marroquíes auténticas y especialidades gourmet en conserva. Incluyendo salsa picante de alta calidad, pepinillos al limón, pasta de pimiento picante y pasta de alcaparras. Ingredientes limpios y formulaciones premium de exportación."
+
+msgid "Automated titration systems continuously test batch acidity to guarantee consistent percentages (e.g. 6% or 8%)."
+msgstr "Sistemas de titulación automatizados prueban continuamente la acidez de los lotes para garantizar porcentajes consistentes (ej. 6% u 8%)."
+
+msgid "Available Packaging Formats"
+msgstr "Formatos de envasado disponibles"
+
+msgid "Average transit times: Europe (2-5 days), USA East Coast (10-14 days), Middle East Gulf (12-18 days), West Africa (6-10 days)."
+msgstr "Tiempos promedio de tránsito: Europa (2-5 días), costa este de EE.UU. (10-14 días), Golfo de Medio Oriente (12-18 días), África Occidental (6-10 días)."
+
+msgid "B2B Export & OEM Private Labeling"
+msgstr "Exportación B2B y marca blanca OEM"
+
+msgid "B2B Export FAQ"
+msgstr "FAQ Exportación B2B"
+
+msgid "B2B Export Packaging Options"
+msgstr "Opciones de envasado para exportación B2B"
+
+msgid "B2B Inquiries"
+msgstr "Consultas B2B"
+
+msgid "B2B Inquiry"
+msgstr "Consulta B2B"
+
+msgid "Back to home"
+msgstr "Volver al inicio"
+
+msgid "Blog"
+msgstr "Blog"
+
+msgid "Blog Post"
+msgstr "Artículo de blog"
+
+msgid "Blog Posts"
+msgstr "Artículos de blog"
+
+msgid "Bottles per Carton"
+msgstr "Botellas por cartón"
+
+msgid "Bulk Vinegar Supply"
+msgstr "Suministro de vinagre a granel"
+
+msgid "Bulk bottles designed for HoReCa distribution, catering services, and large foodservice providers."
+msgstr "Botellas a granel diseñadas para distribución HoReCa, servicios de catering y grandes proveedores de servicios alimentarios."
+
+msgid "CORE PRINCIPLES"
+msgstr "PRINCIPIOS FUNDAMENTALES"
+
+msgid "Can you formulate customized acidity levels or custom vinegar flavors?"
+msgstr "¿Pueden formular niveles de acidez personalizados o sabores de vinagre a medida?"
+
+msgid "Carton Specs"
+msgstr "Especificaciones del cartón"
+
+msgid "Cartons per Pallet"
+msgstr "Cartones por palet"
+
+msgid "Categories"
+msgstr "Categorías"
+
+msgid "Category"
+msgstr "Categoría"
+
+msgid "Certification"
+msgstr "Certificación"
+
+msgid "Certifications"
+msgstr "Certificaciones"
+
+msgid "Chat with our Export Team on WhatsApp"
+msgstr "Chatear con nuestro equipo de exportación por WhatsApp"
+
+msgid "Choose glass bottles, PET jugs, or bulk containers with tailored boxes."
+msgstr "Elija botellas de vidrio, garrafas PET o contenedores a granel con cajas personalizadas."
+
+msgid "Commercial Email Address"
+msgstr "Dirección de email comercial"
+
+msgid "Company Name"
+msgstr "Nombre de la empresa"
+
+msgid "Condiments & Sauces"
+msgstr "Condimentos y Salsas"
+
+msgid "Contact"
+msgstr "Contacto"
+
+msgid "Contact & Exports"
+msgstr "Contacto y Exportación"
+
+msgid "Contact Export Team"
+msgstr "Contactar equipo de exportación"
+
+msgid "Contact Our Export Team"
+msgstr "Contacte a nuestro equipo de exportación"
+
+msgid "Contact Our Export Team Today"
+msgstr "Contacte con nuestro equipo de exportación"
+
+msgid "Continuous physical-chemical monitoring ensures absolute chemical acidity and biological purity compliance."
+msgstr "El monitoreo físico-químico continuo asegura el cumplimiento absoluto de acidez química y pureza biológica."
+
+msgid "Convenient size for professional kitchens, bakeries, food service, and caterers."
+msgstr "Tamaño conveniente para cocinas profesionales, panaderías y servicios de catering."
+
+msgid "Corporate Values"
+msgstr "Valores corporativos"
+
+msgid "Country of Origin"
+msgstr "País de origen"
+
+msgid "Crafting Vinegar in Fès Since 1998"
+msgstr "Fabricando vinagre en Fez desde 1998"
+
+msgid "Custom glass bottling, PET containers, industrial 200L drums, and 1000L IBC pallet tankers."
+msgstr "Embotellado en vidrio personalizado, contenedores PET, tambores industriales de 200L y tanques IBC de 1000L."
+
+msgid "Deeply rooted in the authentic agricultural rich soils of Fès, Morocco, Vinaigre du Maroc combines historical heritage and fermentation expertise with modern industrial technology. We export premium food products compliant with BRC Global Standard (Grade A), IFS Food, Kosher, and Halal specifications."
+msgstr "Profundamente arraigado en los ricos suelos agrícolas de Fez, Marruecos, Vinaigre du Maroc combina herencia histórica y experiencia en fermentación con tecnología industrial moderna."
+
+msgid "Detailed batch records track ingredients, fermentation history, and packaging components for comprehensive recall protection."
+msgstr "Los registros detallados de lotes rastrean ingredientes, historial de fermentación y componentes de envase para protección integral."
+
+msgid "Direct B2B Export Inquiry"
+msgstr "Consulta directa de exportación B2B"
+
+msgid "Direct Telephone"
+msgstr "Teléfono directo"
+
+msgid "Direct highway transport from our factory in Fès to Tangier Med takes under 4 hours. Typical ocean freight transit timelines: Western Europe (Rotterdam, Hamburg, Le Havre): 3-6 days; USA East Coast: 10-14 days; Middle East: 12-18 days."
+msgstr "El transporte por carretera desde nuestra fábrica en Fez a Tánger Med toma menos de 4 horas. Tiempos de tránsito marítimo: Europa occidental: 3-6 días; costa este EE.UU.: 10-14 días; Medio Oriente: 12-18 días."
+
+msgid "Do you offer shipping samples for quality evaluations?"
+msgstr "¿Ofrecen muestras de envío para evaluaciones de calidad?"
+
+msgid "Download Catalog"
+msgstr "Descargar catálogo"
+
+msgid "Download Technical Datasheet"
+msgstr "Descargar ficha técnica"
+
+msgid "EXPORT CAPACITY"
+msgstr "CAPACIDAD DE EXPORTACIÓN"
+
+msgid "Email Address"
+msgstr "Correo electrónico"
+
+msgid "Email Export Department"
+msgstr "Email departamento de exportación"
+
+msgid "Enables straightforward customs clearance at US ports of entry for large wholesale container shipments."
+msgstr "Permite un despacho aduanero sencillo en puertos de entrada de EE.UU. para envíos de contenedores mayoristas."
+
+msgid "European Standard"
+msgstr "Estándar Europeo"
+
+msgid "Explore Technical Logistics Specs"
+msgstr "Explorar especificaciones logísticas"
+
+msgid "Export"
+msgstr "Exportación"
+
+msgid "Export Capabilities"
+msgstr "Capacidades de Exportación"
+
+msgid "Export Capabilities & OEM Private Labeling"
+msgstr "Capacidades de exportación y marca blanca OEM"
+
+msgid "Export Countries"
+msgstr "Países de exportación"
+
+msgid "Export Inquiries Email"
+msgstr "Email de consultas de exportación"
+
+msgid "Export Insights"
+msgstr "Perspectivas de exportación"
+
+msgid "Export News & Industry Insights"
+msgstr "Noticias de exportación y perspectivas de la industria"
+
+msgid "Export Quality"
+msgstr "Calidad de Exportación"
+
+msgid "Export Trade"
+msgstr "Comercio de exportación"
+
+msgid "Export Value"
+msgstr "Valor de exportación"
+
+msgid "Export quality is our absolute priority. Our manufacturing facility maintains active registrations and audits with major international compliance boards."
+msgstr "La calidad de exportación es nuestra prioridad absoluta. Nuestra instalación mantiene registros y auditorías activas con organismos de cumplimiento internacionales."
+
+msgid "Exporting Worldwide"
+msgstr "Exportando al mundo"
+
+msgid "FCL Logistics Shipping"
+msgstr "Envío Logístico FCL"
+
+msgid "FLEXIBLE B2B PACKAGING"
+msgstr "ENVASES B2B FLEXIBLES"
+
+msgid "FOB Shipping Port"
+msgstr "Puerto de envío FOB"
+
+msgid "Facility certified: BRC Global Standard (Grade A) | IFS Food | Halal | Kosher | FDA Registered"
+msgstr "Planta certificada: BRC Global Standard (Grado A) | IFS Food | Halal | Kosher | FDA Registrado"
+
+msgid "Factory Address"
+msgstr "Dirección de la fábrica"
+
+msgid "Fast Logistics"
+msgstr "Logística Rápida"
+
+msgid "Fermentation"
+msgstr "Fermentación"
+
+msgid "Flexible Formats"
+msgstr "Formatos Flexibles"
+
+msgid "Flexible Logistics"
+msgstr "Logística flexible"
+
+msgid "Flexible Packaging Configurations"
+msgstr "Configuraciones de envasado flexibles"
+
+msgid "Flexible Packaging Formats"
+msgstr "Formatos de Envase Flexibles"
+
+msgid "For Global B2B Export"
+msgstr "Para Exportación B2B Global"
+
+msgid "For industrial manufacturers who pack or blend in their local facilities, we export bulk vinegar in 1000L IBC tanks, 200L drums, or direct food-grade flexitanks."
+msgstr "Para fabricantes industriales que envasan o mezclan en sus instalaciones locales, exportamos vinagre a granel en tanques IBC de 1000L, tambores de 200L o flexitanques."
+
+msgid "Frequently Asked B2B Questions"
+msgstr "Preguntas frecuentes B2B"
+
+msgid "Fulfill all fields below to request specific commercial terms, shipping quotes, or sample requests."
+msgstr "Complete todos los campos para solicitar términos comerciales, cotizaciones de envío o solicitudes de muestras."
+
+msgid "Fès Industrial Facility"
+msgstr "Planta Industrial de Fez"
+
+msgid "GLOBAL LOGISTICS NETWORK"
+msgstr "RED LOGÍSTICA GLOBAL"
+
+msgid "Glass and PET retail packaging. Perfect for supermarket distribution and branded OEM contracts."
+msgstr "Envases de vidrio y PET para retail. Perfecto para distribución en supermercados y contratos OEM."
+
+msgid "Global Certificates"
+msgstr "Certificados Globales"
+
+msgid "Global Compliance & Certifications"
+msgstr "Cumplimiento Global y Certificaciones"
+
+msgid "Global Distribution Channels"
+msgstr "Canales de distribución globales"
+
+msgid "Global Partnerships"
+msgstr "Asociaciones globales"
+
+msgid "Global Standards"
+msgstr "Estándares globales"
+
+msgid "Gourmet Condiments"
+msgstr "Condimentos Gourmet"
+
+msgid "Grade A Standard"
+msgstr "Estándar Grado A"
+
+msgid "Heavy HDPE drums with airtight seals for industrial manufacturers and food compounders."
+msgstr "Tambores HDPE pesados con sellos herméticos para fabricantes industriales y mezcladores de alimentos."
+
+msgid "Heavy intermediate bulk shipping containers. Pre-fitted on galvanized steel grids with discharge valves."
+msgstr "Contenedores de carga intermedia pesados. Pre-equipados en rejillas de acero galvanizado con válvulas de descarga."
+
+msgid "Heavy stainless steel acetators utilize aerobic biological fermentation. Acetic acid bacteria naturally convert alcohols into clean vinegars under precise temperature checks."
+msgstr "Los acetadores de acero inoxidable utilizan fermentación biológica aeróbica. Las bacterias del ácido acético convierten naturalmente los alcoholes en vinagres puros."
+
+msgid "Heavy stainless steel acetification acetators guarantee high output and year-round continuous supply."
+msgstr "Los acetadores de acero inoxidable garantizan alto rendimiento y suministro continuo durante todo el año."
+
+msgid "Highly valued by European B2B wholesalers, discount retail networks, and commercial brokers."
+msgstr "Muy valorado por mayoristas B2B europeos, redes de descuento y corredores comerciales."
+
+msgid "Home"
+msgstr "Inicio"
+
+msgid "Incorporate regional languages, import barcodes, and health warnings on labeling."
+msgstr "Incorpore idiomas regionales, códigos de barras de importación y advertencias sanitarias en el etiquetado."
+
+msgid "Industrial Packaging Formats"
+msgstr "Formatos de Envase Industrial"
+
+msgid "Ingredients"
+msgstr "Ingredientes"
+
+msgid "Inquiry Messages"
+msgstr "Mensajes de consulta"
+
+msgid "Interested in exporting this product? Fill out your packaging needs and requested quantity, and our international sales team will provide a customized container quote."
+msgstr "¿Interesado en exportar este producto? Indique sus necesidades de envase y cantidad, y nuestro equipo de ventas le proporcionará un presupuesto personalizado."
+
+msgid "Intermediate Bulk Containers on steel pallets, optimized for industrial vinegar buyers."
+msgstr "Contenedores intermedios a granel en paletas de acero, optimizados para compradores industriales de vinagre."
+
+msgid "International Certifications"
+msgstr "Certificaciones Internacionales"
+
+msgid "International Export Lead Sheet"
+msgstr "Hoja de prospectos de exportación"
+
+msgid "International Food Safety Certifications"
+msgstr "Certificaciones internacionales de seguridad alimentaria"
+
+msgid "International Sales Department"
+msgstr "Departamento de Ventas Internacional"
+
+msgid "Jugs per Carton"
+msgstr "Garrafas por cartón"
+
+msgid "Key QC Operations"
+msgstr "Operaciones Clave de Control de Calidad"
+
+msgid "Large Capacity"
+msgstr "Gran Capacidad"
+
+msgid "Large commercial jars with handle, catering to wholesale distributor shipments."
+msgstr "Garrafas comerciales grandes con asa para envíos de distribuidores mayoristas."
+
+msgid "Lightweight, break-resistant PET bottles ideal for high-volume retail supermarket chains."
+msgstr "Botellas PET ligeras y resistentes, ideales para cadenas de supermercados de alto volumen."
+
+msgid "Logistics & Container Loading"
+msgstr "Logística y Carga de Contenedores"
+
+msgid "MANUFACTURER ADVANTAGE"
+msgstr "VENTAJA DEL FABRICANTE"
+
+msgid "Main navigation"
+msgstr "Navegación principal"
+
+msgid "Manufacturing Process"
+msgstr "Proceso de Fabricación"
+
+msgid "Maximize shipping efficiency by importing mixed containers. Combine premium vinegars, hot sauces, and caper pastes in a single full container load (FCL) shipment."
+msgstr "Maximice la eficiencia de envío importando contenedores mixtos. Combine vinagres premium, salsas picantes y pastas de alcaparras en un solo envío FCL."
+
+msgid "Message & Technical Specifications"
+msgstr "Mensaje y especificaciones técnicas"
+
+msgid "Microbiological Stability"
+msgstr "Estabilidad Microbiológica"
+
+msgid "Mixed Container Loads"
+msgstr "Cargas de contenedores mixtos"
+
+msgid "Mon - Fri: 8:00 AM - 6:00 PM"
+msgstr "Lun - Vie: 8:00 - 18:00"
+
+msgid "Moroccan Export Excellence"
+msgstr "Excelencia Marroquí en Exportación"
+
+msgid "Moroccan Food Manufacturer"
+msgstr "Fabricante de alimentos marroquí"
+
+msgid "Moroccan Heritage, Global Standards"
+msgstr "Patrimonio Marroquí, Estándares Globales"
+
+msgid "Moroccan Premium Vinegar & Condiments Manufacturer"
+msgstr "Fabricante marroquí de vinagres y condimentos premium"
+
+msgid "Moroccan Vinegar & Condiments Exporter"
+msgstr "Exportador marroquí de vinagres y condimentos"
+
+msgid "News"
+msgstr "Noticias"
+
+msgid "News & Insights"
+msgstr "Noticias e Insights"
+
+msgid "No Articles Published"
+msgstr "No hay artículos publicados"
+
+msgid "No Products Found"
+msgstr "No se encontraron productos"
+
+msgid "No related articles found."
+msgstr "No se encontraron artículos relacionados."
+
+msgid "OEM & Private Label"
+msgstr "OEM y Marca Blanca"
+
+msgid "OEM / Private Label"
+msgstr "OEM / Marca Blanca"
+
+msgid "OEM / Private Label Solutions"
+msgstr "Soluciones OEM / Marca blanca"
+
+msgid "OEM / Private Labeling"
+msgstr "OEM / Marca Blanca"
+
+msgid "OEM B2B Private Labels"
+msgstr "Marcas blancas B2B OEM"
+
+msgid "OUR PORTFOLIO"
+msgstr "NUESTRO PORTAFOLIO"
+
+msgid "Open Inquiry Form"
+msgstr "Formulario de consulta"
+
+msgid "Open menu"
+msgstr "Abrir menú"
+
+msgid "Origin"
+msgstr "Origen"
+
+msgid "Other Trade Insights"
+msgstr "Otros insights comerciales"
+
+msgid "Our Export Commitment"
+msgstr "Nuestro compromiso de exportación"
+
+msgid "Our Heritage & Export Capabilities"
+msgstr "Nuestra herencia y capacidades de exportación"
+
+msgid "Our Manufacturing & Fermentation Process"
+msgstr "Nuestro Proceso de Fabricación y Fermentación"
+
+msgid "Our Premium Products"
+msgstr "Nuestros productos premium"
+
+msgid "Our Private Label Steps"
+msgstr "Nuestros pasos de marca blanca"
+
+msgid "Our design and regulatory teams assist in label layouts, ensuring that nutritional tables, barcode registrations, and multilingual ingredient listings comply with target country food import rules."
+msgstr "Nuestros equipos de diseño y regulación asisten en el diseño de etiquetas, asegurando que las tablas nutricionales y listas de ingredientes cumplan con las normas de importación."
+
+msgid "Our export headquarters manages commercial agreements, shipping schedules, and private label OEM setups. Fulfill container orders directly from our Fès factory, fully compliant with your country import specifications."
+msgstr "Nuestra sede de exportación gestiona acuerdos comerciales, calendarios de envío y configuraciones de marca blanca OEM desde nuestra fábrica de Fez."
+
+msgid "Our manufacturing facility operates in full accordance with HACCP directives and global food defense principles. Full batch-code records and technical datasheets are kept for absolute traceability of incoming raw ingredients and outbound maritime shipments."
+msgstr "Nuestra instalación opera en plena conformidad con las directivas HACCP y principios de defensa alimentaria global. Se mantienen registros completos de códigos de lote para trazabilidad absoluta."
+
+msgid "Our manufacturing facility operates multiple high-speed production and automatic filling lines. From 200ml glass/PET bottles for retail retail supermarket chains, up to 1000L IBC tanks for bulk food manufacturers, we fulfill complex mixed-container shipping schedules with guaranteed consistency."
+msgstr "Nuestra instalación opera múltiples líneas de producción de alta velocidad y llenado automático. Desde botellas de 200ml hasta tanques IBC de 1000L, cumplimos calendarios de envío complejos."
+
+msgid "Our proximity to the local agricultural fields of the Saïss plain provides us with natural, premium ingredients. We are dedicated to providing superior export-quality vinegars and condiments that meet global culinary and regulatory standards."
+msgstr "Nuestra proximidad a los campos agrícolas de la llanura del Saïss nos proporciona ingredientes naturales y premium para vinagres y condimentos de calidad exportadora."
+
+msgid "Our standard MOQ is 1 Full Container Load (FCL), which can consist of mixed product pallets (different vinegars and condiments). For bulk industrial shipments in 1000L IBCs or drums, alternative shipping quantities can be organized. Please contact our export managers."
+msgstr "Nuestro MOQ estándar es 1 contenedor completo (FCL), que puede consistir en paletas mixtas. Para envíos industriales a granel en IBCs de 1000L o tambores, se pueden organizar cantidades alternativas."
+
+msgid "Our vinegar lines and condiment fermentation processes are audited and certified Kosher. We cooperate with leading certification rabbinates to ensure complete traceability of raw biological sources and processing equipment."
+msgstr "Nuestras líneas de vinagre y procesos de fermentación de condimentos están auditados y certificados Kosher. Cooperamos con los principales rabinatos de certificación."
+
+msgid "Outbound vinegars pass ultra-fine sterilizing filters and automatic filling lines. Bottles undergo online visual inspection and laser lot coding before palletization."
+msgstr "Los vinagres salientes pasan por filtros esterilizantes ultrafinos y líneas de llenado automático. Las botellas se inspeccionan visualmente y se codifican con láser antes de la paletización."
+
+msgid "Packaging"
+msgstr "Envases"
+
+msgid "Packaging Configuration"
+msgstr "Configuración de envasado"
+
+msgid "Packaging Format"
+msgstr "Formato de envase"
+
+msgid "Packaging Formats"
+msgstr "Formatos de envase"
+
+msgid "Packaging Options"
+msgstr "Opciones de envase"
+
+msgid "Pallet Specs"
+msgstr "Especificaciones del palet"
+
+msgid "Pasteurization processes and strict sterilizing filters eliminate unwanted wild yeasts and bacterial elements."
+msgstr "Los procesos de pasteurización y filtros esterilizantes estrictos eliminan levaduras silvestres y elementos bacterianos no deseados."
+
+msgid "Phone Number"
+msgstr "Teléfono"
+
+msgid "Please check back later for news and export trade updates."
+msgstr "Vuelva más tarde para noticias y actualizaciones de comercio de exportación."
+
+msgid "Please check back later or contact our sales team."
+msgstr "Vuelva más tarde o contacte a nuestro equipo de ventas."
+
+msgid "Premium"
+msgstr "Premium"
+
+msgid "Premium Moroccan Vinegar & Condiments"
+msgstr "Vinagres y Condimentos Premium de Marruecos"
+
+msgid "Premium Moroccan Vinegar & Condiments Exporter"
+msgstr "Exportador de vinagres y condimentos premium de Marruecos"
+
+msgid "Premium Moroccan vinegar & condiments exporter."
+msgstr "Exportador de vinagres y condimentos marroquíes premium."
+
+msgid "Premium Moroccan vinegar and condiments B2B exporter. High production capacity, international BRC/IFS/Halal certifications."
+msgstr "Exportador B2B de vinagres y condimentos marroquíes premium. Alta capacidad de producción, certificaciones internacionales BRC/IFS/Halal."
+
+msgid "Premium Product Catalog"
+msgstr "Catálogo de productos premium"
+
+msgid "Premium Vinegars"
+msgstr "Vinagres Premium"
+
+msgid "Premium glass bottles optimized for high-end vinegars, colored specialties, and flavored dressing products."
+msgstr "Botellas de vidrio premium optimizadas para vinagres de alta gama, especialidades de colores y productos de aderezo aromatizados."
+
+msgid "Prerequisite compliance for exporting food products to the Middle East (GCC), North Africa, and global Muslim consumers."
+msgstr "Cumplimiento previo para exportar productos alimentarios al Medio Oriente (CCG), norte de África y consumidores musulmanes globales."
+
+msgid "Private label contracts require a committed annual purchase volume. We supply turnkey OEM solutions: bottling configurations, customized boxes, labeling alignment compliant with local regulations, and export customs preparations."
+msgstr "Los contratos de marca blanca requieren un volumen de compra anual comprometido. Suministramos soluciones OEM llave en mano: configuraciones de embotellado, cajas personalizadas y preparaciones aduaneras."
+
+msgid "Process"
+msgstr "Proceso"
+
+msgid "Product"
+msgstr "Producto"
+
+msgid "Product Categories"
+msgstr "Categorías de Productos"
+
+msgid "Product Certifications"
+msgstr "Certificaciones del producto"
+
+msgid "Products"
+msgstr "Productos"
+
+msgid "Provides verified product safety and quality assurance for US retail stores, Kosher food chains, and industrial buyers."
+msgstr "Proporciona seguridad verificada del producto y garantía de calidad para tiendas de EE.UU., cadenas de alimentos Kosher y compradores industriales."
+
+msgid "Quality Control"
+msgstr "Control de Calidad"
+
+msgid "Quality Control & Food Safety Standards"
+msgstr "Control de Calidad y Normas de Seguridad Alimentaria"
+
+msgid "Quality Control & Laboratory Standards"
+msgstr "Control de Calidad y Normas de Laboratorio"
+
+msgid "Quality Controls"
+msgstr "Controles de Calidad"
+
+msgid "RECOMMENDED ITEMS"
+msgstr "ARTÍCULOS RECOMENDADOS"
+
+msgid "Rabbinate Audit"
+msgstr "Auditoría Rabínica"
+
+msgid "Read Article"
+msgstr "Leer artículo"
+
+msgid "Ready for Large Bulk & Container Logistics"
+msgstr "Listo para Logística de Contenedores"
+
+msgid "Ready to discuss bulk imports, mixed container logistics, or custom OEM private labeling agreements? Send us your specifications."
+msgstr "¿Listo para discutir importaciones a granel, logística de contenedores mixtos o acuerdos de marca blanca OEM? Envíenos sus especificaciones."
+
+msgid "Recipe Adjustment"
+msgstr "Ajuste de receta"
+
+msgid "Regulatory Alignment"
+msgstr "Alineación regulatoria"
+
+msgid "Related Condiments"
+msgstr "Condimentos relacionados"
+
+msgid "Request B2B Quote"
+msgstr "Solicitar presupuesto B2B"
+
+msgid "Request Quote"
+msgstr "Solicitar presupuesto"
+
+msgid "Requested Products"
+msgstr "Productos solicitados"
+
+msgid "Requested Quantity (e.g. 1 FCL, 10 Pallets)"
+msgstr "Cantidad Solicitada (ej. 1 FCL, 10 Palets)"
+
+msgid "Requested Quantity (e.g. 1 FCL, 5 Pallets)"
+msgstr "Cantidad Solicitada (ej. 1 FCL, 5 Palets)"
+
+msgid "Review frequently asked questions regarding container orders, private labeling, standard production capabilities, and logistics protocols."
+msgstr "Revise las preguntas frecuentes sobre pedidos de contenedores, marca blanca, capacidades de producción y protocolos logísticos."
+
+msgid "Rigorous Laboratory Testing for Every Batch"
+msgstr "Pruebas de laboratorio rigurosas para cada lote"
+
+msgid "SHIPPING DETAILS"
+msgstr "DETALLES DE ENVÍO"
+
+msgid "Sauces & Condiments"
+msgstr "Salsas y Condimentos"
+
+msgid "Select Language"
+msgstr "Seleccionar idioma"
+
+msgid "Select specific biological vinegar types, acidity percentages (e.g. 6% or 8%), or custom colors."
+msgstr "Seleccione tipos específicos de vinagre biológico, porcentajes de acidez (ej. 6% u 8%) o colores personalizados."
+
+msgid "Shelf Life"
+msgstr "Vida útil"
+
+msgid "Simplifies import clearance into the UK, European Union, and major North American retail supermarkets."
+msgstr "Simplifica el despacho de importación en el Reino Unido, la Unión Europea y los principales supermercados de Norteamérica."
+
+msgid "Site Setting"
+msgstr "Configuración del sitio"
+
+msgid "Site Settings"
+msgstr "Configuración del sitio"
+
+msgid "Standard retail and household format. Available in elegant dark round bottles or clear glass."
+msgstr "Formato estándar para retail y hogar. Disponible en elegantes botellas redondas oscuras o vidrio transparente."
+
+msgid "State-of-the-art automatic bottling lines, heavy-capacity stainless fermentation tanks, and rigid B2B logistics controls."
+msgstr "Líneas de embotellado automáticas de última generación, tanques de fermentación de acero inoxidable y controles logísticos B2B rigurosos."
+
+msgid "Storage Conditions"
+msgstr "Condiciones de almacenamiento"
+
+msgid "Strategic Fès location with rapid highway customs transport directly to Tangier Med cargo hub."
+msgstr "Ubicación estratégica en Fez con transporte aduanero rápido por carretera directamente al hub de carga de Tánger Med."
+
+msgid "Strategic highway connection from our Fès factory directly to Tangier Med. Favorable ocean freight transits to Hamburg, Rotterdam, New York, and Gulf ports."
+msgstr "Conexión estratégica por carretera desde nuestra fábrica de Fez directamente a Tánger Med. Tránsitos de flete marítimo favorables a Hamburgo, Rotterdam, Nueva York y puertos del Golfo."
+
+msgid "Strict physical-chemical laboratories analyze acidity, consistency, shelf-stability, and microbiological compliance."
+msgstr "Laboratorios físico-químicos estrictos analizan acidez, consistencia, estabilidad y cumplimiento microbiológico."
+
+msgid "Submit Export Inquiry"
+msgstr "Enviar consulta de exportación"
+
+msgid "Tangier Med Maritime Gateway"
+msgstr "Puerta Marítima de Tánger Med"
+
+msgid "Tangier Med Maritime Logistics"
+msgstr "Logística Marítima Tánger Med"
+
+msgid "Tangier Med Port, Morocco"
+msgstr "Puerto de Tánger Med, Marruecos"
+
+msgid "Tank Specs"
+msgstr "Especificaciones del tanque"
+
+msgid "Target Country"
+msgstr "País destino"
+
+msgid "Target Destination Country"
+msgstr "País de destino objetivo"
+
+msgid "Target Packaging"
+msgstr "Envasado objetivo"
+
+msgid "Technical Details"
+msgstr "Detalles técnicos"
+
+msgid "Technical Specifications Table"
+msgstr "Tabla de especificaciones técnicas"
+
+msgid "The BRCGS Food Safety certification is a leading global safety standard recognized by the GFSI (Global Food Safety Initiative). Maintaining a Grade A status proves our strict compliance with hygienic production processes, hazard analysis controls, and plant sanitation."
+msgstr "La certificación BRCGS de seguridad alimentaria es un estándar mundial reconocido por el GFSI. Mantener el estatus Grado A demuestra nuestro cumplimiento estricto con los procesos de producción higiénica."
+
+msgid "The International Featured Standard (IFS) audits food safety and manufacturing quality. Fulfilling IFS standards demonstrates that Vinaigre du Maroc maintains highly controlled raw ingredient sourcing, biological processing, and packing consistency."
+msgstr "El estándar IFS audita la seguridad alimentaria y la calidad de fabricación. Cumplir con los estándares IFS demuestra que Vinaigre du Maroc mantiene un abastecimiento controlado de materias primas."
+
+msgid "There was an error in your submission. Please check the fields below."
+msgstr "Hubo un error en su envío. Verifique los campos a continuación."
+
+msgid "Traceability Tracking"
+msgstr "Seguimiento de Trazabilidad"
+
+msgid "Turnkey solutions from recipe customization to label alignment, regulatory support, and export packaging."
+msgstr "Soluciones llave en mano desde personalización de recetas hasta alineación de etiquetas, soporte regulatorio y envase de exportación."
+
+msgid "US Registered"
+msgstr "Registrado en EE.UU."
+
+msgid "Uncompromised Quality"
+msgstr "Calidad sin compromisos"
+
+msgid "Usage Ideas"
+msgstr "Ideas de uso"
+
+msgid "View Certification Details"
+msgstr "Ver detalles de certificaciones"
+
+msgid "View Condiment Catalog"
+msgstr "Ver catálogo de condimentos"
+
+msgid "View Details"
+msgstr "Ver detalles"
+
+msgid "View Vinegar Catalog"
+msgstr "Ver catálogo de vinagres"
+
+msgid "Vinaigre du Maroc combines natural raw materials with advanced acetator equipment. Our biological fermentation turns pure wines, ciders, and natural alcohols into highly stable, premium-grade vinegars."
+msgstr "Vinaigre du Maroc combina materias primas naturales con equipos de acetadores avanzados. Nuestra fermentación biológica transforma vinos, sidras y alcoholes naturales en vinagres premium."
+
+msgid "Vinaigre du Maroc holds official Halal certificates. All ingredients, fermentation pipelines, and bottling storage facilities undergo strict religious and technological audits to guarantee zero cross-contamination and pure, lawful products."
+msgstr "Vinaigre du Maroc posee certificados Halal oficiales. Todos los ingredientes e instalaciones se someten a auditorías religiosas y tecnológicas estrictas para garantizar cero contaminación cruzada."
+
+msgid "Vinaigre du Maroc implements rigid food safety systems. Our manufacturing plant, chemical fermentation processes, and automated bottling lines maintain continuous certifications to guarantee seamless customs clearance."
+msgstr "Vinaigre du Maroc implementa sistemas rígidos de seguridad alimentaria. Nuestra planta mantiene certificaciones continuas para garantizar un despacho aduanero fluido."
+
+msgid "Vinaigre du Maroc is a leading Moroccan manufacturer of premium vinegars, sauces, and B2B export condiments. Custom packaging from 200ml to 1000L IBC. Halal, Kosher, IFS, BRC, FDA certified."
+msgstr "Vinaigre du Maroc es un fabricante marroquí líder de vinagres premium, salsas y condimentos de exportación B2B. Envase personalizado de 200ml a 1000L IBC. Certificado Halal, Kosher, IFS, BRC, FDA."
+
+msgid "Vinaigre du Maroc is an international export-focused manufacturer of premium vinegars and table condiments. Empowering international B2B private label OEM agreements and bulk distribution shipping."
+msgstr "Vinaigre du Maroc es un fabricante internacional enfocado en la exportación de vinagres premium y condimentos. Facilitando acuerdos de marca blanca B2B y distribución a granel."
+
+msgid "Vinaigre du Maroc is officially registered with the United States Food and Drug Administration (FDA). Our manufacturing facility complies with FDA Good Manufacturing Practices (GMP) and FSMA rules, ensuring that all food shipments meet US customs specifications."
+msgstr "Vinaigre du Maroc está oficialmente registrado ante la FDA de EE.UU. Nuestra instalación cumple con las GMP y reglas FSMA, asegurando que todos los envíos cumplan con las especificaciones aduaneras estadounidenses."
+
+msgid "Vinaigre du Maroc is the leading industrial vinegar and condiments manufacturer in Morocco. We supply state-of-the-art vinegars, sauces, and preserved table condiments to Europe, the USA, the Middle East, and Africa."
+msgstr "Vinaigre du Maroc es el principal fabricante industrial de vinagre y condimentos en Marruecos. Suministramos vinagres, salsas y condimentos de mesa premium a Europa, EE.UU., Oriente Medio y África."
+
+msgid "Vinaigre du Maroc is the trusted OEM manufacturing partner for supermarket chains, gourmet vinegar brands, and catering distributors worldwide. We offer complete B2B private label solutions, managing everything from recipe optimization (custom acidity, color, flavors) to container bottling, package boxes, and customs compliance support."
+msgstr "Vinaigre du Maroc es el socio OEM de confianza para cadenas de supermercados, marcas gourmet de vinagre y distribuidores de catering. Ofrecemos soluciones completas de marca blanca B2B."
+
+msgid "Vinaigre du Maroc was founded in Fès, Morocco, with a clear vision: to combine traditional biological fermentation heritage with state-of-the-art industrial technology. Over the decades, we have expanded our capacity to become the premier vinegar manufacturer in Morocco, supplying major international distributors, hotel chains, and retail supermarkets."
+msgstr "Vinaigre du Maroc fue fundada en Fez, Marruecos, con una visión clara: combinar la herencia tradicional de fermentación biológica con tecnología industrial de vanguardia."
+
+msgid "WORLD-CLASS COMPLIANCE"
+msgstr "CUMPLIMIENTO DE CLASE MUNDIAL"
+
+msgid "We cooperate with B2B food brokers, commercial importers, and logistics networks in Europe, the USA, and Asia, offering seamless customs clearances."
+msgstr "Cooperamos con corredores de alimentos B2B, importadores comerciales y redes logísticas en Europa, EE.UU. y Asia, ofreciendo despachos aduaneros fluidos."
+
+msgid "We help brand owners design customized formulas, retail bottles, boxes, and barcodes."
+msgstr "Ayudamos a los propietarios de marcas a diseñar fórmulas personalizadas, botellas, cajas y códigos de barras."
+
+msgid "We maintain in-house microbiological and chemical testing labs. Our production batch runs undergo rigorous physical testing for acidity levels, density, and shelf longevity."
+msgstr "Mantenemos laboratorios internos de pruebas microbiológicas y químicas. Nuestros lotes de producción se someten a pruebas físicas rigurosas de acidez, densidad y vida útil."
+
+msgid "We manufacture high-grade white vinegar, red wine vinegar, white wine vinegar, apple cider vinegar, and flavored lemon/apple vinegars. Designed for distribution, retailers, or bulk food applications."
+msgstr "Fabricamos vinagre blanco de alta calidad, vinagre de vino tinto, vinagre de vino blanco, vinagre de sidra de manzana y vinagres aromatizados. Diseñados para distribución, retail o aplicaciones alimentarias a granel."
+
+msgid "We offer tailored B2B packaging setups. From elegant glass bottles for high-end retail supermarkets, lightweight PET containers for wholesale foodservice distributors, to heavy drums and IBC tanks for industrial food manufacturers."
+msgstr "Ofrecemos configuraciones de envase B2B personalizadas. Desde elegantes botellas de vidrio para supermercados de alta gama hasta tambores pesados y tanques IBC para fabricantes industriales."
+
+msgid "We ship mixed full container loads (FCL) from Tangier Med directly to major global gateways."
+msgstr "Enviamos contenedores completos mixtos (FCL) desde Tánger Med directamente a las principales puertas de entrada globales."
+
+msgid "We source premium raw ciders, quality red and white grape wines, and pure agricultural alcohols from certified local suppliers."
+msgstr "Obtenemos sidras crudas premium, vinos de uva roja y blanca de calidad, y alcoholes agrícolas puros de proveedores locales certificados."
+
+msgid "We support multiple packaging setups. From bulk tank trucks to intermediate 1000L IBCs, 200L drums, and consumer retail boxes, we accommodate flexible logistics."
+msgstr "Soportamos múltiples configuraciones de envase. Desde camiones cisterna a granel hasta IBCs de 1000L, tambores de 200L y cajas de retail."
+
+msgid "What are the requirements for B2B Private Labeling / OEM contracts?"
+msgstr "¿Cuáles son los requisitos para contratos de marca blanca / OEM B2B?"
+
+msgid "What is the standard logistics timeline from your Fès plant to Western Europe or USA?"
+msgstr "¿Cuál es el plazo logístico estándar desde su planta de Fez a Europa Occidental o EE.UU.?"
+
+msgid "What is your Minimum Order Quantity (MOQ) for international B2B shipments?"
+msgstr "¿Cuál es su cantidad mínima de pedido (MOQ) para envíos B2B internacionales?"
+
+msgid "Why Choose Vinaigre du Maroc?"
+msgstr "¿Por qué elegir Vinaigre du Maroc?"
+
+msgid "With direct highway connections from Fès to the Mediterranean Gateways of Tangier Med, we deliver seamless freight logistics to ports across Europe, the USA, the Middle East, and Africa."
+msgstr "Con conexiones directas por carretera desde Fez a Tánger Med, ofrecemos logística de flete fluida a puertos de Europa, EE.UU., Medio Oriente y África."
+
+msgid "Yes. Our food technologists and physical-chemical laboratories can calibrate specific biological acidity levels (e.g. 5%, 6%, 8% or higher) and develop customized colored/flavored profiles to match your regional consumer market profile."
+msgstr "Sí. Nuestros tecnólogos alimentarios pueden calibrar niveles de acidez específicos (ej. 5%, 6%, 8% o superior) y desarrollar perfiles de color/sabor personalizados para su mercado regional."
+
+msgid "Yes. We ship product samples (in 250ml or 500ml formats) to registered commercial importers and food brokers worldwide. Let us know your company profile, destination country, and DHL/FedEx shipping account numbers."
+msgstr "Sí. Enviamos muestras de productos (en formatos de 250ml o 500ml) a importadores comerciales registrados en todo el mundo. Indíquenos su perfil de empresa, país de destino y números de cuenta DHL/FedEx."
+
+msgid "Your B2B inquiry has been sent successfully! Our export team will contact you shortly."
+msgstr "¡Su consulta B2B ha sido enviada exitosamente! Nuestro equipo de exportación le contactará pronto."
+
+msgid "Your B2B inquiry has been sent successfully. Our export team will contact you shortly."
+msgstr "Su consulta B2B ha sido enviada exitosamente. Nuestro equipo de exportación le contactará pronto."
+
+msgid "Your inquiry has been sent successfully!"
+msgstr "¡Su consulta ha sido enviada exitosamente!"
+
+msgid "Your message has been sent successfully!"
+msgstr "¡Su mensaje ha sido enviado exitosamente!"
+
+msgid "about/"
+msgstr "sobre-nosotros/"
+
+msgid "blog/"
+msgstr "blog/"
+
+msgid "blog/<str:slug>/"
+msgstr "blog/<str:slug>/"
+
+msgid "certifications/"
+msgstr "certificaciones/"
+
+msgid "contact/"
+msgstr "contacto/"
+
+msgid "export/"
+msgstr "exportacion/"
+
+msgid "faq/"
+msgstr "preguntas-frecuentes/"
+
+msgid "manufacturing-process/"
+msgstr "proceso-fabricacion/"
+
+msgid "packaging/"
+msgstr "envases/"
+
+msgid "products/"
+msgstr "productos/"
+
+msgid "products/<str:slug>/"
+msgstr "productos/<str:slug>/"
+
+msgid "quality-control/"
+msgstr "control-calidad/"
+
+msgid "vinegar manufacturer Morocco, vinegar supplier Morocco, Moroccan vinegar exporter, halal vinegar supplier, private label vinegar, condiment manufacturer Morocco, hot sauce supplier Morocco, export food supplier Morocco"
+msgstr "fabricante de vinagre Marruecos, proveedor de vinagre Marruecos, exportador de vinagre marroquí, proveedor de vinagre halal, vinagre marca blanca"
+
+msgid "branding/"
+msgstr "marca-blanca/"
+
+msgid "Branding"
+msgstr "Marca Blanca"
+
+msgid "Private Label & Branding"
+msgstr "Marca Blanca y Branding"
+
+msgid "Private Label & OEM Branding"
+msgstr "Marca Blanca y OEM"
+
+msgid "Your Brand, Our Expertise"
+msgstr "Su Marca, Nuestra Experiencia"
+
+msgid "How Private Label Works"
+msgstr "Cómo Funciona la Marca Blanca"
+
+msgid "1. Consultation"
+msgstr "1. Consulta"
+
+msgid "2. Design & Sampling"
+msgstr "2. Diseño y Muestreo"
+
+msgid "3. Production"
+msgstr "3. Producción"
+
+msgid "4. Export & Delivery"
+msgstr "4. Exportación y Entrega"
+
+msgid "Ready to Launch Your Brand?"
+msgstr "¿Listo para Lanzar Su Marca?"
+
+msgid "Need help? Chat with us!"
+msgstr "¿Necesita ayuda? ¡Chatea con nosotros!"
+
+msgid "Cookie Settings"
+msgstr "Configuración de cookies"
+
+msgid "Cookie Consent"
+msgstr "Consentimiento de cookies"
+
+msgid "We value your privacy"
+msgstr "Valoramos su privacidad"
+
+msgid "Read our Privacy Policy"
+msgstr "Lea nuestra Política de Privacidad"
+
+msgid "Customize Preferences"
+msgstr "Personalizar preferencias"
+
+msgid "Reject Non-Essential"
+msgstr "Rechazar no esenciales"
+
+msgid "Accept All"
+msgstr "Aceptar todo"
+
+msgid "Cookie Preferences"
+msgstr "Preferencias de cookies"
+
+msgid "Close"
+msgstr "Cerrar"
+
+msgid "Strictly Necessary Cookies"
+msgstr "Cookies estrictamente necesarias"
+
+msgid "Always Active"
+msgstr "Siempre activas"
+
+msgid "Analytics Cookies"
+msgstr "Cookies analíticas"
+
+msgid "Marketing Cookies"
+msgstr "Cookies de marketing"
+
+msgid "Preferences Cookies"
+msgstr "Cookies de preferencias"
+
+msgid "Save My Preferences"
+msgstr "Guardar mis preferencias"
+
+msgid "Language selector"
+msgstr "Selector de idioma"
+
+msgid "View Products"
+msgstr "Ver Productos"
+
+msgid "Scroll down"
+msgstr "Desplazarse hacia abajo"
+
+msgid "Premium Moroccan Vinegars — All Types, Year-Round Supply"
+msgstr "Vinagres Marroquíes Premium — Todos los Tipos, Suministro Todo el Año"
+
+msgid "Vinaigre du Maroc produces high-grade white vinegar, red wine vinegar, white wine vinegar, apple cider vinegar, and flavored vinegars. All manufactured in our state-of-the-art Fès facility with precise acidity control and rigorous quality assurance."
+msgstr "Vinaigre du Maroc produce vinagre blanco de alta calidad, vinagre de vino tinto, vinagre de vino blanco, vinagre de sidra de manzana y vinagres aromatizados."
+
+msgid "White Vinegar — 4% to 20% Acidity"
+msgstr "Vinagre Blanco — Acidez del 4% al 20%"
+
+msgid "View Vinegars"
+msgstr "Ver Vinagres"
+
+msgid "Sauces & Gourmet Condiments — Private Label Ready"
+msgstr "Salsas y Condimentos Gourmet — Listos para Marca Blanca"
+
+msgid "Authentic Moroccan sauces and preserved gourmet specialties. Including premium Hot Sauce, Harissa, Lemon-infused Cornichons, and specialty condiments. Clean ingredients with export-grade formulations designed for international distribution."
+msgstr "Salsas marroquíes auténticas y especialidades gourmet conservadas. Incluyendo salsa picante premium, harissa, pepinillos al limón y condimentos especiales."
+
+msgid "Hot Sauce & Harissa — Private Label OEM"
+msgstr "Salsa Picante y Harissa — OEM Marca Blanca"
+
+msgid "View Condiments"
+msgstr "Ver Condimentos"
+
+msgid "Global Distribution"
+msgstr "Distribución Global"
+
+msgid "B2B Export Specifications"
+msgstr "Especificaciones de Exportación B2B"
+
+msgid "Vinaigre du Maroc is a direct-from-factory manufacturer. We support importers, distributors, and private label clients globally with standardized premium export formats."
+msgstr "Vinaigre du Maroc es un fabricante directo de fábrica. Apoyamos a importadores, distribuidores y clientes de marca blanca globalmente."
+
+msgid "Product Range"
+msgstr "Gama de Productos"
+
+msgid "White Vinegar (4%–20% acidity)"
+msgstr "Vinagre Blanco (acidez 4%–20%)"
+
+msgid "Red & White Wine Vinegar"
+msgstr "Vinagre de Vino Tinto y Blanco"
+
+msgid "Apple Cider Vinegar"
+msgstr "Vinagre de Sidra de Manzana"
+
+msgid "Hot Sauce & Harissa"
+msgstr "Salsa Picante y Harissa"
+
+msgid "Specialty Condiments"
+msgstr "Condimentos Especiales"
+
+msgid "Packaging & Formats"
+msgstr "Envasado y Formatos"
+
+msgid "Retail"
+msgstr "Retail"
+
+msgid "200ml–500ml Glass & PET"
+msgstr "200ml–500ml Vidrio y PET"
+
+msgid "HoReCa"
+msgstr "HoReCa"
+
+msgid "2L–5L PET Bottles"
+msgstr "Botellas PET 2L–5L"
+
+msgid "Industrial"
+msgstr "Industrial"
+
+msgid "200L HDPE Drums"
+msgstr "Tambores HDPE 200L"
+
+msgid "Bulk"
+msgstr "A Granel"
+
+msgid "1000L IBC Tanks"
+msgstr "Tanques IBC 1000L"
+
+msgid "Logistics & Supply"
+msgstr "Logística y Suministro"
+
+msgid "Capacity"
+msgstr "Capacidad"
+
+msgid "25M+ liters annual"
+msgstr "25M+ litros anuales"
+
+msgid "Port"
+msgstr "Puerto"
+
+msgid "FOB Tangier Med / Casablanca"
+msgstr "FOB Tánger Med / Casablanca"
+
+msgid "Transit"
+msgstr "Tránsito"
+
+msgid "Europe 2–5 days"
+msgstr "Europa 2–5 días"
+
+msgid "Supply"
+msgstr "Suministro"
+
+msgid "Year-round continuous production"
+msgstr "Producción continua todo el año"
+
+msgid "Compliance & Trust"
+msgstr "Cumplimiento y Confianza"
+
+msgid "BRC Global Standard Grade A"
+msgstr "BRC Global Standard Grado A"
+
+msgid "IFS Food certified"
+msgstr "Certificado IFS Food"
+
+msgid "Halal & Kosher certified"
+msgstr "Certificado Halal y Kosher"
+
+msgid "FDA registered facility"
+msgstr "Instalación registrada en FDA"
+
+msgid "Why Choose Us"
+msgstr "Por Qué Elegirnos"
+
+msgid "Premium Quality"
+msgstr "Calidad Premium"
+
+msgid "Strict quality controls with physicochemical lab analysis for every batch."
+msgstr "Controles de calidad estrictos con análisis de laboratorio fisicoquímico para cada lote."
+
+msgid "Export Ready"
+msgstr "Listo para Exportar"
+
+msgid "45+ countries served with full documentation and customs compliance."
+msgstr "Más de 45 países atendidos con documentación completa y cumplimiento aduanero."
+
+msgid "Moroccan Heritage"
+msgstr "Herencia Marroquí"
+
+msgid "Deep roots in Fès with traditional fermentation expertise and modern technology."
+msgstr "Raíces profundas en Fez con experiencia en fermentación tradicional y tecnología moderna."
+
+msgid "From 200ml retail glass bottles to 1000L IBC industrial tanks."
+msgstr "Desde botellas de vidrio retail de 200ml hasta tanques industriales IBC de 1000L."
+
+msgid "BRC Grade A, IFS, Halal, Kosher & FDA — Ready for Global Export"
+msgstr "BRC Grado A, IFS, Halal, Kosher y FDA — Listos para Exportación Global"
+
+msgid "Wholesale & Export"
+msgstr "Mayorista y Exportación"
+
+msgid "Contact us for wholesale pricing, private label, or export inquiries."
+msgstr "Contáctenos para precios mayoristas, marca blanca o consultas de exportación."
+
+msgid "Contact Us Now"
+msgstr "Contáctenos Ahora"
+
+msgid "Explore Full Catalog"
+msgstr "Explorar Catálogo Completo"
+
+msgid "Deeply rooted in the authentic agricultural rich soils of Fès, Morocco, Vinaigre du Maroc combines historical heritage and fermentation expertise with modern industrial technology."
+msgstr "Profundamente arraigado en los ricos suelos agrícolas de Fez, Marruecos, Vinaigre du Maroc combina herencia histórica y experiencia en fermentación con tecnología industrial moderna."
+
+msgid "Launch your own vinegar and condiment brand with Vinaigre du Maroc. We handle formulation, production, packaging, labeling, and export logistics — you focus on your market."
+msgstr "Lance su propia marca de vinagre y condimentos con Vinaigre du Maroc. Nos encargamos de la formulación, producción, envasado, etiquetado y logística de exportación — usted se enfoca en su mercado."
+
+
+msgid "All"
+msgstr "Todos"
+
+msgid "Browse our complete catalog of premium Moroccan vinegars, sauces, and condiments. Available in multiple packaging formats from 200ml glass bottles to 1000L IBC tanks for global export."
+msgstr "Explore nuestro catálogo completo de vinagres, salsas y condimentos marroquíes premium. Disponible en múltiples formatos de envasado, desde botellas de vidrio de 200ml hasta contenedores IBC de 1000L para exportación global."
+
+msgid "Browse premium Moroccan vinegars and condiments for export."
+msgstr "Explore vinagres y condimentos marroquíes premium para exportación."
+
+msgid "Contact our export team to discuss your private label project. Minimum order quantities start from 1 pallet."
+msgstr "Póngase en contacto con nuestro equipo de exportación para analizar su proyecto de marca blanca. Las cantidades mínimas de pedido comienzan a partir de 1 palé."
+
+msgid "Details"
+msgstr "Detalles"
+
+msgid "Export Grade Quality"
+msgstr "Calidad de Exportación"
+
+msgid "FOB Tangier Med or Casablanca. Full export documentation, phytosanitary certificates, and customs-ready shipments."
+msgstr "FOB Tánger Med o Casablanca. Documentación de exportación completa, certificados fitosanitarios y envíos listos para aduanas."
+
+msgid "Full-scale production in our BRC Grade A certified facility with strict quality controls and batch traceability."
+msgstr "Producción a gran escala en nuestra instalación certificada BRC Grado A con estrictos controles de calidad y trazabilidad de lotes."
+
+msgid "Hero Background"
+msgstr "Fondo Principal"
+
+msgid "Hero Backgrounds"
+msgstr "Fondos Principales"
+
+msgid "Mobile navigation"
+msgstr "Navegación móvil"
+
+msgid "Need Custom Packaging or a Bulk Quote?"
+msgstr "¿Necesita envasado personalizado o una cotización a granel?"
+
+msgid "Our Product Catalog"
+msgstr "Nuestro Catálogo de Productos"
+
+msgid "Packaging Available"
+msgstr "Envases Disponibles"
+
+msgid "Photo"
+msgstr "Foto"
+
+msgid "Premium Moroccan fermented vinegars and gourmet condiments. Each item is available in multiple packaging formats with full certification documentation for global export."
+msgstr "Vinagres fermentados y condimentos gourmet marroquíes premium. Cada artículo está disponible en múltiples formatos de empaque con documentación de certificación completa para la exportación global."
+
+msgid "Premium Moroccan gourmet products available in multiple packaging formats with full certification for global export."
+msgstr "Productos gourmet marroquíes premium disponibles en múltiples formatos de empaque con certificación completa para exportación global."
+
+msgid "Private label and OEM branding solutions for vinegar and condiments. Custom packaging, formulation, and labeling services from Morocco's leading vinegar manufacturer."
+msgstr "Soluciones de marca blanca y marca propia para vinagre y condimentos. Servicios de envasado, formulación y etiquetado personalizados del principal fabricante de vinagre de Marruecos."
+
+msgid "Product Catalog"
+msgstr "Catálogo de Productos"
+
+msgid "Product Image"
+msgstr "Imagen del Producto"
+
+msgid "Request a B2B Quote"
+msgstr "Solicitar Cotización B2B"
+
+msgid "Share your product vision, target market, and volume requirements. Our export team will guide you through formulation options."
+msgstr "Comparta su visión de producto, mercado objetivo y requisitos de volumen. Nuestro equipo de exportación lo guiará a través de las opciones de formulación."
+
+msgid "These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. They help us to know which pages are the most and least popular and see how visitors move around the site."
+msgstr "Estos cookies nos permiten contar las visitas y fuentes de tráfico para poder medir y mejorar el rendimiento de nuestro sitio. Nos ayudan a saber qué páginas son las más o menos populares y ver cómo los visitantes navegan por el sitio."
+
+msgid "These cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in or filling in forms."
+msgstr "Estos cookies son necesarios para que el sitio web funcione y no se pueden desactivar en nuestros sistemas. Por lo general, solo se configuran en respuesta a sus acciones que equivalen a una solicitud de servicios, como establecer sus preferencias de privacidad, iniciar sesión o completar formularios."
+
+msgid "These cookies enable the website to provide enhanced functionality and personalisation. They may be set by us or by third party providers whose services we have added to our pages."
+msgstr "Estos cookies permiten que el sitio web proporcione una funcionalidad y personalización mejoradas. Pueden ser establecidos por nosotros o por proveedores externos cuyos servicios hemos agregado a nuestras páginas."
+
+msgid "These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites."
+msgstr "Estos cookies pueden ser establecidos a través de nuestro sitio por nuestros socios publicitarios. Pueden ser utilizados por esas empresas para crear un perfil de sus intereses y mostrarle anuncios relevantes en otros sitios."
+
+msgid "Upload a product image (JPEG, PNG, WebP)."
+msgstr "Cargar una imagen del producto (JPEG, PNG, WebP)."
+
+msgid "View"
+msgstr "Ver"
+
+msgid "We create product samples with your custom formulation, labels, and packaging design. Approve before production begins."
+msgstr "Creamos muestras de productos con su formulación personalizada, etiquetas y diseño de envase. Apruebe antes de que comience la producción."
+
+msgid "We offer private label manufacturing, customized acidity levels, and flexible packaging sizes ranging from retail glass to industrial bulk IBC containers for food companies."
+msgstr "Ofrecemos fabricación de marca blanca, niveles de acidez personalizados y tamaños de envase flexibles, desde vidrio para venta minorista hasta contenedores IBC industriales a granel para empresas alimentarias."
+
+msgid "We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic. By clicking 'Accept All', you consent to our use of cookies."
+msgstr "Utilizamos cookies para mejorar su experiencia de navegación, ofrecer anuncios o contenido personalizados y analizar nuestro tráfico. Al hacer clic en 'Aceptar todo', acepta nuestro uso de cookies."
+
+msgid "When you visit any website, it may store or retrieve information on your browser, mostly in the form of cookies. This information might be about you, your preferences or your device and is mostly used to make the site work as you expect it to."
+msgstr "Cuando visita cualquier sitio web, este puede almacenar o recuperar información en su navegador, principalmente en forma de cookies. Esta información puede ser sobre usted, sus preferencias o su dispositivo y se utiliza principalmente para que el sitio funcione como espera."

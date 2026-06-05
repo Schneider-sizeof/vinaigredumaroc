@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% load i18n static %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% block title %}{% trans "Private Label & Branding" %} | Vinaigre du Maroc{% endblock %}
+{% block meta_description %}{% trans "Private label and OEM branding solutions for vinegar and condiments. Custom packaging, formulation, and labeling services from Morocco's leading vinegar manufacturer." %}{% endblock %}
+
+{% block content %}
+<section class="page-hero">
+    <div class="page-hero-content">
+        <span class="hero-accent text-uppercase fw-bold" style="letter-spacing:3px;font-size:0.85rem;">{% trans "Your Brand, Our Expertise" %}</span>
+        <div class="hero-divider"></div>
+        <h1>{% trans "Private Label & OEM Branding" %}</h1>
+        <p>{% trans "Launch your own vinegar and condiment brand with Vinaigre du Maroc. We handle formulation, production, packaging, labeling, and export logistics — you focus on your market." %}</p>
+    </div>
+</section>
+
+<section class="section-padding" style="background: var(--cream-bg, #fdfcf7);">
+    <div class="container">
+        <div class="text-center mb-5">
+            <span class="eyebrow">{% trans "Your Brand, Our Expertise" %}</span>
+            <h2 class="section-title">{% trans "How Private Label Works" %}</h2>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 2rem;">
+            <div class="choose-card text-center">
+                <div class="choose-icon-wrapper mx-auto"><i class="bi bi-chat-dots" style="font-size:1.5rem;"></i></div>
+                <h3 style="font-size: 1.1rem; margin-bottom: 0.75rem;">{% trans "1. Consultation" %}</h3>
+                <p style="font-size: 0.88rem; color: #666;">{% trans "Share your product vision, target market, and volume requirements. Our export team will guide you through formulation options." %}</p>
+            </div>
+            <div class="choose-card text-center">
+                <div class="choose-icon-wrapper mx-auto"><i class="bi bi-palette" style="font-size:1.5rem;"></i></div>
+                <h3 style="font-size: 1.1rem; margin-bottom: 0.75rem;">{% trans "2. Design & Sampling" %}</h3>
+                <p style="font-size: 0.88rem; color: #666;">{% trans "We create product samples with your custom formulation, labels, and packaging design. Approve before production begins." %}</p>
+            </div>
+            <div class="choose-card text-center">
+                <div class="choose-icon-wrapper mx-auto"><i class="bi bi-gear" style="font-size:1.5rem;"></i></div>
+                <h3 style="font-size: 1.1rem; margin-bottom: 0.75rem;">{% trans "3. Production" %}</h3>
+                <p style="font-size: 0.88rem; color: #666;">{% trans "Full-scale production in our BRC Grade A certified facility with strict quality controls and batch traceability." %}</p>
+            </div>
+            <div class="choose-card text-center">
+                <div class="choose-icon-wrapper mx-auto"><i class="bi bi-truck" style="font-size:1.5rem;"></i></div>
+                <h3 style="font-size: 1.1rem; margin-bottom: 0.75rem;">{% trans "4. Export & Delivery" %}</h3>
+                <p style="font-size: 0.88rem; color: #666;">{% trans "FOB Tangier Med or Casablanca. Full export documentation, phytosanitary certificates, and customs-ready shipments." %}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-padding" style="background: linear-gradient(135deg, #581825, #3d0f1a); color: #fff;">
+    <div class="container text-center">
+        <h2 style="color:#fff; font-family: 'Playfair Display', serif; margin-bottom: 1.5rem;">{% trans "Ready to Launch Your Brand?" %}</h2>
+        <p style="color: rgba(255,255,255,0.8); max-width: 550px; margin: 0 auto 2rem; font-size: 1.05rem;">
+            {% trans "Contact our export team to discuss your private label project. Minimum order quantities start from 1 pallet." %}
+        </p>
+        <a href="{% url 'contact' %}" class="btn-premium btn-premium-accent" style="border-radius: 50px;">{% trans "Contact Export Team" %}</a>
+    </div>
+</section>
+{% endblock %}

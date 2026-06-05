@@ -1,0 +1,121 @@
+{% extends 'base.html' %}
+{% load i18n static certification_tags %}
+
+{% block title %}{% trans "International Food Safety Certifications" %}{% endblock %}
+
+{% block content %}
+
+    <!-- ===== HERO HEADER ===== -->
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <span class="hero-accent text-uppercase fw-bold" style="letter-spacing:3px;font-size:0.85rem;">{% trans "WORLD-CLASS COMPLIANCE" %}</span>
+            <div class="hero-divider"></div>
+            <h1>{% trans "Global Compliance & Certifications" %}</h1>
+            <p>{% trans "Export quality is our absolute priority. Our manufacturing facility maintains active registrations and audits with major international compliance boards." %}</p>
+        </div>
+    </section>
+
+    <!-- ===== CARDS GRID ===== -->
+    <section class="section-padding">
+        <div class="container">
+            <p class="fs-5 text-secondary text-center mx-auto mb-5" style="max-width: 800px;">
+                {% trans "Vinaigre du Maroc implements rigid food safety systems. Our manufacturing plant, chemical fermentation processes, and automated bottling lines maintain continuous certifications to guarantee seamless customs clearance." %}
+            </p>
+
+            <div class="row g-4">
+                
+                <!-- BRC GS Card -->
+                <div class="col-md-6">
+                    <div class="glass-section p-5 bg-light border shadow-sm height-100">
+                        <div class="d-flex align-items-center gap-3 mb-4">
+                            <div class="cert-svg-wrap" style="width: 50px; height: 50px; display: inline-block; flex-shrink: 0;">
+                                {% render_certification_icon 'BRCGS' %}
+                            </div>
+                            <h3 class="fw-bold text-success m-0">BRC Global Standard (Grade A)</h3>
+                        </div>
+                        <p class="text-secondary">
+                            {% trans "The BRCGS Food Safety certification is a leading global safety standard recognized by the GFSI (Global Food Safety Initiative). Maintaining a Grade A status proves our strict compliance with hygienic production processes, hazard analysis controls, and plant sanitation." %}
+                        </p>
+                        <div class="mt-3 p-3 bg-white rounded small text-secondary">
+                            <strong>{% trans "Export Value" %}:</strong> {% trans "Simplifies import clearance into the UK, European Union, and major North American retail supermarkets." %}
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IFS Food Card -->
+                <div class="col-md-6">
+                    <div class="glass-section p-5 bg-light border shadow-sm height-100">
+                        <div class="d-flex align-items-center gap-3 mb-4">
+                            <div class="cert-svg-wrap" style="width: 50px; height: 50px; display: inline-block; flex-shrink: 0;">
+                                {% render_certification_icon 'IFS' %}
+                            </div>
+                            <h3 class="fw-bold text-success m-0">IFS Food Standard</h3>
+                        </div>
+                        <p class="text-secondary">
+                            {% trans "The International Featured Standard (IFS) audits food safety and manufacturing quality. Fulfilling IFS standards demonstrates that Vinaigre du Maroc maintains highly controlled raw ingredient sourcing, biological processing, and packing consistency." %}
+                        </p>
+                        <div class="mt-3 p-3 bg-white rounded small text-secondary">
+                            <strong>{% trans "Export Value" %}:</strong> {% trans "Highly valued by European B2B wholesalers, discount retail networks, and commercial brokers." %}
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Halal Card -->
+                <div class="col-md-6">
+                    <div class="glass-section p-5 bg-light border shadow-sm height-100">
+                        <div class="d-flex align-items-center gap-3 mb-4">
+                            <div class="cert-svg-wrap" style="width: 50px; height: 50px; display: inline-block; flex-shrink: 0;">
+                                {% render_certification_icon 'HALAL' %}
+                            </div>
+                            <h3 class="fw-bold text-success m-0">Halal Certification</h3>
+                        </div>
+                        <p class="text-secondary">
+                            {% trans "Vinaigre du Maroc holds official Halal certificates. All ingredients, fermentation pipelines, and bottling storage facilities undergo strict religious and technological audits to guarantee zero cross-contamination and pure, lawful products." %}
+                        </p>
+                        <div class="mt-3 p-3 bg-white rounded small text-secondary">
+                            <strong>{% trans "Export Value" %}:</strong> {% trans "Prerequisite compliance for exporting food products to the Middle East (GCC), North Africa, and global Muslim consumers." %}
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kosher Card -->
+                <div class="col-md-6">
+                    <div class="glass-section p-5 bg-light border shadow-sm height-100">
+                        <div class="d-flex align-items-center gap-3 mb-4">
+                            <div class="cert-svg-wrap" style="width: 50px; height: 50px; display: inline-block; flex-shrink: 0;">
+                                {% render_certification_icon 'KOSHER' %}
+                            </div>
+                            <h3 class="fw-bold text-success m-0">Kosher Certification</h3>
+                        </div>
+                        <p class="text-secondary">
+                            {% trans "Our vinegar lines and condiment fermentation processes are audited and certified Kosher. We cooperate with leading certification rabbinates to ensure complete traceability of raw biological sources and processing equipment." %}
+                        </p>
+                        <div class="mt-3 p-3 bg-white rounded small text-secondary">
+                            <strong>{% trans "Export Value" %}:</strong> {% trans "Provides verified product safety and quality assurance for US retail stores, Kosher food chains, and industrial buyers." %}
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FDA Card -->
+                <div class="col-12">
+                    <div class="glass-section p-5 bg-light border shadow-sm">
+                        <div class="d-flex align-items-center gap-3 mb-4">
+                            <div class="cert-svg-wrap" style="width: 50px; height: 50px; display: inline-block; flex-shrink: 0;">
+                                {% render_certification_icon 'FDA' %}
+                            </div>
+                            <h3 class="fw-bold text-success m-0">FDA Facility Registry (USA)</h3>
+                        </div>
+                        <p class="text-secondary">
+                            {% trans "Vinaigre du Maroc is officially registered with the United States Food and Drug Administration (FDA). Our manufacturing facility complies with FDA Good Manufacturing Practices (GMP) and FSMA rules, ensuring that all food shipments meet US customs specifications." %}
+                        </p>
+                        <div class="mt-3 p-3 bg-white rounded small text-secondary">
+                            <strong>{% trans "Export Value" %}:</strong> {% trans "Enables straightforward customs clearance at US ports of entry for large wholesale container shipments." %}
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

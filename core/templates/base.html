@@ -1,0 +1,847 @@
+{% load i18n static i18n_extras %}
+{% get_current_language as LANGUAGE_CODE %}
+{% get_current_language_bidi as LANGUAGE_BIDI %}
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE }}" dir="{% if LANGUAGE_BIDI %}rtl{% else %}ltr{% endif %}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Google Analytics (from admin panel) -->
+    {% if site_settings.google_analytics_id %}
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site_settings.google_analytics_id }}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '{{ site_settings.google_analytics_id }}');
+    </script>
+    {% endif %}
+
+    <!-- Title & Description -->
+    <title>{% block title %}{{ site_settings.site_name }}{% endblock %}</title>
+    <meta name="description"
+        content="{% block meta_description %}{% trans 'Vinaigre du Maroc is a leading Moroccan manufacturer of premium vinegars, sauces, and B2B export condiments. Custom packaging from 200ml to 1000L IBC. Halal, Kosher, IFS, BRC, FDA certified.' %}{% endblock %}">
+    <meta name="author" content="Vinaigre du Maroc">
+    <meta name="keywords" content="{% block meta_keywords %}{% trans 'vinegar manufacturer Morocco, vinegar supplier Morocco, Moroccan vinegar exporter, halal vinegar supplier, private label vinegar, condiment manufacturer Morocco, hot sauce supplier Morocco, export food supplier Morocco' %}{% endblock %}">
+    <meta name="robots" content="{% block robots %}index, follow{% endblock %}">
+    <meta http-equiv="content-language" content="{{ LANGUAGE_CODE }}">
+
+    <!-- Canonical & Hreflang -->
+    <link rel="canonical"
+        href="{% block canonical_url %}{{ SITE_URL }}{{ request.path|url_encode_path }}{% endblock %}">
+    <link rel="alternate" hreflang="en" href="{{ SITE_URL }}{% translate_url 'en' %}">
+    <link rel="alternate" hreflang="fr" href="{{ SITE_URL }}{% translate_url 'fr' %}">
+    <link rel="alternate" hreflang="ar" href="{{ SITE_URL }}{% translate_url 'ar' %}">
+    <link rel="alternate" hreflang="es" href="{{ SITE_URL }}{% translate_url 'es' %}">
+    <link rel="alternate" hreflang="it" href="{{ SITE_URL }}{% translate_url 'it' %}">
+    <link rel="alternate" hreflang="x-default" href="{{ SITE_URL }}{% translate_url 'en' %}">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="{% block og_type %}website{% endblock %}">
+    <meta property="og:title" content="{% block og_title %}{{ site_settings.site_name }} - {% trans 'Moroccan Vinegar & Condiments Exporter' %}{% endblock %}">
+    <meta property="og:description" content="{% block og_description %}{% trans 'Premium Moroccan vinegar and condiments B2B exporter. High production capacity, international BRC/IFS/Halal certifications.' %}{% endblock %}">
+    <meta property="og:url" content="{{ SITE_URL }}{{ request.path|url_encode_path }}">
+    <meta property="og:site_name" content="Vinaigre du Maroc">
+    <meta property="og:locale" content="{{ LANGUAGE_CODE }}">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{% block twitter_title %}{{ site_settings.site_name }}{% endblock %}">
+    <meta name="twitter:description" content="{% block twitter_description %}{% trans 'Premium Moroccan vinegar & condiments exporter.' %}{% endblock %}">
+
+    <!-- Favicon & Themes -->
+    <link rel="icon" type="image/png" href="{% static 'images/logo.png' %}">
+    <link rel="apple-touch-icon" href="{% static 'images/logo.png' %}">
+    <meta name="theme-color" content="#581825">
+    <meta name="msapplication-TileColor" content="#581825">
+
+    <!-- Preconnect & Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    {% if LANGUAGE_BIDI %}
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    {% endif %}
+
+    <!-- Bootstrap (LTR/RTL switch) -->
+    {% if LANGUAGE_BIDI %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" crossorigin="anonymous">
+    {% else %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    {% endif %}
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Premium Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/cookie_consent.css' %}">
+
+    <!-- ===== Navbar Inline Styles (CapersMed Architecture) ===== -->
+    <style>
+        /* RTL global overrides */
+        html[dir="rtl"] h1,
+        html[dir="rtl"] h2,
+        html[dir="rtl"] h3,
+        html[dir="rtl"] h4,
+        html[dir="rtl"] .section-title,
+        html[dir="rtl"] .hero-content h1,
+        html[dir="rtl"] .hero-content p {
+            text-align: center !important;
+        }
+        html[dir="rtl"] p,
+        html[dir="rtl"] ul,
+        html[dir="rtl"] ol,
+        html[dir="rtl"] li {
+            text-align: right;
+        }
+        html[dir="rtl"] .text-center,
+        html[dir="rtl"] .text-center p {
+            text-align: center !important;
+        }
+
+        /* RTL nav fixes */
+        html[dir="rtl"] .nav-container {
+            direction: rtl;
+        }
+        html[dir="rtl"] .nav-left {
+            direction: rtl;
+            justify-content: flex-end;
+            gap: 1.2rem;
+        }
+        html[dir="rtl"] .nav-right {
+            direction: rtl;
+            justify-content: flex-start;
+            gap: 1.2rem;
+        }
+        html[dir="rtl"] .nav-left a,
+        html[dir="rtl"] .nav-right a {
+            letter-spacing: 0.5px;
+            font-size: .75rem;
+        }
+        html[dir="rtl"] .nav-left a::after,
+        html[dir="rtl"] .nav-right a::after {
+            left: auto;
+            right: 0;
+        }
+        html[dir="rtl"] .nav-lang {
+            margin-left: 0;
+            margin-right: 1rem;
+            border-left: none;
+            border-right: 1px solid #eee;
+            padding-left: 0;
+            padding-right: 1rem;
+        }
+        html[dir="rtl"] .nav-dropdown-list {
+            left: auto;
+            right: 0;
+            text-align: right;
+        }
+
+        /* ===== FIXED HEADER ===== */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(255,255,255,.97);
+            border-bottom: 1px solid #e8e8e8;
+            backdrop-filter: blur(8px);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            min-height: 80px;
+            gap: 1rem;
+        }
+
+        .nav-left {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            list-style: none;
+            justify-content: flex-end;
+            flex: 1;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 0 0 auto;
+            margin: 0 1rem;
+        }
+
+        .nav-logo img {
+            height: 62px;
+            width: auto;
+            display: block;
+            transition: transform .3s ease;
+        }
+
+        .nav-logo img:hover {
+            transform: scale(1.03);
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            list-style: none;
+            justify-content: flex-start;
+            flex: 1;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-left a,
+        .nav-right a {
+            font-size: .78rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            color: #444;
+            position: relative;
+            padding: 6px 0;
+            white-space: nowrap;
+            transition: color .3s ease;
+        }
+
+        .nav-left a::after,
+        .nav-right a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background: var(--color-primary, #581825);
+            transition: width .3s ease;
+        }
+
+        .nav-left a:hover,
+        .nav-right a:hover,
+        .nav-left a.nav-active,
+        .nav-right a.nav-active {
+            color: var(--color-primary, #581825);
+        }
+
+        .nav-left a:hover::after,
+        .nav-right a:hover::after,
+        .nav-left a.nav-active::after,
+        .nav-right a.nav-active::after {
+            width: 100%;
+        }
+
+        /* ===== FLAG LANGUAGE SWITCHER ===== */
+        .nav-lang {
+            display: flex;
+            align-items: center;
+            flex-wrap: nowrap;
+            flex-shrink: 0;
+            gap: 8px;
+            margin-left: 1rem;
+            border-left: 1px solid #eee;
+            padding-left: 1rem;
+            white-space: nowrap;
+        }
+
+        .nav-lang a {
+            display: flex;
+            align-items: center;
+            flex-shrink: 0;
+            transition: transform 0.2s ease, opacity 0.2s ease;
+            opacity: 0.7;
+        }
+
+        .nav-lang a:hover {
+            transform: scale(1.15);
+            opacity: 1;
+        }
+
+        .nav-lang a.lang-active {
+            opacity: 1;
+            pointer-events: none;
+        }
+
+        .nav-lang img {
+            width: 22px;
+            height: auto;
+            border-radius: 2px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            border: 1px solid rgba(0,0,0,0.05);
+            flex-shrink: 0;
+        }
+
+        .nav-lang a.lang-active img {
+            border: 2px solid var(--color-primary, #581825);
+            box-shadow: 0 0 8px rgba(88,24,37,0.2);
+        }
+
+        /* ===== NAV DROPDOWN (for Process submenu) ===== */
+        .nav-dropdown-wrap {
+            position: relative;
+        }
+        .nav-dropdown-wrap > a {
+            cursor: pointer;
+        }
+        .nav-dropdown-list {
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%) translateY(15px);
+            background: #fff;
+            border: 1px solid rgba(88,24,37,0.08);
+            box-shadow: 0 10px 30px rgba(88,24,37,0.05);
+            border-radius: 8px;
+            list-style: none;
+            padding: 0.75rem 0;
+            margin: 0;
+            min-width: 220px;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 100;
+        }
+        .nav-dropdown-wrap:hover .nav-dropdown-list {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(-50%) translateY(5px);
+        }
+        .nav-dropdown-list li a {
+            display: block;
+            padding: 0.5rem 1.5rem;
+            font-size: 0.8rem;
+            color: #444;
+            text-transform: none;
+            letter-spacing: 0.5px;
+            font-weight: 500;
+        }
+        .nav-dropdown-list li a::after {
+            display: none;
+        }
+        .nav-dropdown-list li a:hover {
+            background-color: rgba(88,24,37,0.04);
+            color: var(--color-primary, #581825);
+        }
+
+        /* ===== RESPONSIVE NAV TWEAKS ===== */
+        @media (max-width: 1380px) {
+            .nav-container { padding: 0 1rem; gap: 0.5rem; }
+            .nav-left, .nav-right { gap: 0.6rem; }
+            .nav-left a, .nav-right a { font-size: 0.72rem; letter-spacing: 0.6px; }
+            .nav-logo img { height: 52px; }
+            .nav-lang { margin-left: 0.5rem; padding-left: 0.5rem; gap: 4px; }
+            .nav-lang img { width: 18px; }
+        }
+
+        @media (max-width: 1180px) {
+            .nav-container { padding: 0 0.5rem; gap: 0.3rem; }
+            .nav-left, .nav-right { gap: 0.4rem; }
+            .nav-left a, .nav-right a { font-size: 0.66rem; letter-spacing: 0.2px; }
+            .nav-logo img { height: 44px; }
+            .nav-lang { margin-left: 0.3rem; padding-left: 0.3rem; gap: 3px; }
+            .nav-lang img { width: 15px; }
+        }
+
+        /* ===== MOBILE HAMBURGER BUTTON ===== */
+        .mobile-menu-btn {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+            z-index: 1001;
+        }
+
+        .mobile-menu-btn span {
+            width: 24px;
+            height: 2px;
+            background: #333;
+            transition: all .3s ease;
+            display: block;
+        }
+
+        /* ===== MOBILE FULL-SCREEN OVERLAY ===== */
+        .mobile-nav-overlay {
+            position: fixed;
+            top: 0;
+            left: 100%;
+            width: 100%;
+            height: 100vh;
+            background: #fff;
+            z-index: 999;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 5rem 1.5rem 3rem;
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
+            transition: left .4s cubic-bezier(.77,.2,.05,1);
+        }
+
+        .mobile-nav-overlay.open {
+            left: 0;
+        }
+
+        .mobile-nav-logo {
+            margin-bottom: 2.5rem;
+        }
+
+        .mobile-nav-logo img {
+            height: 65px;
+        }
+
+        .mobile-nav-links {
+            list-style: none;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        .mobile-nav-links li {
+            margin-bottom: 1.8rem;
+        }
+
+        .mobile-nav-links a {
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #333;
+        }
+
+        .mobile-nav-links a:hover,
+        .mobile-nav-links a.nav-active {
+            color: var(--color-primary, #581825);
+        }
+
+        .mobile-lang-switch {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid #eee;
+            justify-content: center;
+            max-width: 90%;
+        }
+
+        .mobile-lang-switch a {
+            display: flex;
+            align-items: center;
+            transition: transform 0.2s ease;
+        }
+
+        .mobile-lang-switch img {
+            width: 28px;
+            height: auto;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .mobile-lang-switch a.lang-active img {
+            border: 2px solid var(--color-primary, #581825);
+        }
+
+        /* ===== MOBILE BREAKPOINT ===== */
+        @media (max-width: 1024px) {
+            .nav-left, .nav-right { display: none; }
+            .nav-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                min-height: 70px;
+                padding: 0 1rem;
+            }
+            .nav-logo { margin: 0; }
+            .mobile-menu-btn { display: flex; }
+        }
+    </style>
+
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Vinaigre du Maroc",
+      "url": "{{ SITE_URL }}",
+      "logo": "{{ SITE_URL }}{% static 'images/logo.png' %}",
+      "description": "Premium vinegar and condiments manufacturer from Morocco exporting to Europe, USA, Middle East, and Africa.",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "{{ site_settings.phone }}",
+        "contactType": "sales",
+        "email": "{{ site_settings.email }}",
+        "availableLanguage": ["English", "French", "Arabic", "Spanish", "Italian"]
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Quartier Industriel Bensouda",
+        "addressLocality": "Fes",
+        "postalCode": "30000",
+        "addressCountry": "MA"
+      }
+    }
+    </script>
+
+    <!-- WebSite Schema for Sitelinks Search -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Vinaigre du Maroc",
+      "url": "{{ SITE_URL }}",
+      "inLanguage": ["en","fr","ar","es","it"],
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "{{ SITE_URL }}/en/products/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+    {% block extra_schema %}{% endblock %}
+    {% block extra_head %}{% endblock %}
+</head>
+
+<body>
+    <!-- ===== HEADER ===== -->
+    <header id="site-header">
+        <nav class="nav-container" aria-label="{% trans 'Main navigation' %}">
+
+            <!-- LEFT: Home · Products · Certifications · Export -->
+            <ul class="nav-left nav-links">
+                <li>
+                    <a href="{% url 'home' %}"
+                        class="{% if request.resolver_match.url_name == 'home' %}nav-active{% endif %}">
+                        {% trans "Home" %}
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url 'products' %}"
+                        class="{% if request.resolver_match.url_name == 'products' or request.resolver_match.url_name == 'product_detail' %}nav-active{% endif %}">
+                        {% trans "Products" %}
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url 'certifications' %}"
+                        class="{% if request.resolver_match.url_name == 'certifications' %}nav-active{% endif %}">
+                        {% trans "Certifications" %}
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url 'export' %}"
+                        class="{% if request.resolver_match.url_name == 'export' %}nav-active{% endif %}">
+                        {% trans "Export" %}
+                    </a>
+                </li>
+            </ul>
+
+            <!-- CENTER: Logo -->
+            <div class="nav-logo">
+                <a href="{% url 'home' %}" aria-label="Vinaigre du Maroc — {% trans 'Back to home' %}">
+                    <img src="{% static 'images/logo.png' %}" alt="Vinaigre du Maroc — Premium Moroccan Vinegar & Condiments"
+                        width="186" height="62">
+                </a>
+            </div>
+
+            <!-- RIGHT: Branding · Blog · Contact · Flags -->
+            <ul class="nav-right nav-links">
+                <li>
+                    <a href="{% url 'branding' %}"
+                        class="{% if request.resolver_match.url_name == 'branding' %}nav-active{% endif %}">
+                        {% trans "Branding" %}
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url 'blog' %}"
+                        class="{% if request.resolver_match.url_name == 'blog' or request.resolver_match.url_name == 'blog_detail' %}nav-active{% endif %}">
+                        {% trans "Blog" %}
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url 'contact' %}"
+                        class="{% if request.resolver_match.url_name == 'contact' %}nav-active{% endif %}">
+                        {% trans "Contact" %}
+                    </a>
+                </li>
+                <li class="nav-lang" aria-label="{% trans 'Language selector' %}">
+                    <a href="{% translate_url 'en' %}" class="{% if LANGUAGE_CODE == 'en' %}lang-active{% endif %}"
+                        title="English" hreflang="en">
+                        <img src="https://flagcdn.com/w40/gb.png" alt="English">
+                    </a>
+                    <a href="{% translate_url 'fr' %}" class="{% if LANGUAGE_CODE == 'fr' %}lang-active{% endif %}"
+                        title="Français" hreflang="fr">
+                        <img src="https://flagcdn.com/w40/fr.png" alt="Français">
+                    </a>
+                    <a href="{% translate_url 'ar' %}" class="{% if LANGUAGE_CODE == 'ar' %}lang-active{% endif %}"
+                        title="العربية" hreflang="ar">
+                        <img src="https://flagcdn.com/w40/ma.png" alt="العربية">
+                    </a>
+                    <a href="{% translate_url 'es' %}" class="{% if LANGUAGE_CODE == 'es' %}lang-active{% endif %}"
+                        title="Español" hreflang="es">
+                        <img src="https://flagcdn.com/w40/es.png" alt="Español">
+                    </a>
+                    <a href="{% translate_url 'it' %}" class="{% if LANGUAGE_CODE == 'it' %}lang-active{% endif %}"
+                        title="Italiano" hreflang="it">
+                        <img src="https://flagcdn.com/w40/it.png" alt="Italiano">
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Mobile Hamburger -->
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="{% trans 'Open menu' %}"
+                aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+
+        </nav>
+
+        <!-- Mobile Full-Screen Overlay -->
+        <div class="mobile-nav-overlay" id="mobile-nav-overlay" role="dialog"
+            aria-label="{% trans 'Mobile navigation' %}">
+            <div class="mobile-nav-logo">
+                <img src="{% static 'images/logo.png' %}" alt="Vinaigre du Maroc" width="186" height="65" loading="lazy">
+            </div>
+            <ul class="mobile-nav-links">
+                <li><a href="{% url 'home' %}"
+                        class="{% if request.resolver_match.url_name == 'home' %}nav-active{% endif %}">{% trans "Home" %}</a></li>
+                <li><a href="{% url 'products' %}"
+                        class="{% if request.resolver_match.url_name == 'products' %}nav-active{% endif %}">{% trans "Products" %}</a></li>
+                <li><a href="{% url 'certifications' %}"
+                        class="{% if request.resolver_match.url_name == 'certifications' %}nav-active{% endif %}">{% trans "Certifications" %}</a></li>
+                <li><a href="{% url 'export' %}"
+                        class="{% if request.resolver_match.url_name == 'export' %}nav-active{% endif %}">{% trans "Export" %}</a></li>
+                <li><a href="{% url 'branding' %}"
+                        class="{% if request.resolver_match.url_name == 'branding' %}nav-active{% endif %}">{% trans "Branding" %}</a></li>
+                <li><a href="{% url 'blog' %}"
+                        class="{% if request.resolver_match.url_name == 'blog' %}nav-active{% endif %}">{% trans "Blog" %}</a></li>
+                <li><a href="{% url 'contact' %}"
+                        class="{% if request.resolver_match.url_name == 'contact' %}nav-active{% endif %}">{% trans "Contact" %}</a></li>
+            </ul>
+            <div class="mobile-lang-switch">
+                <a href="{% translate_url 'en' %}" class="{% if LANGUAGE_CODE == 'en' %}lang-active{% endif %}"
+                    title="English"><img src="https://flagcdn.com/w40/gb.png" alt="English"></a>
+                <a href="{% translate_url 'fr' %}" class="{% if LANGUAGE_CODE == 'fr' %}lang-active{% endif %}"
+                    title="Français"><img src="https://flagcdn.com/w40/fr.png" alt="Français"></a>
+                <a href="{% translate_url 'ar' %}" class="{% if LANGUAGE_CODE == 'ar' %}lang-active{% endif %}"
+                    title="العربية"><img src="https://flagcdn.com/w40/ma.png" alt="العربية"></a>
+                <a href="{% translate_url 'es' %}" class="{% if LANGUAGE_CODE == 'es' %}lang-active{% endif %}"
+                    title="Español"><img src="https://flagcdn.com/w40/es.png" alt="Español"></a>
+                <a href="{% translate_url 'it' %}" class="{% if LANGUAGE_CODE == 'it' %}lang-active{% endif %}"
+                    title="Italiano"><img src="https://flagcdn.com/w40/it.png" alt="Italiano"></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== ALERT MESSAGES ===== -->
+    {% if messages %}
+    <div class="container" style="margin-top: 90px;">
+        {% for message in messages %}
+        <div class="alert alert-{% if message.tags == 'error' %}danger{% else %}{{ message.tags }}{% endif %} alert-dismissible fade show shadow-sm" role="alert">
+            {{ message }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+
+    <!-- ===== CONTENT BLOCK ===== -->
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer-premium">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="fs-4 fw-bold text-white mb-3" style="font-family: var(--font-heading);">
+                        VINAIGRE <span style="color: var(--soft-gold);">DU MAROC</span>
+                    </h5>
+                    <p class="text-white-50">
+                        {% trans "Vinaigre du Maroc is an international export-focused manufacturer of premium vinegars and table condiments. Empowering international B2B private label OEM agreements and bulk distribution shipping." %}
+                    </p>
+                    <div class="footer-social-wrap">
+                        <a href="{{ site_settings.facebook_url }}" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="{{ site_settings.instagram_url }}" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="{{ site_settings.linkedin_url }}" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-6">
+                    <h6 class="footer-title">{% trans "Products" %}</h6>
+                    <ul class="footer-links">
+                        <li><a href="{% url 'about' %}">{% trans "About Us" %}</a></li>
+                        <li><a href="{% url 'products' %}">{% trans "All Products" %}</a></li>
+                        <li><a href="{% url 'products' %}?category=vinegars">{% trans "Premium Vinegars" %}</a></li>
+                        <li><a href="{% url 'products' %}?category=sauces-condiments">{% trans "Condiments & Sauces" %}</a></li>
+                        <li><a href="{% url 'certifications' %}">{% trans "Certifications" %}</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 col-6">
+                    <h6 class="footer-title">{% trans "Export Capabilities" %}</h6>
+                    <ul class="footer-links">
+                        <li><a href="{% url 'export' %}">{% trans "OEM / Private Label" %}</a></li>
+                        <li><a href="{% url 'export' %}">{% trans "Bulk Vinegar Supply" %}</a></li>
+                        <li><a href="{% url 'branding' %}">{% trans "Branding" %}</a></li>
+                        <li><a href="{% url 'blog' %}">{% trans "Blog" %}</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h6 class="footer-title">{% trans "Contact & Exports" %}</h6>
+                    <p class="text-white-50"><i class="bi bi-geo-alt-fill text-danger me-2"></i> {{ site_settings.address }}</p>
+                    <p class="text-white-50"><i class="bi bi-telephone-fill text-success me-2"></i> {{ site_settings.phone }}</p>
+                    <p class="text-white-50"><i class="bi bi-envelope-fill text-primary me-2"></i> {{ site_settings.email }}</p>
+                    <p class="text-white-50"><i class="bi bi-clock-fill text-warning me-2"></i> {% trans "Mon - Fri: 8:00 AM - 6:00 PM" %}</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center text-white-50 text-center gap-3">
+                <p class="m-0">&copy; {% now "Y" %} {{ site_settings.site_name }}. {% trans "All Rights Reserved." %}</p>
+                <p class="m-0" style="font-size: 0.8rem;">
+                    {% trans "Facility certified: BRC Global Standard (Grade A) | IFS Food | Halal | Kosher | FDA Registered" %}
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float with Tooltip (CapersMed style) -->
+    <a href="https://wa.me/212535123456?text=Hello%2C%20I%20am%20interested%20in%20your%20B2B%20vinegar%20and%20condiment%20exports."
+        class="whatsapp-float-btn" target="_blank" rel="noopener noreferrer" aria-label="{% trans 'Chat with our Export Team on WhatsApp' %}"
+        id="whatsapp-btn">
+        <div class="whatsapp-tooltip" id="whatsapp-tooltip">
+            {% trans "Need help? Chat with us!" %}
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+            <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+        </svg>
+    </a>
+    <style>
+    .whatsapp-tooltip {
+        position: absolute;
+        right: 70px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: #fff;
+        color: #333;
+        padding: 8px 14px;
+        border-radius: 8px;
+        font-size: 0.82rem;
+        font-weight: 500;
+        white-space: nowrap;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        pointer-events: none;
+    }
+    .whatsapp-tooltip::after {
+        content: '';
+        position: absolute;
+        right: -6px;
+        top: 50%;
+        transform: translateY(-50%);
+        border: 6px solid transparent;
+        border-left-color: #fff;
+    }
+    .whatsapp-float-btn:hover .whatsapp-tooltip {
+        opacity: 1;
+        visibility: visible;
+    }
+    html[dir="rtl"] .whatsapp-tooltip {
+        right: auto;
+        left: 70px;
+    }
+    html[dir="rtl"] .whatsapp-tooltip::after {
+        right: auto;
+        left: -6px;
+        border-left-color: transparent;
+        border-right-color: #fff;
+    }
+    </style>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <!-- Mobile Full-Screen Overlay Toggle -->
+    <script>
+    (function(){
+        var btn = document.getElementById('mobile-menu-btn');
+        var overlay = document.getElementById('mobile-nav-overlay');
+        if (!btn || !overlay) return;
+
+        btn.addEventListener('click', function(){
+            var isOpen = overlay.classList.toggle('open');
+            btn.setAttribute('aria-expanded', String(isOpen));
+            document.body.style.overflow = isOpen ? 'hidden' : '';
+            // Animate hamburger to X
+            var spans = btn.querySelectorAll('span');
+            if (isOpen) {
+                spans[0].style.transform = 'translateY(7px) rotate(45deg)';
+                spans[1].style.opacity = '0';
+                spans[2].style.transform = 'translateY(-7px) rotate(-45deg)';
+            } else {
+                spans[0].style.transform = '';
+                spans[1].style.opacity = '';
+                spans[2].style.transform = '';
+            }
+        });
+
+        // Close on link click
+        overlay.querySelectorAll('a').forEach(function(link) {
+            link.addEventListener('click', function(){
+                overlay.classList.remove('open');
+                btn.setAttribute('aria-expanded', 'false');
+                document.body.style.overflow = '';
+                var spans = btn.querySelectorAll('span');
+                spans[0].style.transform = '';
+                spans[1].style.opacity = '';
+                spans[2].style.transform = '';
+            });
+        });
+    })();
+    </script>
+
+    <!-- Content Protection Scripts (like CapersMed) -->
+    <style>
+        body { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+        input, textarea { -webkit-user-select: auto !important; -moz-user-select: auto !important; -ms-user-select: auto !important; user-select: auto !important; }
+    </style>
+    <script>
+    (function(){
+        document.addEventListener('contextmenu', function(e){ e.preventDefault(); });
+        document.addEventListener('keydown', function(e){
+            if (e.key === 'F12' || e.keyCode === 123) { e.preventDefault(); }
+            if ((e.ctrlKey || e.metaKey) && e.shiftKey && (e.key.toLowerCase() === 'i' || e.key.toLowerCase() === 'j' || e.key.toLowerCase() === 'c')) { e.preventDefault(); }
+            if ((e.ctrlKey || e.metaKey) && (e.key.toLowerCase() === 'u' || e.key.toLowerCase() === 's' || e.key.toLowerCase() === 'c' || e.key.toLowerCase() === 'a')) {
+                if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+                e.preventDefault();
+            }
+        });
+        document.addEventListener('dragstart', function(e){
+            if (e.target.tagName === 'IMG' || e.target.tagName === 'A') { e.preventDefault(); }
+        });
+    })();
+    </script>
+
+    <!-- Cookie Consent System -->
+    {% include 'core/includes/cookie_consent.html' %}
+    <script src="{% static 'js/cookie_consent.js' %}"></script>
+
+    {% block extra_js %}{% endblock %}
+
+</body>
+</html>

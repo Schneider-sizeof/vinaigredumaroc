@@ -1,0 +1,650 @@
+{% extends 'base.html' %}
+{% load i18n static i18n_extras packaging_tags %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% block title %}{% trans "Product Catalog" %} — {{ site_settings.site_name }}{% endblock %}
+{% block meta_description %}{% trans "Browse our complete catalog of premium Moroccan vinegars, sauces, and condiments. Available in multiple packaging formats from 200ml glass bottles to 1000L IBC tanks for global export." %}{% endblock %}
+{% block og_title %}{% trans "Product Catalog" %} — {{ site_settings.site_name }}{% endblock %}
+{% block og_description %}{% trans "Premium Moroccan gourmet products available in multiple packaging formats with full certification for global export." %}{% endblock %}
+{% block twitter_title %}{% trans "Product Catalog" %} — {{ site_settings.site_name }}{% endblock %}
+{% block twitter_description %}{% trans "Browse premium Moroccan vinegars and condiments for export." %}{% endblock %}
+
+{% block extra_schema %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ SITE_URL }}/{{ LANGUAGE_CODE }}/" },
+    { "@type": "ListItem", "position": 2, "name": "{% trans 'Products' %}" }
+  ]
+}
+</script>
+{% endblock %}
+
+{% block extra_head %}
+<style>
+    /* ========== PRODUCT TABLE PAGE ========== */
+
+    .products-page-hero {
+        padding: 140px 2rem 80px;
+        text-align: center;
+        color: #fff;
+        position: relative;
+        overflow: hidden;
+        background: linear-gradient(rgba(88, 24, 37, 0.9), rgba(88, 24, 37, 0.95)), url('{% static "images/hero_bg.jpg" %}') center/cover no-repeat;
+    }
+
+    .products-page-hero h1 {
+        font-family: var(--font-heading);
+        font-size: 3rem;
+        color: #fff;
+        margin-bottom: 0.75rem;
+    }
+
+    .products-page-hero p {
+        color: rgba(255, 255, 255, 0.9);
+        font-size: 1.1rem;
+        max-width: 560px;
+        margin: 0 auto;
+    }
+
+    .products-eyebrow {
+        display: inline-block;
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: var(--brand-gold);
+        margin-bottom: 1rem;
+    }
+
+    /* ========== TABLE WRAPPER ========== */
+    .products-table-section {
+        padding: 3rem 2rem 5rem;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    .category-block {
+        margin-bottom: 4rem;
+    }
+
+    .category-heading {
+        font-family: var(--font-heading);
+        font-size: 1.5rem;
+        color: var(--brand-burgundy);
+        padding: 0.5rem 0 0.75rem;
+        margin-bottom: 1rem;
+        border-bottom: 2px solid #eae3d2;
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+    }
+
+    .products-table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0;
+        background: #fff;
+        border: 1px solid #eae3d2;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 24px rgba(88, 24, 37, 0.04);
+    }
+
+    /* Table Header */
+    .products-table thead tr {
+        background: #fdfcf7;
+        border-bottom: 2px solid #eae3d2;
+    }
+
+    .products-table th {
+        padding: 1rem 1.2rem;
+        text-align: left;
+        font-size: 0.68rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        color: var(--brand-burgundy);
+        white-space: nowrap;
+    }
+
+    /* Alignments for RTL support */
+    html[dir="rtl"] .products-table th {
+        text-align: right;
+    }
+
+    .products-table th:nth-child(1) {
+        width: 180px;
+        text-align: center;
+    }
+
+    .products-table th:nth-child(3) {
+        width: 280px;
+    }
+
+    .products-table th:nth-child(4) {
+        width: 240px;
+    }
+
+    .products-table th:nth-child(5) {
+        width: 120px;
+        text-align: center;
+    }
+
+    /* Table Rows */
+    .products-table tbody tr {
+        border-bottom: 1px solid #faf8f2;
+        transition: background 0.2s ease;
+    }
+
+    .products-table tbody tr:last-child {
+        border-bottom: none;
+    }
+
+    .products-table tbody tr:hover {
+        background: #fdfcf7;
+    }
+
+    .products-table td {
+        padding: 1.2rem;
+        vertical-align: middle;
+    }
+
+    /* ========== COLUMN 1: Image — Clean Transparent Style ========== */
+    .prod-img-cell {
+        text-align: center;
+        width: 160px;
+    }
+
+    .prod-img-wrap {
+        width: 120px;
+        height: 120px;
+        border-radius: 16px;
+        overflow: hidden;
+        margin: 0 auto;
+        position: relative;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .prod-img-placeholder {
+        font-size: 3.5rem;
+        line-height: 1;
+        filter: drop-shadow(0 4px 8px rgba(88, 24, 37, 0.1));
+        transition: transform 0.4s ease;
+    }
+
+    .products-table tbody tr:hover .prod-img-placeholder {
+        transform: scale(1.15) rotate(5deg);
+    }
+
+    /* ========== COLUMN 2: Product Name ========== */
+    .prod-name {
+        font-family: var(--font-heading);
+        font-size: 1.15rem;
+        font-weight: 600;
+        color: var(--brand-burgundy);
+        margin-bottom: 0.3rem;
+    }
+
+    .prod-desc {
+        font-size: 0.82rem;
+        color: var(--slate-light);
+        line-height: 1.5;
+        max-width: 320px;
+    }
+
+    .prod-premium-badge {
+        display: inline-block;
+        font-size: 0.62rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: var(--brand-gold);
+        background: #fdfcf7;
+        border: 1px solid #eae3d2;
+        padding: 2px 7px;
+        border-radius: 20px;
+        margin-bottom: 5px;
+    }
+
+    /* ========== COLUMN 3: Packaging Pills ========== */
+    .packaging-icons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        align-items: center;
+    }
+
+    .pkg-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        padding: 4px 10px;
+        background: #fdfcf7;
+        border: 1px solid #eae3d2;
+        border-radius: 16px;
+        font-size: 0.7rem;
+        font-weight: 600;
+        color: var(--slate-dark);
+        white-space: nowrap;
+        transition: all 0.2s ease;
+        cursor: default;
+    }
+
+    .pkg-pill:hover {
+        background: var(--brand-burgundy);
+        color: #fff;
+        border-color: var(--brand-burgundy);
+        transform: translateY(-1px);
+    }
+
+    .no-data {
+        font-size: 0.78rem;
+        color: #bbb;
+        font-style: italic;
+    }
+
+    /* ========== COLUMN 4: Certification Badges ========== */
+    .cert-badges {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        align-items: center;
+    }
+
+    .cert-badge {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        padding: 4px 10px;
+        border-radius: 6px;
+        font-size: 0.65rem;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        white-space: nowrap;
+        transition: all 0.25s ease;
+        cursor: default;
+        border: 1.5px solid transparent;
+    }
+
+    .cert-badge:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 10px rgba(88, 24, 37, 0.08);
+    }
+
+    .cert-icon-emoji {
+        font-size: 0.9rem;
+    }
+
+    /* Individual cert colors */
+    .cert-BRCGS {
+        background: #fdf2f2;
+        color: #9b1c1c;
+        border-color: #f8b4b4;
+    }
+
+    .cert-IFS {
+        background: #f0fdf4;
+        color: #166534;
+        border-color: #bbf7d0;
+    }
+
+    .cert-HALAL {
+        background: #fffbeb;
+        color: #92400e;
+        border-color: #fef3c7;
+    }
+
+    .cert-KOSHER {
+        background: #eff6ff;
+        color: #1e40af;
+        border-color: #bfdbfe;
+    }
+
+    .cert-FDA {
+        background: #f8fafc;
+        color: #334155;
+        border-color: #cbd5e1;
+    }
+
+    /* ========== COLUMN 5: Details Button ========== */
+    .prod-details-cell {
+        text-align: center;
+    }
+
+    .btn-view-details {
+        display: inline-block;
+        padding: 8px 16px;
+        border: 2px solid var(--brand-burgundy);
+        color: var(--brand-burgundy);
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+        border-radius: 5px;
+        transition: all 0.25s ease;
+        white-space: nowrap;
+        text-decoration: none;
+    }
+
+    .btn-view-details:hover {
+        background: var(--brand-burgundy);
+        color: #fff;
+        transform: translateY(-1px);
+        box-shadow: 0 4px 14px rgba(88, 24, 37, 0.2);
+    }
+
+    /* ========== MOBILE RESPONSIVE ========== */
+    @media (max-width: 991px) {
+        .products-table-section {
+            padding: 2rem 1.2rem 3rem;
+        }
+
+        .products-table thead {
+            display: none;
+        }
+
+        .products-table,
+        .products-table tbody,
+        .products-table tr,
+        .products-table td {
+            display: block;
+            width: 100%;
+        }
+
+        .products-table {
+            background: transparent;
+            border: none;
+            box-shadow: none;
+            overflow: visible;
+            border-radius: 0;
+        }
+
+        .products-table tbody {
+            background: transparent;
+        }
+
+        .products-table tbody tr {
+            border: 1px solid #eae3d2;
+            border-radius: 16px;
+            margin-bottom: 2.5rem;
+            padding: 1.2rem;
+            background: #fff;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.03);
+            position: relative;
+        }
+
+        /* Decorative divider between product cards */
+        .products-table tbody tr::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background: linear-gradient(90deg, #eae3d2, var(--brand-gold), #eae3d2);
+            border-radius: 2px;
+            margin: 0 auto;
+            position: absolute;
+            bottom: -1.4rem;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .products-table tbody tr:last-child::after {
+            display: none;
+        }
+
+        .products-table td {
+            padding: 0.6rem 0;
+            border: none;
+            border-bottom: 1px solid #fdfcf7;
+        }
+
+        .products-table td:last-child {
+            border-bottom: none;
+        }
+
+        .products-table td::before {
+            content: attr(data-label);
+            display: block;
+            font-size: 0.65rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--brand-gold);
+            margin-bottom: 5px;
+        }
+
+        .prod-img-cell::before {
+            display: none !important;
+        }
+
+        .prod-details-cell {
+            text-align: left;
+        }
+        
+        html[dir="rtl"] .prod-details-cell {
+            text-align: right;
+        }
+
+        .prod-img-cell {
+            text-align: center;
+        }
+
+        .prod-img-wrap {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 0.5rem;
+            overflow: hidden;
+        }
+
+        .products-page-hero h1 {
+            font-size: 2rem;
+        }
+
+        /* Quick nav becomes horizontal slider on mobile */
+        .product-quicknav {
+            flex-wrap: nowrap !important;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            justify-content: flex-start !important;
+            padding: 1.2rem 1rem 0.8rem 0.5rem !important;
+            margin: 15px 0 0 1rem;
+            gap: 0.5rem !important;
+            scroll-snap-type: x mandatory;
+            scrollbar-width: none;
+        }
+
+        .product-quicknav::-webkit-scrollbar {
+            display: none;
+        }
+
+        .product-quicknav .pqn-btn {
+            scroll-snap-align: start;
+            flex-shrink: 0;
+            padding: 8px 16px;
+            font-size: 0.72rem;
+        }
+
+        /* Compact packaging on mobile */
+        .packaging-icons {
+            gap: 5px !important;
+        }
+    }
+
+    /* ========== PRODUCT QUICK NAV ========== */
+    .product-quicknav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.6rem 0.5rem;
+        justify-content: center;
+        padding: 2rem 2rem 1rem;
+        max-width: 1200px;
+        margin: 15px auto 0;
+    }
+
+    .pqn-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        padding: 8px 16px;
+        border: 1.5px solid #eae3d2;
+        border-radius: 25px;
+        font-size: 0.75rem;
+        font-weight: 600;
+        color: var(--brand-burgundy);
+        background: #fff;
+        text-decoration: none;
+        transition: all 0.25s ease;
+        cursor: pointer;
+        white-space: nowrap;
+        font-family: inherit;
+    }
+
+    .pqn-btn:hover {
+        background: #fdfcf7;
+        border-color: var(--brand-burgundy);
+        transform: translateY(-1px);
+        box-shadow: 0 4px 12px rgba(88, 24, 37, 0.05);
+    }
+
+    .pqn-btn.pqn-active {
+        background: var(--brand-burgundy);
+        color: #fff;
+        border-color: var(--brand-burgundy);
+    }
+
+    /* Highlight animation when scrolled to */
+    @keyframes productHighlight {
+        0% {
+            background-color: rgba(181, 148, 75, 0.2);
+        }
+        100% {
+            background-color: transparent;
+        }
+    }
+
+    tr.product-highlight td {
+        animation: productHighlight 2s ease-out;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+
+    <!-- ===== PAGE HERO ===== -->
+    <section class="products-page-hero">
+        <span class="products-eyebrow">{% trans "Export Grade Quality" %}</span>
+        <h1>{% trans "Our Product Catalog" %}</h1>
+        <p>{% trans "Premium Moroccan fermented vinegars and gourmet condiments. Each item is available in multiple packaging formats with full certification documentation for global export." %}</p>
+    </section>
+
+    <!-- ===== PRODUCT QUICK NAV ===== -->
+    <div class="product-quicknav">
+        <button class="pqn-btn pqn-active" onclick="showAll()">{% trans "All" %}</button>
+        {% for cat in categories %}
+            {% for product in cat.products.all %}
+            <a href="#product-{{ product.slug }}" class="pqn-btn" onclick="scrollToProduct(event, 'product-{{ product.slug }}')">
+                {% if cat.slug == 'vinegars' %}🍾{% else %}🌶️{% endif %} {{ product|translate_field:'name' }}
+            </a>
+            {% endfor %}
+        {% endfor %}
+    </div>
+
+    <!-- ===== PRODUCT TABLES SECTIONS ===== -->
+    <div class="products-table-section">
+
+        {% for cat in categories %}
+        {% if cat.products.exists %}
+        <div class="category-block" id="category-{{ cat.slug }}">
+            <h2 class="category-heading">
+                {% if cat.image %}
+                    <img src="{{ cat.image.url }}" alt="{{ cat|translate_field:'name' }}" class="me-2" style="height: 32px; width: auto; object-fit: contain; vertical-align: middle; border-radius: 4px;">
+                {% else %}
+                    <span class="me-2">{% if cat.slug == 'vinegars' %}🍾{% else %}🌶️{% endif %}</span>
+                {% endif %}
+                {{ cat|translate_field:'name' }}
+            </h2>
+
+            <table class="products-table">
+                <thead>
+                    <tr>
+                        <th>{% trans "Photo" %}</th>
+                        <th>{% trans "Product" %}</th>
+                        <th>{% trans "Packaging Available" %}</th>
+                        <th>{% trans "Certifications" %}</th>
+                        <th>{% trans "Details" %}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for product in cat.products.all %}
+                        {% include 'core/includes/product_table_row.html' %}
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        {% endif %}
+        {% empty %}
+        <div class="text-center py-5">
+            <i class="bi bi-search fs-1 text-muted"></i>
+            <h4 class="mt-3">{% trans "No Products Found" %}</h4>
+            <p class="text-secondary">{% trans "Please check back later or contact our sales team." %}</p>
+        </div>
+        {% endfor %}
+
+    </div>
+
+    <!-- ===== ENQUIRY CTA ===== -->
+    <section class="section-padding text-white text-center" style="background: var(--brand-burgundy); position: relative; overflow: hidden;">
+        <div class="container position-relative" style="z-index: 2;">
+            <h2 style="font-family: var(--font-heading); font-size: 2.25rem; margin-bottom: 1rem; color: #fff;">
+                📦 {% trans "Need Custom Packaging or a Bulk Quote?" %}
+            </h2>
+            <p style="color: rgba(255, 255, 255, 0.75); font-size: 1.1rem; margin-bottom: 2rem; max-width: 580px; margin-left: auto; margin-right: auto;">
+                {% trans "We offer private label manufacturing, customized acidity levels, and flexible packaging sizes ranging from retail glass to industrial bulk IBC containers for food companies." %}
+            </p>
+            <a href="{% url 'contact' %}" class="btn-premium btn-premium-accent">
+                {% trans "Request a B2B Quote" %}
+            </a>
+        </div>
+    </section>
+
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    function scrollToProduct(e, id) {
+        e.preventDefault();
+        var el = document.getElementById(id);
+        if (!el) return;
+        
+        // Update active quicknav button
+        document.querySelectorAll('.pqn-btn').forEach(function (b) { b.classList.remove('pqn-active'); });
+        e.currentTarget.classList.add('pqn-active');
+        
+        // Scroll with offset for sticky header (offset 100px)
+        var y = el.getBoundingClientRect().top + window.pageYOffset - 110;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+        
+        // Trigger visual highlight animation
+        el.classList.remove('product-highlight');
+        void el.offsetWidth; // Force CSS reflow
+        el.classList.add('product-highlight');
+    }
+    
+    function showAll() {
+        document.querySelectorAll('.pqn-btn').forEach(function (b) { b.classList.remove('pqn-active'); });
+        document.querySelector('.pqn-btn').classList.add('pqn-active');
+        
+        var firstBlock = document.querySelector('.category-block');
+        if (firstBlock) {
+            var y = firstBlock.getBoundingClientRect().top + window.pageYOffset - 110;
+            window.scrollTo({ top: y, behavior: 'smooth' });
+        }
+    }
+</script>
+{% endblock %}

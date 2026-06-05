@@ -1,0 +1,11 @@
+# XML Sitemap URL
+Sitemap: {{ base_url }}/sitemap.xml
+
+User-agent: *
+{% if is_staging %}
+Disallow: /
+{% else %}
+Disallow: /admin/
+Disallow: /set-language/
+Allow: /
+{% endif %}

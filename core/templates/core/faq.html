@@ -1,0 +1,104 @@
+{% extends 'base.html' %}
+{% load i18n static %}
+
+{% block title %}{% trans "Frequently Asked B2B Questions" %}{% endblock %}
+
+{% block content %}
+
+    <!-- ===== HERO HEADER ===== -->
+    <section class="bg-success text-white py-5 text-center position-relative">
+        <div class="container py-5">
+            <span class="text-warning fw-bold text-uppercase tracking-widest">{% trans "Moroccan Food Manufacturer" %}</span>
+            <h1 class="text-white fs-1 fw-bold mt-2">{% trans "B2B Export FAQ" %}</h1>
+        </div>
+    </section>
+
+    <!-- ===== ACCORDIONS ===== -->
+    <section class="section-padding py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <p class="fs-5 text-secondary text-center mb-5">
+                        {% trans "Review frequently asked questions regarding container orders, private labeling, standard production capabilities, and logistics protocols." %}
+                    </p>
+
+                    <!-- Bootstrap Accordion -->
+                    <div class="accordion faq-accordion" id="faqAccordion">
+                        
+                        <!-- FAQ 1 -->
+                        <div class="accordion-item shadow-sm">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    {% trans "What is your Minimum Order Quantity (MOQ) for international B2B shipments?" %}
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-secondary">
+                                    {% trans "Our standard MOQ is 1 Full Container Load (FCL), which can consist of mixed product pallets (different vinegars and condiments). For bulk industrial shipments in 1000L IBCs or drums, alternative shipping quantities can be organized. Please contact our export managers." %}
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 2 -->
+                        <div class="accordion-item shadow-sm">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    {% trans "Can you formulate customized acidity levels or custom vinegar flavors?" %}
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-secondary">
+                                    {% trans "Yes. Our food technologists and physical-chemical laboratories can calibrate specific biological acidity levels (e.g. 5%, 6%, 8% or higher) and develop customized colored/flavored profiles to match your regional consumer market profile." %}
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 3 -->
+                        <div class="accordion-item shadow-sm">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    {% trans "What are the requirements for B2B Private Labeling / OEM contracts?" %}
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-secondary">
+                                    {% trans "Private label contracts require a committed annual purchase volume. We supply turnkey OEM solutions: bottling configurations, customized boxes, labeling alignment compliant with local regulations, and export customs preparations." %}
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 4 -->
+                        <div class="accordion-item shadow-sm">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    {% trans "Do you offer shipping samples for quality evaluations?" %}
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-secondary">
+                                    {% trans "Yes. We ship product samples (in 250ml or 500ml formats) to registered commercial importers and food brokers worldwide. Let us know your company profile, destination country, and DHL/FedEx shipping account numbers." %}
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 5 -->
+                        <div class="accordion-item shadow-sm">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    {% trans "What is the standard logistics timeline from your Fès plant to Western Europe or USA?" %}
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-secondary">
+                                    {% trans "Direct highway transport from our factory in Fès to Tangier Med takes under 4 hours. Typical ocean freight transit timelines: Western Europe (Rotterdam, Hamburg, Le Havre): 3-6 days; USA East Coast: 10-14 days; Middle East: 12-18 days." %}
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

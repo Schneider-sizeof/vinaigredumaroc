@@ -1,0 +1,122 @@
+{% extends 'base.html' %}
+{% load i18n static %}
+
+{% block title %}{% trans "Contact & Exports" %}{% endblock %}
+
+{% block content %}
+
+    <!-- ===== HERO HEADER ===== -->
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <span class="hero-accent text-uppercase fw-bold" style="letter-spacing:3px;font-size:0.85rem;">{% trans "Moroccan Food Manufacturer" %}</span>
+            <div class="hero-divider"></div>
+            <h1>{% trans "Contact Our Export Team" %}</h1>
+            <p>{% trans "Ready to discuss bulk imports, mixed container logistics, or custom OEM private labeling agreements? Send us your specifications." %}</p>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT CONTENT ===== -->
+    <section class="section-padding py-5">
+        <div class="container">
+            <div class="row g-5">
+                
+                <!-- Commercial offices details -->
+                <div class="col-lg-5">
+                    <h2 class="fs-2 fw-bold text-success mb-4">{% trans "International Sales Department" %}</h2>
+                    <p class="text-secondary mb-4 leading-relaxed">
+                        {% trans "Our export headquarters manages commercial agreements, shipping schedules, and private label OEM setups. Fulfill container orders directly from our Fès factory, fully compliant with your country import specifications." %}
+                    </p>
+                    
+                    <div class="d-flex align-items-start gap-3 mb-4">
+                        <span class="fs-4 text-success">📍</span>
+                        <div>
+                            <h6 class="fw-bold m-0">{% trans "Factory Address" %}</h6>
+                            <p class="text-secondary small">{{ site_settings.address }}</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-start gap-3 mb-4">
+                        <span class="fs-4 text-success">📞</span>
+                        <div>
+                            <h6 class="fw-bold m-0">{% trans "Direct Telephone" %}</h6>
+                            <p class="text-secondary small">{{ site_settings.phone }}</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-start gap-3 mb-4">
+                        <span class="fs-4 text-success">📧</span>
+                        <div>
+                            <h6 class="fw-bold m-0">{% trans "Export Inquiries Email" %}</h6>
+                            <p class="text-secondary small"><a href="mailto:{{ site_settings.email }}" class="text-success">{{ site_settings.email }}</a></p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-start gap-3">
+                        <span class="fs-4 text-success">🚢</span>
+                        <div>
+                            <h6 class="fw-bold m-0">{% trans "FOB Shipping Port" %}</h6>
+                            <p class="text-secondary small">{% trans "Tangier Med Port, Morocco" %}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Complete B2B lead generation form -->
+                <div class="col-lg-7">
+                    <div class="form-card-premium shadow-lg">
+                        <h4 class="fw-bold text-success mb-3"><i class="bi bi-envelope-fill me-2"></i>{% trans "International Export Lead Sheet" %}</h4>
+                        <p class="text-secondary small mb-4">
+                            {% trans "Fulfill all fields below to request specific commercial terms, shipping quotes, or sample requests." %}
+                        </p>
+                        
+                        <form method="POST" action="{% url 'contact' %}">
+                            {% csrf_token %}
+                            {{ form.website }} <!-- Anti-spam honeypot field -->
+                            
+                            <div class="row g-3">
+                                <div class="col-md-6 col-12">
+                                    <label class="form-label-premium">{% trans "Company Name" %} *</label>
+                                    {{ form.company_name }}
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <label class="form-label-premium">{% trans "Target Destination Country" %} *</label>
+                                    {{ form.country }}
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <label class="form-label-premium">{% trans "Commercial Email Address" %} *</label>
+                                    {{ form.email }}
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <label class="form-label-premium">{% trans "Phone Number" %} *</label>
+                                    {{ form.phone }}
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <label class="form-label-premium">{% trans "Requested Products" %} *</label>
+                                    {{ form.requested_products }}
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <label class="form-label-premium">{% trans "Target Packaging" %} *</label>
+                                    {{ form.packaging_format }}
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label-premium">{% trans "Requested Quantity (e.g. 1 FCL, 10 Pallets)" %} *</label>
+                                    {{ form.quantity }}
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label-premium">{% trans "Message & Technical Specifications" %} *</label>
+                                    {{ form.custom_message }}
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <button type="submit" class="btn-premium btn-premium-accent w-100 py-3">
+                                        <i class="bi bi-send-fill me-2"></i> {% trans "Submit Export Inquiry" %}
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

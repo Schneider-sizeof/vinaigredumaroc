@@ -1,0 +1,60 @@
+{% load i18n static i18n_extras packaging_tags certification_tags %}
+<tr id="product-{{ product.slug }}">
+
+    <td class="prod-img-cell" data-label="">
+        <div class="prod-img-wrap">
+            {% if product.image %}
+                <img src="{{ product.image.url }}" alt="{{ product|translate_field:'name' }}" class="img-fluid" style="max-height: 100%; max-width: 100%; object-fit: contain; border-radius: 8px;">
+            {% else %}
+                <span class="prod-img-placeholder">
+                    {% if product.category.slug == 'vinegars' %}🍾{% else %}🌶️{% endif %}
+                </span>
+            {% endif %}
+        </div>
+    </td>
+
+    <td data-label="Product">
+        {% if product.is_premium %}<span class="prod-premium-badge">★ Premium</span><br>{% endif %}
+        <div class="prod-name">{{ product|translate_field:'name' }}</div>
+        <div class="prod-desc">{{ product|translate_field:'short_description' }}</div>
+    </td>
+
+    <td data-label="Packaging">
+        {% if product.packaging_formats.exists %}
+        <div class="packaging-icons">
+            {% for pkg in product.packaging_formats.all %}
+            <span class="pkg-pill" title="{{ pkg.name }}">
+                <span class="pkg-svg-wrap" style="width: 24px; height: 24px; display: inline-block; vertical-align: middle; margin-right: 4px;">
+                    {% render_packaging_icon pkg.name %}
+                </span>
+                {{ pkg.name }}
+            </span>
+            {% endfor %}
+        </div>
+        {% else %}
+        <span class="no-data">—</span>
+        {% endif %}
+    </td>
+
+    <td data-label="Certifications">
+        {% if product.certifications.exists %}
+        <div class="cert-badges">
+            {% for cert in product.certifications.all %}
+            <span class="cert-badge cert-{{ cert.code|upper }}" title="{{ cert.name }}">
+                <span class="cert-svg-wrap" style="width: 18px; height: 18px; display: inline-block; vertical-align: middle; margin-right: 4px;">
+                    {% render_certification_icon cert.code %}
+                </span>
+                {{ cert.code|upper }}
+            </span>
+            {% endfor %}
+        </div>
+        {% else %}
+        <span class="no-data">—</span>
+        {% endif %}
+    </td>
+
+    <td class="prod-details-cell" data-label="">
+        <a href="{% url 'product_detail' product|translate_field:'slug' %}" class="btn-view-details">{% trans "View" %} →</a>
+    </td>
+
+</tr>

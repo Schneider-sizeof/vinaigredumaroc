@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+{% load i18n static %}
+
+{% block title %}{% trans "B2B Export & OEM Private Labeling" %}{% endblock %}
+
+{% block content %}
+
+    <!-- ===== HERO HEADER ===== -->
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <span class="hero-accent text-uppercase fw-bold" style="letter-spacing:3px;font-size:0.85rem;">{% trans "EXPORT CAPACITY" %}</span>
+            <div class="hero-divider"></div>
+            <h1>{% trans "Export Capabilities & OEM Private Labeling" %}</h1>
+            <p>{% trans "We offer tailored B2B packaging setups. From elegant glass bottles for high-end retail supermarkets, lightweight PET containers for wholesale foodservice distributors, to heavy drums and IBC tanks for industrial food manufacturers." %}</p>
+        </div>
+    </section>
+
+    <!-- ===== EXPORT CAPABILITIES ===== -->
+    <section class="section-padding py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="fs-2 fw-bold text-success mb-3">{% trans "OEM / Private Label Solutions" %}</h2>
+                    <p class="text-secondary mb-4" style="text-align: justify;">
+                        {% trans "Vinaigre du Maroc is the trusted OEM manufacturing partner for supermarket chains, gourmet vinegar brands, and catering distributors worldwide. We offer complete B2B private label solutions, managing everything from recipe optimization (custom acidity, color, flavors) to container bottling, package boxes, and customs compliance support." %}
+                    </p>
+                    <p class="text-secondary" style="text-align: justify;">
+                        {% trans "Our design and regulatory teams assist in label layouts, ensuring that nutritional tables, barcode registrations, and multilingual ingredient listings comply with target country food import rules." %}
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="p-5 bg-light rounded shadow-sm border border-success border-5 border-top-0 border-end-0 border-bottom-0">
+                        <h4 class="text-success mb-3 fw-bold">{% trans "Our Private Label Steps" %}</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-3 d-flex align-items-start gap-2">
+                                <span class="badge bg-success rounded-circle">1</span>
+                                <div>
+                                    <strong>{% trans "Recipe Adjustment" %}</strong>
+                                    <p class="small text-secondary m-0">{% trans "Select specific biological vinegar types, acidity percentages (e.g. 6% or 8%), or custom colors." %}</p>
+                                </div>
+                            </li>
+                            <li class="mb-3 d-flex align-items-start gap-2">
+                                <span class="badge bg-success rounded-circle">2</span>
+                                <div>
+                                    <strong>{% trans "Packaging Configuration" %}</strong>
+                                    <p class="small text-secondary m-0">{% trans "Choose glass bottles, PET jugs, or bulk containers with tailored boxes." %}</p>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-start gap-2">
+                                <span class="badge bg-success rounded-circle">3</span>
+                                <div>
+                                    <strong>{% trans "Regulatory Alignment" %}</strong>
+                                    <p class="small text-secondary m-0">{% trans "Incorporate regional languages, import barcodes, and health warnings on labeling." %}</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== LOGISTICS SECTION ===== -->
+    <section class="section-padding bg-warm-light">
+        <div class="container">
+            <span class="eyebrow">{% trans "SHIPPING DETAILS" %}</span>
+            <h2 class="section-title">{% trans "Logistics & Container Loading" %}</h2>
+            
+            <div class="row g-4">
+                
+                <!-- Bulk tanker -->
+                <div class="col-md-4">
+                    <div class="choose-card">
+                        <div class="choose-icon-wrapper"><i class="bi bi-truck"></i></div>
+                        <h4 class="fw-bold mb-2">{% trans "Bulk Vinegar Supply" %}</h4>
+                        <p class="text-secondary small">{% trans "For industrial manufacturers who pack or blend in their local facilities, we export bulk vinegar in 1000L IBC tanks, 200L drums, or direct food-grade flexitanks." %}</p>
+                    </div>
+                </div>
+
+                <!-- Container loading -->
+                <div class="col-md-4">
+                    <div class="choose-card">
+                        <div class="choose-icon-wrapper"><i class="bi bi-box-seam"></i></div>
+                        <h4 class="fw-bold mb-2">{% trans "Mixed Container Loads" %}</h4>
+                        <p class="text-secondary small">{% trans "Maximize shipping efficiency by importing mixed containers. Combine premium vinegars, hot sauces, and caper pastes in a single full container load (FCL) shipment." %}</p>
+                    </div>
+                </div>
+
+                <!-- Global distribution -->
+                <div class="col-md-4">
+                    <div class="choose-card">
+                        <div class="choose-icon-wrapper"><i class="bi bi-globe-americas"></i></div>
+                        <h4 class="fw-bold mb-2">{% trans "Tangier Med Maritime Gateway" %}</h4>
+                        <p class="text-secondary small">{% trans "Strategic highway connection from our Fès factory directly to Tangier Med. Favorable ocean freight transits to Hamburg, Rotterdam, New York, and Gulf ports." %}</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
