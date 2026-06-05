@@ -1011,10 +1011,6 @@ msgstr "Enregistrer mes préférences"
 msgid "Language selector"
 msgstr "Sélecteur de langue"
 
-msgid "Blog"
-msgstr "Blog"
-
-
 msgid "View Products"
 msgstr "Voir les Produits"
 
