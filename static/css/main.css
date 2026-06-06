@@ -565,6 +565,7 @@ a {
   padding: 5rem 0 2rem;
   font-size: 0.9rem;
   border-top: 3px solid var(--soft-gold);
+  overflow: hidden;
 }
 
 .footer-title {

@@ -524,6 +524,7 @@
 </head>
 
 <body class="{% if request.resolver_match.url_name != 'home' %}inner-page{% endif %}">
+    <div id="page-wrap" style="overflow-x: hidden; width: 100%;">
     <!-- ===== HEADER ===== -->
     <header id="site-header">
         <nav class="nav-container" aria-label="{% trans 'Main navigation' %}">
@@ -848,6 +849,7 @@
     <script src="{% static 'js/cookie_consent.js' %}"></script>
 
     {% block extra_js %}{% endblock %}
+    </div><!-- /#page-wrap -->
 
 </body>
 </html>
