@@ -80,6 +80,13 @@ body {
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+  padding-top: 80px;
+}
+
+@media (max-width: 1024px) {
+  body {
+    padding-top: 70px;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -104,6 +111,12 @@ a {
 /* Base Layout utilities */
 .section-padding {
   padding: 6.5rem 0;
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding: 3.5rem 0;
+  }
 }
 
 .bg-warm-light {
@@ -227,7 +240,6 @@ a {
   justify-content: center;
   text-align: center;
   color: #fff;
-  margin-top: 80px;
   padding: 4rem 2rem;
   background-size: cover;
   background-position: center;
@@ -476,13 +488,18 @@ a {
   background-color: var(--warm-white);
 }
 
-/* B2B Inquiry form stylings */
 .form-card-premium {
   border-radius: var(--radius-md);
   border: 1px solid rgba(88, 24, 37, 0.06);
   background: #ffffff;
-  padding: 3rem;
+  padding: 1.5rem;
   box-shadow: var(--shadow-lg);
+}
+
+@media (min-width: 768px) {
+  .form-card-premium {
+    padding: 3rem;
+  }
 }
 
 .form-label-premium {

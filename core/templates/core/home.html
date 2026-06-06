@@ -51,7 +51,7 @@
 {% block content %}
 <!-- ===== HERO SECTION (CapersMed-Inspired) ===== -->
 <section class="hero" style="background: linear-gradient(rgba(88,24,37,0.18), rgba(88,24,37,0.42)), url('{% static "images/hero_bg.jpg" %}') center 15%/cover no-repeat;">
-    <div class="hero-content" style="margin-top: 80px !important;">
+    <div class="hero-content">
         <h1>
             {% if LANGUAGE_CODE == 'en' %}
                 Premium Moroccan Vinegar &amp; Condiments
@@ -514,6 +514,17 @@
     @media (max-width: 576px) {
         .b2b-specs-grid {
             grid-template-columns: 1fr;
+        }
+        .hero-content h1 {
+            font-size: 1.8rem !important;
+        }
+        .hero-content p {
+            font-size: 1rem !important;
+            margin-bottom: 1.8rem !important;
+        }
+        .btn-hero-primary, .btn-hero-secondary {
+            padding: 12px 28px !important;
+            font-size: 0.8rem !important;
         }
     }
 </style>
