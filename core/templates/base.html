@@ -517,7 +517,7 @@
     {% block extra_head %}{% endblock %}
 </head>
 
-<body>
+<body class="{% if request.resolver_match.url_name != 'home' %}inner-page{% endif %}">
     <!-- ===== HEADER ===== -->
     <header id="site-header">
         <nav class="nav-container" aria-label="{% trans 'Main navigation' %}">
