@@ -114,6 +114,7 @@
     /* ── Hero Section ── */
     .hero {
         min-height: 100vh;
+        min-height: 100dvh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -126,7 +127,7 @@
     }
     @media (max-width: 1024px) {
         .hero {
-            padding-top: 80px;
+            padding-top: 75px;
         }
     }
     .hero-content {
@@ -531,6 +532,9 @@
         .btn-hero-primary, .btn-hero-secondary {
             padding: 12px 28px !important;
             font-size: 0.8rem !important;
+        }
+        .scroll-indicator {
+            bottom: 1.2rem !important;
         }
     }
 </style>
