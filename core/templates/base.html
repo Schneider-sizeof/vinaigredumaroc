@@ -390,14 +390,14 @@
             padding: 5rem 1.5rem 3rem;
             overflow-y: auto;
             -webkit-overflow-scrolling: touch;
-            transform: translateX(100%);
+            transform: translateY(-10px);
             visibility: hidden;
             opacity: 0;
-            transition: transform .4s cubic-bezier(.77,.2,.05,1), opacity .4s ease, visibility .4s ease;
+            transition: transform .3s ease, opacity .3s ease, visibility .3s ease;
         }
 
         .mobile-nav-overlay.open {
-            transform: translateX(0);
+            transform: translateY(0);
             visibility: visible;
             opacity: 1;
         }
