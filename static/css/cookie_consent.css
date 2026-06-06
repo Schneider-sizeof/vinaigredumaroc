@@ -1,7 +1,7 @@
 /* ===== Cookie Consent System ===== */
 .cc-banner {
     position: fixed;
-    bottom: -100%;
+    bottom: 0;
     left: 0; right: 0;
     background: #fff;
     padding: 1.5rem 2rem;
@@ -11,10 +11,11 @@
     flex-wrap: wrap;
     align-items: center;
     gap: 1.5rem;
-    transition: bottom 0.5s cubic-bezier(0.16,1,0.3,1);
+    transform: translateY(100%);
+    transition: transform 0.5s cubic-bezier(0.16,1,0.3,1);
     border-top: 3px solid var(--color-accent, #b5944b);
 }
-.cc-banner.cc-active { bottom: 0; }
+.cc-banner.cc-active { transform: translateY(0); }
 .cc-banner-content { flex: 1 1 400px; }
 .cc-banner-content h3 {
     font-size: 1.1rem; font-weight: 700;
