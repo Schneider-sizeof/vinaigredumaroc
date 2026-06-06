@@ -542,7 +542,13 @@
         <!-- CARD 1: Premium Vinegars -->
         <div class="about-preview fade-up">
             <div class="product-glow-wrap" style="flex: 1 1 400px;">
-                <span class="glow-icon">🍾</span>
+                {% with cat=categories|get_by_slug:'vinegars' %}
+                    {% if cat and cat.image %}
+                        <img src="{{ cat.image.url }}" alt="{{ cat|translate_field:'name' }}" class="img-fluid" style="max-height: 320px; object-fit: contain; filter: drop-shadow(0 10px 20px rgba(0,0,0,0.12)); z-index: 1; position: relative;">
+                    {% else %}
+                        <span class="glow-icon">🍾</span>
+                    {% endif %}
+                {% endwith %}
             </div>
             <div class="about-text">
                 <div class="section-divider" style="margin-left: 0; align-self: flex-start;"><span></span><i>◆</i><span></span></div>
@@ -567,7 +573,13 @@
                 <a href="{% url 'products' %}?category=sauces-condiments" class="btn-premium btn-premium-secondary" style="border-radius: 50px;">{% trans "View Condiments" %}</a>
             </div>
             <div class="product-glow-wrap" style="flex: 1 1 400px;">
-                <span class="glow-icon">🌶️</span>
+                {% with cat=categories|get_by_slug:'sauces-condiments' %}
+                    {% if cat and cat.image %}
+                        <img src="{{ cat.image.url }}" alt="{{ cat|translate_field:'name' }}" class="img-fluid" style="max-height: 320px; object-fit: contain; filter: drop-shadow(0 10px 20px rgba(0,0,0,0.12)); z-index: 1; position: relative;">
+                    {% else %}
+                        <span class="glow-icon">🌶️</span>
+                    {% endif %}
+                {% endwith %}
             </div>
         </div>
 

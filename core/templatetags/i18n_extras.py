@@ -97,3 +97,17 @@ def translate_field(obj, field_name):
 
     # Base fallback
     return getattr(obj, field_name, "")
+
+
+@register.filter
+def get_by_slug(queryset, slug):
+    """
+    Returns the first item in the list/queryset that matches the slug.
+    Usage: {{ categories|get_by_slug:'vinegars' }}
+    """
+    if not queryset:
+        return None
+    for item in queryset:
+        if getattr(item, 'slug', None) == slug:
+            return item
+    return None
