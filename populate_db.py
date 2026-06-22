@@ -178,7 +178,7 @@ def populate():
         # --- VINEGARS ---
         {
             'category': vinegars_cat,
-            'name_en': 'Vinaigre blond d’alcool',
+            'name_en': 'Blond Alcohol Vinegar',
             'name_fr': 'Vinaigre blond d’alcool',
             'name_ar': 'خل الكحول الأشقر',
             'name_es': 'Vinagre rubio de alcohol',
@@ -197,7 +197,7 @@ def populate():
         },
         {
             'category': vinegars_cat,
-            'name_en': 'Vinaigre de vin rouge',
+            'name_en': 'Red Wine Vinegar',
             'name_fr': 'Vinaigre de vin rouge',
             'name_ar': 'خل النبيذ الأحمر',
             'name_es': 'Vinagre de vino tinto',
@@ -216,7 +216,7 @@ def populate():
         },
         {
             'category': vinegars_cat,
-            'name_en': 'Vinaigre de vin blanc',
+            'name_en': 'White Wine Vinegar',
             'name_fr': 'Vinaigre de vin blanc',
             'name_ar': 'خل النبيذ الأبيض',
             'name_es': 'Vinagre de vino blanco',
@@ -235,7 +235,7 @@ def populate():
         },
         {
             'category': vinegars_cat,
-            'name_en': 'Vinaigre aromatisé pomme',
+            'name_en': 'Apple Aromatic Vinegar',
             'name_fr': 'Vinaigre aromatisé pomme',
             'name_ar': 'خل بنكهة التفاح',
             'name_es': 'Vinagre aromatizado manzana',
@@ -254,7 +254,7 @@ def populate():
         },
         {
             'category': vinegars_cat,
-            'name_en': 'Vinaigre aromatisé citron',
+            'name_en': 'Lemon Aromatic Vinegar',
             'name_fr': 'Vinaigre aromatisé citron',
             'name_ar': 'خل بنكهة الليمون',
             'name_es': 'Vinagre aromatizado limón',
@@ -273,7 +273,7 @@ def populate():
         },
         {
             'category': vinegars_cat,
-            'name_en': 'Vinaigre de cidre',
+            'name_en': 'Apple Cider Vinegar',
             'name_fr': 'Vinaigre de cidre',
             'name_ar': 'خل التفاح الطبيعي',
             'name_es': 'Vinagre de sidra de manzana',
@@ -292,7 +292,7 @@ def populate():
         },
         {
             'category': vinegars_cat,
-            'name_en': 'Vinaigre coloré',
+            'name_en': 'Caramel Colored Vinegar',
             'name_fr': 'Vinaigre coloré',
             'name_ar': 'الخل الملون',
             'name_es': 'Vinagre coloreado',
@@ -331,7 +331,7 @@ def populate():
         },
         {
             'category': sauces_cat,
-            'name_en': 'Cornichon de citron',
+            'name_en': 'Lemon Pickled Gherkins',
             'name_fr': 'Cornichon de citron',
             'name_ar': 'مخلل خيار بالليمون',
             'name_es': 'Pepinillos con limón',
@@ -350,7 +350,7 @@ def populate():
         },
         {
             'category': sauces_cat,
-            'name_en': 'Pâte de piment fort',
+            'name_en': 'Hot Pepper Paste',
             'name_fr': 'Pâte de piment fort',
             'name_ar': 'معجون الفلفل الحار',
             'name_es': 'Pasta de chile picante',
@@ -369,7 +369,7 @@ def populate():
         },
         {
             'category': sauces_cat,
-            'name_en': 'Pâte de câpre',
+            'name_en': 'Caper Paste',
             'name_fr': 'Pâte de câpre',
             'name_ar': 'معجون الكبار',
             'name_es': 'Pasta de alcaparras',
@@ -390,7 +390,7 @@ def populate():
 
 
     PRODUCT_TRANSLATIONS = {
-        "Vinaigre blond d’alcool": {
+        "Blond Alcohol Vinegar": {
             "description_fr": "Fabriqué par fermentation biologique continue avancée. Possède une acidité nette et une grande clarté, idéal pour les conditionneurs de produits alimentaires en vrac et les marques de supermarchés.",
             "ingredients_fr": "Vinaigre d'alcool agricole dilué, colorant caramel.",
             "usage_ideas_fr": "Cornichons au vinaigre, vinaigrettes commerciales, préparation de repas collectifs.",
@@ -404,7 +404,7 @@ def populate():
             "ingredients_it": "Aceto di alcool agricolo diluito, colorante caramello.",
             "usage_ideas_it": "Sottaceti, condimenti commerciali per insalata, preparazione di cibi per mense."
         },
-        "Vinaigre de vin rouge": {
+        "Red Wine Vinegar": {
             "description_fr": "Acétifié lentement pour conserver le bouquet naturel du raisin. Apporte une touche acide robuste et raffinée aux vinaigrettes gourmandes et marinades méditerranéennes.",
             "ingredients_fr": "Vinaigre de vin rouge, antioxydant (sulfites).",
             "usage_ideas_fr": "Vinaigrettes, marinades pour viandes rouges, réductions de sauces gourmandes.",
@@ -418,7 +418,7 @@ def populate():
             "ingredients_it": "Aceto di vino rosso, antiossidante (solfiti).",
             "usage_ideas_it": "Vinaigrette, marinate per carni rosse, riduzioni di salse gourmet."
         },
-        "Vinaigre de vin blanc": {
+        "White Wine Vinegar": {
             "description_fr": "Fermenté à partir de vins blancs de qualité. Corps clair et brillant avec un équilibre fruité subtil, optimisé pour les poissons, les sauces de fruits de mer et les vinaigrettes de luxe.",
             "ingredients_fr": "Vinaigre de vin blanc, antioxydant (sulfites).",
             "usage_ideas_fr": "Sauce hollandaise, assaisonnements pour poissons, conservation des légumes blancs.",
@@ -432,7 +432,7 @@ def populate():
             "ingredients_it": "Aceto di vino bianco, antiossidante (solfiti).",
             "usage_ideas_it": "Salsa olandese, condimenti per pesce, conservazione di ortaggi bianchi."
         },
-        "Vinaigre aromatisé pomme": {
+        "Apple Aromatic Vinegar": {
             "description_fr": "Présente un équilibre harmonieux entre l'acidité intense et la douceur naturelle de la pomme. Idéal pour les vinaigrettes légères d'été et les catalogues de vente au détail.",
             "ingredients_fr": "Vinaigre blanc, arôme naturel de pomme, colorant caramel.",
             "usage_ideas_fr": "Salades d'été, marinades de viande blanche, pickles de fruits.",
@@ -446,7 +446,7 @@ def populate():
             "ingredients_it": "Aceto bianco, aroma naturale di mela, colorante caramello.",
             "usage_ideas_it": "Insalate estive, marinate per carni bianche, sottaceti di frutta."
         },
-        "Vinaigre aromatisé citron": {
+        "Lemon Aromatic Vinegar": {
             "description_fr": "Associe une acidité biologique standard de 6 % à des huiles d'écorce de citron fraîches. Excellent pour le conditionnement des fruits de mer, les condiments de table et les marinades gourmandes.",
             "ingredients_fr": "Vinaigre blanc, huiles essentielles de citron naturelles.",
             "usage_ideas_fr": "Vinaigrettes pour poissons, assaisonnement de poulet, salades vertes fraîches.",
@@ -460,7 +460,7 @@ def populate():
             "ingredients_it": "Aceto bianco, oli essenziali naturali di limone.",
             "usage_ideas_it": "Condimenti per pesce, condimento per pollo, insalate verdi fresche."
         },
-        "Vinaigre de cidre": {
+        "Apple Cider Vinegar": {
             "description_fr": "Fermenté naturellement à partir de pommes marocaines locales. Totalement brut pour préserver la 'mère de vinaigre' active. Très demandé sur les marchés biologiques américains et européens.",
             "ingredients_fr": "Vinaigre de cidre de pomme brut fermenté.",
             "usage_ideas_fr": "Toniques de santé, vinaigrettes relevées, cosmétiques biologiques.",
@@ -474,7 +474,7 @@ def populate():
             "ingredients_it": "Aceto di sidro di mele grezzo fermentato.",
             "usage_ideas_it": "Bevande salutari, condimenti saporiti per insalata, biologici."
         },
-        "Vinaigre coloré": {
+        "Caramel Colored Vinegar": {
             "description_fr": "Conçu spécifiquement pour les réseaux de supermarchés sous marque de distributeur. Clarté élevée, coloration uniforme et niveaux d'acidité stricts pour répondre aux exigences des acheteurs B2B.",
             "ingredients_fr": "Vinaigre blanc dilué, colorant caramel de qualité alimentaire.",
             "usage_ideas_fr": "Condiment de table, conserves au vinaigre, assaisonnement général.",
@@ -502,7 +502,7 @@ def populate():
             "ingredients_it": "Peperoncini rossi invecchiati, aceto, sale, stabilizzanti.",
             "usage_ideas_it": "Ali di pollo, marinate, condimento da tavola per ristoranti."
         },
-        "Cornichon de citron": {
+        "Lemon Pickled Gherkins": {
             "description_fr": "Jeunes cornichons croquants marinés dans une saumure de vinaigre claire et des tranches de citron marocain. Condiment spécial très apprécié sur les tables d'Europe et du Moyen-Orient.",
             "ingredients_fr": "Petits cornichons, vinaigre, eau, tranches de citron, sel, épices naturelles.",
             "usage_ideas_fr": "Plats gourmets, garnitures de burgers, plats d'accompagnement traditionnels.",
@@ -516,7 +516,7 @@ def populate():
             "ingredients_it": "Cetriolini novelli, aceto, acqua, fette di limone, sale, spezie naturali.",
             "usage_ideas_it": "Piatti gourmet, farcitura di burger, contorni tradizionali."
         },
-        "Pâte de piment fort": {
+        "Hot Pepper Paste": {
             "description_fr": "Piments séchés au soleil moulus et mélangés à du sel marin et du vinaigre. Destinée aux industriels de l'agroalimentaire, aux fabricants de sauces et aux supermarchés.",
             "ingredients_fr": "Piments rouges forts, sel, vinaigre, régulateurs d'acidité.",
             "usage_ideas_fr": "Base industrielle pour sauces, marinades de viande, préparations de restauration.",
@@ -530,7 +530,7 @@ def populate():
             "ingredients_it": "Peperoncini rossi piccanti, sale, aceto, regolatori di acidità.",
             "usage_ideas_it": "Peperoncini macinati, sale, aceto, regolatori di acidità."
         },
-        "Pâte de câpre": {
+        "Caper Paste": {
             "description_fr": "Câpres marocaines salées et finement broyées, mélangées à du vinaigre et de l'huile végétale. Une tapenade gourmande riche en umami, optimisée pour les contrats d'exportation B2B.",
             "ingredients_fr": "Câpres marocaines, huile de tournesol, vinaigre, épices.",
             "usage_ideas_fr": "Tartinades gourmandes, sauces pour fruits de mer, vinaigrettes.",
