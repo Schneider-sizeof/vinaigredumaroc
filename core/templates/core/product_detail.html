@@ -5,6 +5,31 @@
 
 {% block meta_description %}{{ product|translate_field:'short_description' }}{% endblock %}
 
+{% block extra_head %}
+<style>
+    .detail-img-zoom-wrap {
+        overflow: hidden;
+        border-radius: 16px;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 2rem;
+        border: 1px solid #eae3d2;
+        box-shadow: 0 4px 20px rgba(88, 24, 37, 0.02);
+    }
+    .detail-img-zoom {
+        transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        width: 100%;
+        height: auto;
+    }
+    .detail-img-zoom-wrap:hover .detail-img-zoom {
+        transform: scale(1.08);
+    }
+</style>
+{% endblock %}
+
 {% block content %}
 
     <!-- ===== BREADCRUMB SCHEMA (SEO) ===== -->
@@ -25,18 +50,22 @@
             <div class="row g-5">
                 
                 <!-- Product Left Visual Placement -->
-                <div class="col-lg-5 text-center">
-                    <div class="glass-section p-4 p-md-5 shadow rounded-3 bg-white" style="position: sticky; top: 120px;">
+                <div class="col-lg-6 text-center">
+                    <div style="position: sticky; top: 120px;">
                         {% if product.image %}
-                            <img src="{{ product.image.url }}" alt="{{ product|translate_field:'name' }}" class="img-fluid rounded-3" style="max-height: 350px; object-fit: contain; filter: drop-shadow(0 10px 15px rgba(88, 24, 37, 0.08));">
+                            <div class="detail-img-zoom-wrap">
+                                <img src="{{ product.image.url }}" alt="{{ product|translate_field:'name' }}" class="img-fluid rounded-3 detail-img-zoom" style="max-height: 450px; object-fit: contain; filter: drop-shadow(0 10px 15px rgba(88, 24, 37, 0.08));">
+                            </div>
                         {% else %}
-                            <i class="bi {% if product.category.slug == 'vinegars' %}bi-droplet-half text-success{% else %}bi-fire text-danger{% endif %}" style="font-size: 10rem;"></i>
+                            <div class="glass-section p-4 p-md-5 shadow rounded-3 bg-white">
+                                <i class="bi {% if product.category.slug == 'vinegars' %}bi-droplet-half text-success{% else %}bi-fire text-danger{% endif %}" style="font-size: 10rem;"></i>
+                            </div>
                         {% endif %}
                     </div>
                 </div>
 
                 <!-- Product Detail Specifications -->
-                <div class="col-lg-7">
+                <div class="col-lg-6">
                     <span class="badge bg-success-subtle text-success text-uppercase fw-bold px-3 py-2 mb-3">
                         {{ product.category|translate_field:'name' }}
                     </span>

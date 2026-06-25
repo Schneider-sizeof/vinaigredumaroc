@@ -155,12 +155,12 @@
     /* ========== COLUMN 1: Image — Clean Transparent Style ========== */
     .prod-img-cell {
         text-align: center;
-        width: 160px;
+        width: 200px;
     }
 
     .prod-img-wrap {
-        width: 120px;
-        height: 120px;
+        width: 160px;
+        height: 160px;
         border-radius: 16px;
         overflow: hidden;
         margin: 0 auto;
@@ -171,8 +171,16 @@
         justify-content: center;
     }
 
+    .prod-img-wrap img {
+        transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .products-table tbody tr:hover .prod-img-wrap img {
+        transform: scale(1.12) rotate(2deg);
+    }
+
     .prod-img-placeholder {
-        font-size: 3.5rem;
+        font-size: 4rem;
         line-height: 1;
         filter: drop-shadow(0 4px 8px rgba(88, 24, 37, 0.1));
         transition: transform 0.4s ease;
@@ -445,8 +453,8 @@
         }
 
         .prod-img-wrap {
-            width: 120px;
-            height: 120px;
+            width: 150px;
+            height: 150px;
             margin: 0 auto 0.5rem;
             overflow: hidden;
         }
